@@ -4,6 +4,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import org.example.restaurant.Controlere.StaffController;
+import org.example.restaurant.Controlere.TableController;
+import org.example.restaurant.Domain.Entitati.Table;
 import org.example.restaurant.Domain.Entitati.Validatori.MenuItemValidator;
 import org.example.restaurant.Domain.Entitati.Validatori.OrderValidator;
 import org.example.restaurant.Domain.Entitati.Validatori.TableValidator;
@@ -40,25 +43,31 @@ public class Application extends javafx.application.Application {
         //afisez ferestra pentru staff
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("staff.fxml"));
         AnchorPane paneStaff = fxmlLoader.load();
+        StaffController staffController = fxmlLoader.getController();
+        staffController.setService(service);
         Scene staffScene = new Scene(paneStaff);
         Stage staffStage = new Stage();
         staffStage.setScene(staffScene);
         staffStage.setTitle("Staff");
         staffStage.setWidth(430);
-        staffStage.setHeight(330);
+        staffStage.setHeight(490);
         staffStage.show();
 
         //afisez cate o fereastra pentru fiecare masa
-        for(int i = 0; i< tablesRepository.findAll().size(); i++){
+        for(Table table : service.findAllTables()){
             FXMLLoader loader = new FXMLLoader(getClass().getResource("table.fxml"));
-            AnchorPane table = loader.load();
-            Scene tableScene = new Scene(table);
+            AnchorPane tablePane = loader.load();
+            TableController controller = loader.getController();
+            controller.setService(service);
+            controller.setIdTable(table.getId());
+            Scene tableScene = new Scene(tablePane);
             Stage tableStage = new Stage();
             tableStage.setScene(tableScene);
             tableStage.setTitle("Table");
-            tableStage.setWidth(601);
-            tableStage.setHeight(399);
+            tableStage.setWidth(304);
+            tableStage.setHeight(441);
             tableStage.show();
+
         }
     }
 }

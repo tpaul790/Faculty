@@ -1,9 +1,11 @@
 package org.example.restaurant.Domain.Entitati;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.time.LocalDateTime;
 import java.util.List;
 
-public class Order {
+public class Order implements Comparable<Order> {
     private int id;
     private int table;
     private List<MenuItem> menuItems;
@@ -64,5 +66,10 @@ public class Order {
 
     public void setOrderDate(LocalDateTime orderDate) {
         this.orderDate = orderDate;
+    }
+
+    @Override
+    public int compareTo(@NotNull Order o) {
+        return this.orderDate.compareTo(o.orderDate);
     }
 }

@@ -11,6 +11,7 @@ module org.example.restaurant {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires java.sql;
+    requires annotations;
 
     opens org.example.restaurant to javafx.fxml;
     exports org.example.restaurant;

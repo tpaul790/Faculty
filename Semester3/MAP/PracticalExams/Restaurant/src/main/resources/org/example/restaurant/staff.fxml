@@ -6,19 +6,19 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="430.0"
-            xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.restaurant.Controlere.StaffController">
    <children>
       <Label layoutX="190.0" layoutY="14.0" text="Stuff">
          <font>
             <Font name="System Bold" size="25.0" />
          </font>
       </Label>
-      <TableView layoutX="-2.0" layoutY="130.0" prefHeight="200.0" prefWidth="434.0">
+      <TableView fx:id="tableView" layoutX="2.0" layoutY="142.0" prefHeight="331.0" prefWidth="430.0">
         <columns>
-          <TableColumn prefWidth="61.0" text="IDMasa" />
-          <TableColumn prefWidth="157.0" text="Data" />
-            <TableColumn prefWidth="213.0" text="NumeProdus" />
+          <TableColumn fx:id="columnIdMasa" prefWidth="61.0" text="IDMasa" />
+          <TableColumn fx:id="columnData" prefWidth="176.0" text="Data" />
+            <TableColumn fx:id="columnNume" prefWidth="190.0" text="NumeProdus" />
         </columns>
       </TableView>
       <Label layoutX="156.0" layoutY="104.0" text="Placed Orders">
