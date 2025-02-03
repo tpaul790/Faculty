@@ -2,21 +2,63 @@ package org.example.restaurant;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import org.example.restaurant.Domain.Entitati.Validatori.MenuItemValidator;
+import org.example.restaurant.Domain.Entitati.Validatori.OrderValidator;
+import org.example.restaurant.Domain.Entitati.Validatori.TableValidator;
+import org.example.restaurant.Repository.MenuItemsRepository;
+import org.example.restaurant.Repository.OrdersRepository;
+import org.example.restaurant.Repository.TablesRepository;
+import org.example.restaurant.Service.Service;
 
 import java.io.IOException;
 
 public class Application extends javafx.application.Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
-        stage.setScene(scene);
-        stage.show();
+        initView();
     }
 
     public static void main(String[] args) {
         launch();
+    }
+
+    public void initView() throws IOException {
+        //construiesc aplicatia
+        MenuItemValidator menuItemValidator = MenuItemValidator.getInstance();
+        OrderValidator orderValidator = OrderValidator.getInstance();
+        TableValidator tableValidator = TableValidator.getInstance();
+
+        MenuItemsRepository menuItemsRepository = new MenuItemsRepository("jdbc:postgresql://localhost:5432/Restaurant","postgres","paul2004",menuItemValidator);
+        OrdersRepository ordersRepository = new OrdersRepository("jdbc:postgresql://localhost:5432/Restaurant","postgres","paul2004",orderValidator);
+        TablesRepository tablesRepository = new TablesRepository("jdbc:postgresql://localhost:5432/Restaurant","postgres","paul2004",tableValidator);
+
+        Service service = new Service(menuItemsRepository, ordersRepository, tablesRepository);
+
+
+        //afisez ferestra pentru staff
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("staff.fxml"));
+        AnchorPane paneStaff = fxmlLoader.load();
+        Scene staffScene = new Scene(paneStaff);
+        Stage staffStage = new Stage();
+        staffStage.setScene(staffScene);
+        staffStage.setTitle("Staff");
+        staffStage.setWidth(430);
+        staffStage.setHeight(330);
+        staffStage.show();
+
+        //afisez cate o fereastra pentru fiecare masa
+        for(int i = 0; i< tablesRepository.findAll().size(); i++){
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("table.fxml"));
+            AnchorPane table = loader.load();
+            Scene tableScene = new Scene(table);
+            Stage tableStage = new Stage();
+            tableStage.setScene(tableScene);
+            tableStage.setTitle("Table");
+            tableStage.setWidth(601);
+            tableStage.setHeight(399);
+            tableStage.show();
+        }
     }
 }
