@@ -20,6 +20,24 @@ public class Nevoie extends Entity<Long>{
         this.status = Status.CAUT_EROU;
     }
 
+    public Nevoie(Long id, String titlu, String descriere, LocalDateTime deadline, Long omInNevoi,Long omSalvator, Status status) {
+        super(id);
+        this.titlu = titlu;
+        this.descriere = descriere;
+        this.deadline = deadline;
+        this.omInNevoi = omInNevoi;
+        this.omSalvator = omSalvator;
+        this.status = status;
+    }
+
+    public static Status statusFromString(String status) {
+        return switch (status) {
+            case "CAUT_EROU" -> Status.CAUT_EROU;
+            case "EROU_GASIT" -> Status.EROU_GASIT;
+            default -> null;
+        };
+    }
+
     public String getTitlu() {
         return titlu;
     }
@@ -66,5 +84,13 @@ public class Nevoie extends Entity<Long>{
 
     public void setStatus(Status status) {
         this.status = status;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Nevoie nevoie = (Nevoie) o;
+        return getId().equals(nevoie.getId());
     }
 }

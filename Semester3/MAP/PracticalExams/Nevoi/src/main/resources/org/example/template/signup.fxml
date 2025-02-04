@@ -14,7 +14,7 @@
         <TextField fx:id="textFieldPrenume" layoutX="102.0" layoutY="80.0" />
         <TextField fx:id="textFieldUsername" layoutX="102.0" layoutY="120.0" />
         <PasswordField fx:id="textFieldPassword" layoutX="102.0" layoutY="160.0" />
-        <TextField fx:id="textFiedStrada" layoutX="102.0" layoutY="200.0" />
+        <TextField fx:id="textFiledStrada" layoutX="102.0" layoutY="200.0" />
         <TextField fx:id="textFieldNumar" layoutX="102.0" layoutY="240.0" />
         <TextField fx:id="textFieldTelefon" layoutX="102.0" layoutY="280.0" />
         <Label layoutX="14.0" layoutY="40.0" text="Nume">
@@ -54,6 +54,6 @@
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <ComboBox layoutX="100.0" layoutY="1.0" prefWidth="150.0" promptText="Oras" />
+      <ComboBox fx:id="orasCombo" layoutX="100.0" layoutY="1.0" prefWidth="150.0" promptText="Oras" />
     </children>
 </AnchorPane>

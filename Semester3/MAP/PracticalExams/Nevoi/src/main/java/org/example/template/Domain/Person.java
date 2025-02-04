@@ -1,16 +1,18 @@
 package org.example.template.Domain;
 
+import com.fasterxml.jackson.databind.ser.std.ObjectArraySerializer;
+
 public class Person extends Entity<Long>{
     private String nume;
     private String prenume;
     private String username;
     private String password;
-    private String oras;
+    private Oras oras;
     private String strada;
     private String numar;
     private String telefon;
 
-    public Person(Long id, String nume, String prenume, String username, String password, String oras, String strada, String numar, String telefon) {
+    public Person(Long id, String nume, String prenume, String username, String password, Oras oras, String strada, String numar, String telefon) {
         super(id);
         this.nume = nume;
         this.prenume = prenume;
@@ -20,6 +22,35 @@ public class Person extends Entity<Long>{
         this.strada = strada;
         this.numar = numar;
         this.telefon = telefon;
+    }
+
+    public Person(String nume, String prenume, String username, String password, Oras oras, String strada, String numar, String telefon) {
+        this.nume = nume;
+        this.prenume = prenume;
+        this.username = username;
+        this.password = password;
+        this.oras = oras;
+        this.strada = strada;
+        this.numar = numar;
+        this.telefon = telefon;
+    }
+
+    public static Oras orasFromString(String oras) {
+        switch (oras) {
+            case "Bistrita" -> {
+                return Oras.Bistrita;
+            }
+            case "Bucuresti" -> {
+                return Oras.Bucuresti;
+            }
+            case "Cluj" -> {
+                return Oras.Cluj;
+            }
+            case "Bacau" -> {
+                return Oras.Bacau;
+            }
+        }
+        return null;
     }
 
     public String getNume() {
@@ -46,11 +77,11 @@ public class Person extends Entity<Long>{
         this.username = username;
     }
 
-    public String getOras() {
+    public Oras getOras() {
         return oras;
     }
 
-    public void setOras(String oras) {
+    public void setOras(Oras oras) {
         this.oras = oras;
     }
 
@@ -84,5 +115,10 @@ public class Person extends Entity<Long>{
 
     public void setTelefon(String telefon) {
         this.telefon = telefon;
+    }
+
+    @Override
+    public String toString() {
+        return nume+" | "+prenume+" | "+username+" | "+oras+" | "+strada;
     }
 }

@@ -24,8 +24,8 @@ public class ApplicationStart extends Application {
     }
 
     public void initView(Stage stage) throws IOException {
-        PersoaneRepository persoaneRepository = new PersoaneRepository("jdbc:postgresql://localhost:5432/SocialNetwork","postgres","paul2004");
-        NevoiRepository nevoiRepository = new NevoiRepository("jdbc:postgresql://localhost:5432/SocialNetwork","postgres","paul2004");
+        PersoaneRepository persoaneRepository = new PersoaneRepository("jdbc:postgresql://localhost:5432/Ajut","postgres","paul2004");
+        NevoiRepository nevoiRepository = new NevoiRepository("jdbc:postgresql://localhost:5432/Ajut","postgres","paul2004");
 
         Service service = new Service(persoaneRepository, nevoiRepository);
 
@@ -35,10 +35,26 @@ public class ApplicationStart extends Application {
         stage.setScene(scene);
         stage.show();
         stage.setTitle("LogIn");
-        stage.setWidth(290);
-        stage.setHeight(200);
+        stage.setWidth(401);
+        stage.setHeight(300);
 
         LogInController controller = fxmlLoader.getController();
+        controller.setService(service);
+        controller.setStage(stage);
+
+        Stage stage1 = new Stage();
+        FXMLLoader fxmlLoader1 = new FXMLLoader(ApplicationStart.class.getResource("login.fxml"));
+        Parent root1 = fxmlLoader1.load();
+        Scene scene1 = new Scene(root1);
+        stage1.setScene(scene1);
+        stage1.show();
+        stage1.setTitle("LogIn");
+        stage1.setWidth(401);
+        stage1.setHeight(300);
+
+        LogInController controller1 = fxmlLoader1.getController();
+        controller1.setService(service);
+        controller1.setStage(stage1);
 
 
     }

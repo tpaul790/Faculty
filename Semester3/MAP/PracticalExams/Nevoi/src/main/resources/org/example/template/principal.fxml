@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.template.Controller.PrincipalController">
+  <tabs>
+    <Tab text="Vreau sa ajut">
+         <content>
+            <AnchorPane prefHeight="404.0" prefWidth="608.0">
+               <children>
+                  <TableView fx:id="tableNevoi" layoutX="2.0" layoutY="35.0" prefHeight="200.0" prefWidth="600.0">
+                    <columns>
+                      <TableColumn fx:id="columnTitluNevoi" prefWidth="75.0" text="Titlu" />
+                        <TableColumn fx:id="columnDescNevoi" prefWidth="139.0" text="Descriere" />
+                        <TableColumn fx:id="columnDeadlineNevoi" prefWidth="99.0" text="Deadline" />
+                        <TableColumn fx:id="columnOmNevoi" prefWidth="92.0" text="OmInNevoie" />
+                        <TableColumn fx:id="columnErouNevoi" prefWidth="89.0" text="OmSalvator" />
+                        <TableColumn fx:id="columnStatusNevoi" prefWidth="105.0" text="Status" />
+                    </columns>
+                  </TableView>
+                  <TableView fx:id="tableFapte" layoutX="2.0" layoutY="270.0" prefHeight="200.0" prefWidth="600.0">
+                     <columns>
+                         <TableColumn fx:id="columnTitluFapte" prefWidth="75.0" text="Titlu" />
+                         <TableColumn fx:id="columnDescFapte" prefWidth="139.0" text="Descriere" />
+                         <TableColumn fx:id="columnDeadlineFapte" prefWidth="99.0" text="Deadline" />
+                         <TableColumn fx:id="columnOmFapte" prefWidth="92.0" text="OmInNevoie" />
+                         <TableColumn fx:id="columnErouFapte" prefWidth="89.0" text="OmSalvator" />
+                         <TableColumn fx:id="columnStatusFapte" prefWidth="105.0" text="Status" />
+                     </columns>
+                  </TableView>
+                  <Label layoutX="14.0" layoutY="15.0" text="Nevoi" />
+                  <Label layoutX="14.0" layoutY="253.0" text="Fapte Bune" />
+                  <Button layoutX="248.0" layoutY="2.0" mnemonicParsing="false" onAction="#onAjutButtonClick" prefHeight="26.0" prefWidth="82.0" text="Ajut" />
+               </children>
+            </AnchorPane>
+         </content></Tab>
+    <Tab text="Vreau sa fiu ajutat">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="titluNevoie" layoutX="213.0" layoutY="80.0" />
+                  <DatePicker fx:id="deadlineNevoie" layoutX="211.0" layoutY="192.0" prefHeight="26.0" prefWidth="164.0" />
+                  <Label layoutX="121.0" layoutY="80.0" text="Titlu">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="121.0" layoutY="121.0" text="Descriere">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="121.0" layoutY="192.0" text="Deadline">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="descriereNevoie" layoutX="213.0" layoutY="114.0" prefHeight="66.0" prefWidth="160.0" />
+                  <Button onAction="#onAdaugaNevoieButtonClick" layoutX="244.0" layoutY="235.0" mnemonicParsing="false" text="AdaugaNevoie" />
+               </children></AnchorPane>
+         </content></Tab>
+  </tabs>
+</TabPane>
