@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="293aa401-7dee-48d7-a08b-a4bd15b61ea5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Template/src/main/java/org/example/template/Domain/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Template/src/main/java/org/example/template/Domain/Validator/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Zboruri/src/main/java/org/example/template/Controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Zboruri/src/main/java/org/example/template/Controller/PrincipalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Zboruri/src/main/java/org/example/template/Domain/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Zboruri/src/main/java/org/example/template/Domain/Flight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Zboruri/src/main/java/org/example/template/Domain/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Zboruri/src/main/java/org/example/template/Domain/Validator/ClientValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Zboruri/src/main/java/org/example/template/Domain/Validator/FlightValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Zboruri/src/main/java/org/example/template/Domain/Validator/TicketValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Zboruri/src/main/java/org/example/template/Domain/Validator/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Zboruri/src/main/java/org/example/template/Repository/ClientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Zboruri/src/main/java/org/example/template/Repository/FlightRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Zboruri/src/main/java/org/example/template/Repository/TicketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Zboruri/src/main/java/org/example/template/Service/Service.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Template/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Template/.idea/gradle.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,21 +140,12 @@
       <updated>1738582313911</updated>
       <workItem from="1738582314911" duration="17105000" />
       <workItem from="1738649067677" duration="34000" />
+      <workItem from="1738653330904" duration="16000" />
+      <workItem from="1738662203314" duration="1385000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/restaurant/Repository/MenuItemsRepository.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
