@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.template.Controller.AdoptionCentreController">
+   <children>
+      <Label fx:id="numeLabel" layoutX="14.0" layoutY="15.0" text="Nume">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="capacitateLabel" layoutX="14.0" layoutY="51.0" text="Capacitate">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="ocupare" layoutX="201.0" layoutY="80.0" prefWidth="200.0" progress="0.0" />
+      <Label fx:id="ocupareLabel" layoutX="264.0" layoutY="51.0" text="Ocupare">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listView" layoutX="4.0" layoutY="145.0" prefHeight="256.0" prefWidth="594.0" />
+      <ComboBox fx:id="tipCombo" layoutX="226.0" layoutY="113.0" prefWidth="150.0" promptText="Tip" />
+   </children>
+</AnchorPane>
