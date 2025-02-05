@@ -7,12 +7,14 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.example.template.Domain.Client;
+import org.example.template.Domain.FiltruDto;
 import org.example.template.Domain.Flight;
 
 import org.example.template.Service.Service;
 import org.example.template.Utils.Events.ChangeEvent;
 import org.example.template.Utils.Observer.Observer;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -52,6 +54,16 @@ public class PrincipalController implements Observer<ChangeEvent> {
     @FXML
     public DatePicker datePicker;
 
+    public void initialize() {
+        tableView.setItems(model);
+        fromColumn.setCellValueFactory(new PropertyValueFactory<>("from"));
+        toColumn.setCellValueFactory(new PropertyValueFactory<>("to"));
+        departureTimeColumn.setCellValueFactory(new PropertyValueFactory<>("departureTime"));
+        landingTimeColumn.setCellValueFactory(new PropertyValueFactory<>("landingTime"));
+        seatsColumn.setCellValueFactory(new PropertyValueFactory<>("seats"));
+    }
+
+    //pentru paginare
     public void initNumberOfPages(int size){
         if(size > 0) {
             nrOfPages = size / pageSize;
@@ -68,9 +80,41 @@ public class PrincipalController implements Observer<ChangeEvent> {
     public void initPageLabel(){
         prevBtn.setDisable(curentPage == 1);
         nextBtn.setDisable(curentPage == nrOfPages);
-
         pageLabel.setText(curentPage+"/"+nrOfPages);
     }
+
+    public void onPrevButtonClick(ActionEvent actionEvent) {
+        curentPage--;
+        initModel2();
+    }
+
+    public void onNextButtonClick(ActionEvent actionEvent) {
+        curentPage++;
+        initModel2();
+    }
+
+    //initializez modelul cu zborurile filtrate de pe pagina curenta folosind sql query
+    public void initModel2(){
+        if(toCombo.getSelectionModel().getSelectedItem()!=null && fromCombo.getSelectionModel().getSelectedItem()!=null && datePicker.getValue()!=null){
+            //iau datele
+            String from = fromCombo.getSelectionModel().getSelectedItem();
+            String to = toCombo.getSelectionModel().getSelectedItem();
+            LocalDate data = datePicker.getValue();
+            //creez dto ul pentru filtrare
+            FiltruDto dto = new FiltruDto(from,to,data,pageSize,curentPage);
+            //scad numarul de locuri disponibile in functie de bilete
+            Set<Flight> flights = service.findAllFlightsOnPage(dto);
+            service.decreseNrOfSeatsForFlights(flights);
+            //adaug datele filtrate si de pe pagina curenta
+            model.setAll(flights);
+            //iau dimensiunea datelor
+            int size = service.filtredFlightsSize(dto);
+            //initializez page number ul si labelul
+            initNumberOfPages(size);
+            initPageLabel();
+        }
+    }
+    //restul functionalitatilor
 
     public void initCombos(){
         Set<String> from = service.findAllFrom();
@@ -80,48 +124,8 @@ public class PrincipalController implements Observer<ChangeEvent> {
         toCombo.getItems().addAll(to);
     }
 
-    public void onPrevButtonClick(ActionEvent actionEvent) {
-        curentPage--;
-        initModel();
-    }
-
-    public void onNextButtonClick(ActionEvent actionEvent) {
-        curentPage++;
-        initModel();
-    }
-
-    public void initialize() {
-        tableView.setItems(model);
-        fromColumn.setCellValueFactory(new PropertyValueFactory<>("from"));
-        toColumn.setCellValueFactory(new PropertyValueFactory<>("to"));
-        departureTimeColumn.setCellValueFactory(new PropertyValueFactory<>("departureTime"));
-        landingTimeColumn.setCellValueFactory(new PropertyValueFactory<>("landingTime"));
-        seatsColumn.setCellValueFactory(new PropertyValueFactory<>("seats"));
-    }
-
-    public void initModel(){
-        if(toCombo.getSelectionModel().getSelectedItem()!=null && fromCombo.getSelectionModel().getSelectedItem()!=null && datePicker.getValue()!=null){
-            //iau datele pentru filtrare
-            String from = fromCombo.getSelectionModel().getSelectedItem();
-            String to = toCombo.getSelectionModel().getSelectedItem();
-            int day = datePicker.getValue().getDayOfMonth();
-
-            //iau toate zborurile filtrate si le sortez ca sa le iau mereu corect
-            Set<Flight> filtred = service.filtredFlights(to,from,day).stream().sorted().collect(Collectors.toCollection(LinkedHashSet::new));
-
-            //iau primele pageSize zboruri de la pageSize*(curentPage-1)
-            Set<Flight> flightsOnPage = service.findAllFlightdOnPage(filtred, curentPage-1,pageSize);
-
-            //le sortez sa se pastreze ordinea
-            model.setAll(flightsOnPage);
-
-            initNumberOfPages(filtred.size());
-            initPageLabel();
-        }
-    }
-
     public void afterService(){
-        initModel();
+        initModel2();
         initCombos();
         service.addObserver(this);
     }
@@ -150,9 +154,32 @@ public class PrincipalController implements Observer<ChangeEvent> {
 
     @Override
     public void update(ChangeEvent event) {
-        Flight flight = model.stream().filter(f -> f.getFlightId() == event.getFlight()).findFirst().orElse(null);
-        int index = model.indexOf(flight);
-        flight.setSeats(flight.getSeats()-1);
-        model.set(index, flight);
+        initModel();
+    }
+
+    //paginare fara sql querry
+    public void initModel(){
+        if(toCombo.getSelectionModel().getSelectedItem()!=null && fromCombo.getSelectionModel().getSelectedItem()!=null && datePicker.getValue()!=null){
+            //iau datele pentru filtrare
+            String from = fromCombo.getSelectionModel().getSelectedItem();
+            String to = toCombo.getSelectionModel().getSelectedItem();
+            int day = datePicker.getValue().getDayOfMonth();
+
+            //iau toate zborurile filtrate si le sortez ca sa le iau mereu corect
+            Set<Flight> filtred = service.filtredFlights(to,from,day).stream().sorted().collect(Collectors.toCollection(LinkedHashSet::new));
+
+            //iau primele pageSize zboruri de la pageSize*(curentPage-1)
+            Set<Flight> flightsOnPage = service.findAllFlightdOnPage(filtred, curentPage-1,pageSize);
+
+            //scad numarul de pentru zbor din capacitatea zborului
+
+            service.decreseNrOfSeatsForFlights(flightsOnPage);
+
+            //le sortez sa se pastreze ordinea
+            model.setAll(flightsOnPage);
+
+            initNumberOfPages(filtred.size());
+            initPageLabel();
+        }
     }
 }

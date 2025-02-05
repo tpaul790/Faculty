@@ -28,7 +28,7 @@
       <ComboBox fx:id="fromCombo" layoutX="35.0" layoutY="26.0" prefWidth="150.0" promptText="From" />
       <ComboBox fx:id="toCombo" layoutX="395.0" layoutY="26.0" prefWidth="150.0" promptText="To" />
       <DatePicker fx:id="datePicker" layoutX="207.0" layoutY="63.0" />
-      <Button layoutX="210.0" layoutY="105.0" mnemonicParsing="false" onAction="#initModel" prefHeight="31.0" prefWidth="84.0" text="Flilter">
+      <Button layoutX="210.0" layoutY="105.0" mnemonicParsing="false" onAction="#initModel2" prefHeight="31.0" prefWidth="84.0" text="Flilter">
          <font>
             <Font size="16.0" />
          </font>
