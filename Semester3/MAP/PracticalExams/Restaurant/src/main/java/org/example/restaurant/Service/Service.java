@@ -28,7 +28,8 @@ public class Service implements Observable<OrderEvent> {
 
     public void addOrder(int tableId, List<Integer> itemids){
         ordersRepository.save(tableId);
-        int idOrder = findAllOrders().stream().sorted().collect(Collectors.toList()).getLast().getId();
+        //obtin id ul comentii si adaug toate itemele comandate
+        int idOrder = findAllOrders().stream().sorted().toList().getLast().getId();
         ordersRepository.saveItems(idOrder, itemids);
 
         //arunc cate un event pentru fiecare produs comandat

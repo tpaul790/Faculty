@@ -65,7 +65,7 @@ public class Application extends javafx.application.Application {
             tableStage.setScene(tableScene);
             tableStage.setTitle("Table");
             tableStage.setWidth(304);
-            tableStage.setHeight(441);
+            tableStage.setHeight(460);
             tableStage.show();
 
         }
