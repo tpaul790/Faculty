@@ -42,6 +42,7 @@ public class LogInController {
         this.stage = stage;
     }
 
+    //daca s-a facut corect login ul atunci se deschide fereastra principala
     @FXML
     public void onLogInButtonClick(ActionEvent actionEvent) {
         Person person = listView.getSelectionModel().getSelectedItem();
@@ -62,6 +63,7 @@ public class LogInController {
         }
     }
 
+    //se deschide fereastra pentru signUp
     @FXML
     private void onSignUpButtonClick() {
         //creez scena pentru signup

@@ -44,6 +44,7 @@ public class PrincipalController implements Observer<ChangeEvent> {
     public TextArea descriereNevoie;
 
 
+    //initializez modelele si coloanele tabelelor
     public void initialize() {
         tableFapte.setItems(modelFapte);
         tableNevoi.setItems(modelNevoi);
@@ -69,8 +70,10 @@ public class PrincipalController implements Observer<ChangeEvent> {
     }
 
     private void initModelFapte() {
+        modelFapte.setAll(service.findAllFapteBuneForUser(user));
     }
 
+    //toate nevoile persoanelor care sunt din acelasi oras cu mine fara nevoile mele
     private void initModelNevoi() {
         modelNevoi.setAll(service.findAllNevoiForUser(user));
     }
@@ -84,26 +87,26 @@ public class PrincipalController implements Observer<ChangeEvent> {
         afterService();
     }
 
+    //cand ajuti, primesti un mesaj, se actualizeaza nevoia si se adauga si in tabelul de fapte bune
+    //se apeleaza o functie din service care sa i notifice pe toti ca o nevoie s-a modificat
     public void onAjutButtonClick(ActionEvent actionEvent) {
         if(tableNevoi.getSelectionModel().getSelectedItem() != null) {
             Nevoie nevoie = tableNevoi.getSelectionModel().getSelectedItem();
             if(nevoie.getStatus().equals(Status.CAUT_EROU)){
                 MessageAlert.showSuccesMessage(null,"Ai salvat un om!");
-                int index = modelNevoi.indexOf(nevoie);
                 nevoie.setStatus(Status.EROU_GASIT);
                 nevoie.setOmSalvator(user.getId());
-                modelNevoi.set(index, nevoie);
-                modelFapte.add(nevoie);
-                service.tableNevoiChange(nevoie);
+                service.updateSalvatorNevoie(nevoie);
             }
         }
     }
 
+    //dupa ce ai completat formularul poti sa-ti adaugi nevoia care se salveaza din db
     public void onAdaugaNevoieButtonClick(ActionEvent actionEvent) {
         String titlu = titluNevoie.getText();
         String descriere = descriereNevoie.getText();
         LocalDate date = deadlineNevoie.getValue();
-        LocalDateTime deadline = date.atTime(LocalTime.now());
+        LocalDateTime deadline = date.atTime(LocalTime.MIDNIGHT);
         Long omInNevoie = user.getId();
         Status status = Status.CAUT_EROU;
         if(!titlu.isEmpty() && !descriere.isEmpty()) {
@@ -113,11 +116,11 @@ public class PrincipalController implements Observer<ChangeEvent> {
         }
     }
 
+    //
     @Override
     public void update(ChangeEvent event) {
-        Nevoie nevoie = event.getData();
-        int index = modelNevoi.indexOf(nevoie);
-        modelNevoi.set(index, nevoie);
+        initModelFapte();
+        initModelNevoi();
     }
 
 }

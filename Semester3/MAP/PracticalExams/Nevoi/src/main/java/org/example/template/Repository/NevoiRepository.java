@@ -2,6 +2,7 @@ package org.example.template.Repository;
 
 import org.example.template.Domain.Nevoie;
 import org.example.template.Domain.Person;
+import org.example.template.Domain.Status;
 
 import java.sql.*;
 import java.time.LocalDateTime;
@@ -52,5 +53,17 @@ public class NevoiRepository {
             e.printStackTrace();
         }
         return nevoi;
+    }
+
+    public void update(Nevoie entity) {
+        try(Connection connection = DriverManager.getConnection(url,dbUsername,dbPassword);
+            PreparedStatement preparedStatement = connection.prepareStatement("update \"Nevoi\" set status = ?, \"omSalvator\" = ? where id = ?")){
+            preparedStatement.setString(1, Status.EROU_GASIT.toString());
+            preparedStatement.setLong(2,entity.getOmSalvator());
+            preparedStatement.setLong(3,entity.getId());
+            preparedStatement.executeUpdate();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
     }
 }

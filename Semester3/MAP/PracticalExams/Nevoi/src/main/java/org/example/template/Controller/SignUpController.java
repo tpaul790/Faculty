@@ -42,6 +42,7 @@ public class SignUpController {
         this.stage = stage;
     }
 
+    //iei datele, creezi persoana si o adaugi
     public void onSignUpButtonClick(ActionEvent actionEvent) {
         Predicate<String> empty = String::isEmpty;
         String name = textFieldName.getText();
@@ -65,6 +66,7 @@ public class SignUpController {
         }
     }
 
+    //te intorci pe pagina de login
     public void onLogInButtonClick(ActionEvent actionEvent) {
         try {
             FXMLLoader loader = new FXMLLoader(ApplicationStart.class.getResource("login.fxml"));

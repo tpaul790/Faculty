@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="293aa401-7dee-48d7-a08b-a4bd15b61ea5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nevoi/src/main/java/org/example/template/Controller/LogInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Nevoi/src/main/java/org/example/template/Controller/LogInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nevoi/src/main/java/org/example/template/Controller/PrincipalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Nevoi/src/main/java/org/example/template/Controller/PrincipalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nevoi/src/main/java/org/example/template/Controller/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Nevoi/src/main/java/org/example/template/Controller/SignUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nevoi/src/main/java/org/example/template/Repository/NevoiRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Nevoi/src/main/java/org/example/template/Repository/NevoiRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nevoi/src/main/java/org/example/template/Service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Nevoi/src/main/java/org/example/template/Service/Service.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +132,7 @@
       <workItem from="1738662203314" duration="1385000" />
       <workItem from="1738671556315" duration="5000" />
       <workItem from="1738673509644" duration="6000" />
+      <workItem from="1738751608975" duration="616000" />
     </task>
     <servers />
   </component>

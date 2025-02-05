@@ -27,7 +27,6 @@ public class Service implements Observable<ChangeEvent> {
         this.observers = new ArrayList<>();
     }
 
-
     public void savePerson(String name, String prenume, String username, String password, Oras oras, String strada, String numar, String telefon) {
         Person person = new Person(name,prenume,username,password,oras,strada,numar,telefon);
         persoaneRepository.save(person);
@@ -36,6 +35,13 @@ public class Service implements Observable<ChangeEvent> {
     public void saveNevoie(String titlu, String descriere, LocalDateTime deadline, Long omInNevoi, Long omSalvator, Status status){
         Nevoie nevoie = new Nevoie(null, titlu, descriere, deadline, omInNevoi, omSalvator, status);
         nevoiRepository.save(nevoie);
+    }
+
+    //cand se face update se anunta toti observerii ca s-a modificat
+    public void updateSalvatorNevoie(Nevoie nevoie){
+        nevoiRepository.update(nevoie);
+        ChangeEvent event = new ChangeEvent(EventType.AJUT,nevoie);
+        notify(event);
     }
 
     public Set<Person> findAllPersons() {
@@ -60,6 +66,17 @@ public class Service implements Observable<ChangeEvent> {
         return result;
     }
 
+    public Set<Nevoie> findAllFapteBuneForUser(Person user) {
+        Set<Nevoie> nevoi = nevoiRepository.findAll();
+        Set<Nevoie> result = new HashSet<>();
+        for(Nevoie n : nevoi){
+            if(n.getOmSalvator().equals(user.getId())){
+                result.add(n);
+            }
+        }
+        return result;
+    }
+
     @Override
     public void addObserver(Observer<ChangeEvent> observer) {
         observers.add(observer);
@@ -73,10 +90,5 @@ public class Service implements Observable<ChangeEvent> {
     @Override
     public void notify(ChangeEvent event) {
         observers.forEach(observer -> observer.update(event));
-    }
-
-    public void tableNevoiChange(Nevoie nevoie) {
-        ChangeEvent event = new ChangeEvent(EventType.AJUT,nevoie);
-        notify(event);
     }
 }
