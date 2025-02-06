@@ -1,7 +1,18 @@
 package org.example.template.Utils.Events;
 
+import org.example.template.Domain.Show;
+
 public class ChangeEvent implements Event {
     private EventType eventType;
-    //atribut pentru old data si new data pentru update
-    //doar data pentru delete sau add
+    private Show data;
+    public ChangeEvent(EventType eventType, Show data) {
+        this.eventType = eventType;
+    }
+    public EventType getEventType() {
+        return eventType;
+    }
+
+    public Show getData() {
+        return data;
+    }
 }
