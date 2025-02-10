@@ -1,0 +1,24 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]
+then 
+	echo "Argumente insuficiente sau prea multe"
+	echo "Utilizare: $0 dir1/fis1 ..."
+	exit 1
+fi
+
+for arg in $@
+do
+	if [ -f $arg ]
+	then
+		nume=`echo $arg | awk '{print $NF}'`
+		NRC=`cat $arg | wc -c`
+		NRL=`cat $arg | wc -l`
+		echo "Fisier: $nume. Caractere: $NRC. Linii: $NRL"
+	elif [ -d $arg ]
+	then
+		nume=`echo $arg | awk '{print $NF}'`
+		NRF=`find $arg -type f| wc -l`
+		echo "Director: $nume. Fisiere: $NRF"
+	fi
+done

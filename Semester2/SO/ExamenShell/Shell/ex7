@@ -1,0 +1,23 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]
+then
+	echo "Introduce niste argumente bossule"
+	exit 1
+fi
+
+echo -n "Introducet primul cuvant: "
+read cuv1
+echo -n "Introduceti al doilea cuvant: "
+read cuv2
+
+for F in $@
+do
+	if [ -w $F ]
+	then
+		 sed -i 's/'$cuv1'/'$cuv2'/g' $F
+	else
+		echo "'$F' nu exista sau nu se poate scrie"
+	fi
+done
+

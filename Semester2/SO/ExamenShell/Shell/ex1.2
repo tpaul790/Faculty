@@ -1,0 +1,15 @@
+#!/bin/bash
+if [ ! $# -eq 1 ]
+then 
+	echo "Argumente insuficiente sau prea multe"
+	echo "Utilizare: $0 Nr_nat"
+	exit 1
+fi
+
+N=$1
+
+for i in `seq 1 $N`
+do
+	touch file_$i.txt
+	cat /etc/passwd | sed -n ''$i',+5p'>file_$i.txt 
+done

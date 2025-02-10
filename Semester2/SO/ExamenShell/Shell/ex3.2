@@ -1,0 +1,24 @@
+#!/bin/bash
+
+if [ ! $# -eq 1 ]
+then 
+	echo "Argumente insuficiente sau prea multe"
+	echo "Utilizare: $0 dir"
+	exit 1
+fi
+
+cnt=0
+sum=0
+D=$1
+
+for F in `find $D -type f`
+do
+	if file $F | grep -q "ASCII text$"
+	then
+		cnt=$(($cnt+1))
+		nrl=`cat $F | wc -l`
+		sum=$(($sum+$nrl))
+	fi
+done	
+medie=$(($sum/$cnt))
+echo "Media este: $medie"

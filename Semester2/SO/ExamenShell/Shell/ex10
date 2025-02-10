@@ -1,0 +1,27 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]
+then 
+	echo "Argumente insuficiente"
+	echo "Utilizare: $0 dir"
+	exit 1
+fi
+
+D=$1
+
+for F in `find $D -type f | sort`
+do
+	#obin doar numele
+	name=`echo $F | awk -F/ '{print $NF}'`
+	#verific daca numele are mai putin de 8 caract ca lungime
+	if echo $name | grep -q -E "^.{,8}$"
+	then
+		echo "FISIER: '$name'"
+		#verific daca e fisier text
+		if file $F | grep -q -E "ASCII text$"
+		then
+			#afisez prima linie
+			head -1 $F
+		fi
+	fi
+done

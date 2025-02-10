@@ -1,0 +1,15 @@
+#|
+
+maxim(l)	= l, numeric
+		= -1, atom
+		= max(maxim(l1),...,maxim(l2)), l=l1..ln lista
+|#
+
+(Defun maxim(l)
+	(cond
+		((numberp l) l)
+		((atom l) -1)
+		(t (apply #'max (mapcar #'maxim l)))
+	)
+)
+

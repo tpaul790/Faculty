@@ -1,0 +1,23 @@
+#!/bin/bash
+
+if [ ! $# -eq 1 ]
+then
+	echo "Argumente insuficiente sau prea multe"
+	echo "Utilizare: $0 nr_nat"
+	exit 1
+fi
+
+N=$1
+while [ ! $N -eq 0 ]
+do
+	D=`date | awk -F: '{print $3}' | awk '{print $1}'`
+	N=$(($N - 1))
+	P=$(($D % 2))
+	if [ $P -eq 0 ]
+	then
+		echo "tic"
+	else
+		echo "toc"
+	fi
+	sleep 1
+done

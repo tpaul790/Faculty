@@ -1,0 +1,5 @@
+total 20
+-rw-rw-r-- 1 parallels parallels  221 May  7 16:13 ex1.c
+-rw-rw-r-- 1 parallels parallels  583 May  7 16:22 ex2.c
+-rwxrwxr-x 1 parallels parallels 9272 May  7 16:22 main
+-rw-r--r-- 1 parallels parallels    0 May  7 16:22 text

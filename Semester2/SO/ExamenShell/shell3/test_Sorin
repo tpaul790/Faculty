@@ -1,0 +1,43 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]
+then 
+	echo "Argumente insuficiente"
+	echo "Utilizare: $0 fis1 fis2 ..."
+	exit 1
+fi
+
+C=""
+while true
+do
+	echo -n "Cuvant: "
+	read C
+	if [ $C == "stop" ]
+	then
+		break
+	fi
+	for F in $@
+	do
+		echo "Fisier: $F"
+		if file $F | grep -q "ASCII text$"
+		then
+			NRL=`cat $F | wc -l`
+			echo "Linii: $NRL"
+			for i in `seq 1 $NRL`
+			do
+				L=`cat $F | sed -n ''$i'p'`
+				NR_CUV=`echo $L | wc -w`
+				echo "- linia $i: $NR_CUV cuvinte"
+				P=$(($NR_CUV % 2))
+				if [ $P -eq 0 ] 
+				then
+					NEW_L=`echo $L | sed -E 's/(\<[AEIOUaeiou][a-z]*\>)/'$C' \1/'`
+					sed -i "${i}c ${NEW_L}" $F
+				fi
+			done
+		else
+			echo "Fisierul dat nu e de tip text"
+		fi
+	done
+done
+

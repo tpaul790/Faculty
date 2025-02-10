@@ -1,0 +1,36 @@
+#|
+
+lista(l1..ln)	= inv(aux(l1..ln))
+
+aux(l1..ln) 	= (), n=0
+			= l1(+)aux(l2..ln), n>0 si l1 atom
+			= aux(l1)(+)aux(l2..ln), n>0 si l1 lista
+
+inv(l1..ln) = iaux(l1..ln,())
+
+iaux(l1..ln, col)	= col, n=0
+				= iaux(l2..ln,l1(+)col)
+|#
+
+(Defun lista(l)
+	(inv (aux l))
+)
+
+(Defun aux(l)
+	(cond
+		((null l) nil)
+		((atom (car l)) (cons (car l) (aux (cdr l))))
+		(t (append (aux (car l)) (aux (cdr l))))
+	)
+)
+
+(Defun inv(l)
+	(iaux l nil)
+)
+
+(Defun iaux(l col)
+	(cond
+		((null l) col)
+		(t (iaux (cdr l) (cons (car l) col)))
+	)
+)

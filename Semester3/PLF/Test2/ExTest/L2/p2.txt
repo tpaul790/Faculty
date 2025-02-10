@@ -1,0 +1,54 @@
+#|
+
+nivel(l1..ln,k)	= (), n=0
+			= (l1), k=1
+			= nivel(stâng(l1..ln),k-1)(+)nivel(drept(l1..ln),k-1), n>0 si k>1
+|#
+
+(Defun stang(l)
+	(aux (cddr l) 0 0)
+)
+
+(Defun aux(l nv nm)
+	(cond
+		((null l) nil)
+		((= nv (+ nm 1)) nil)
+		(t (cons (car l) (cons (cadr l) (aux (cddr l) (+ nv 1) (+ nm (cadr l))))))
+	)
+)
+
+(Defun drept(l)
+	(aux2 (cddr l) 0 0)
+)
+
+(Defun aux2(l nv nm)
+	(cond
+		((null l) nil)
+		((= nv (+ nm 1)) l)
+		(t (aux2 (cddr l) (+ nv  1) (+ nm (cadr l))))
+	)
+)
+
+(Defun nivel(l k)
+	(cond 
+		((null l) nil)
+		((= k 1) (list (car l)))
+		(t (append (nivel (stang l) (- k 1)) (nivel (drept l) (- k 1))))
+	)
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

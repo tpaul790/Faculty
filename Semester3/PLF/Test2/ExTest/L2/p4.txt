@@ -1,0 +1,34 @@
+
+#|
+
+conversie(l1..ln) 	= (), n=0
+				= (l1,n-1)(+)conversie(l2)(+)conversie(l3), n>0
+|#
+
+(Defun conversie(l) 
+	(cond
+		((null l) nil)
+		(t (append (list (car l) (- (length l) 1)) (conversie (cadr l)) (conversie (caddr l))))
+	)
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

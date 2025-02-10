@@ -1,0 +1,51 @@
+#!/bin/bash
+
+if [ $# -lt 3 ] 
+then
+	echo "Argumente insuficiente"
+	echo "Utilizare: $0 funcite_c biblioteca fis1/dir1 fis2/dir2 ..."
+	exit 1
+fi
+
+func=$1
+b=$2
+shift 2
+
+for arg in $@
+do
+	if [ -d $arg ]
+	then
+		for F in `find $arg -type f`
+		do
+			name=`echo $F | awk -F/ '{print $NF}'`
+			if echo $name | grep -E -q ".c$"
+			then
+				if cat $F | grep -q -E "${func}"
+				then
+					if cat $F | grep -q -E "#include<${b}>"
+					then
+						ok=1
+					else
+						sed -i "1i #include<${b}>" $F
+					fi
+				fi
+			fi
+		done
+	elif [ -f $arg ]
+	then
+                if echo $arg | grep -q -E ".c$"
+                then
+                	if cat $arg | grep -q "${func}"
+                        then
+                        	if cat $arg | grep -E -q "#include<${b}>"
+                               	then
+					ok=1
+                                else
+        	                        sed -i "1i #include<${b}>" $arg
+                       	        fi
+                         fi
+                fi
+	else
+		echo "$arg nu este nici fisier nici director"
+	fi
+done

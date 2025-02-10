@@ -1,0 +1,91 @@
+#|
+
+diferenta(a1..an,b1..bm)  	= (0), a1..bn=b1..bm
+					= elimina(invers(aux(invers(a1..an),invers(b1..bm),0)))
+
+elimina(l1..ln)	= (), n=0
+			= l1..ln, l1!=0 si n>0
+			= elimina(l2..ln), l1 = 0 si n>0
+
+conditie(a b f)	= 1, a-b-f<0
+			= 0 altfel
+
+aux(a1..an,b1..bm,f)	= (), n=0,m=0 si f=0
+				= (-), n=0,m = 0 si f=1
+				= (a1-f)%10(+)aux(a2..an,(),conditie(a1,0,f)), n>0, m=0
+				= (b1-f)%10(+)aux((),b2..bm,conditie(0,b1,f)), n=0, m>0
+				= (a1-b1-f)%10(+)aux(a2..an,b2..bm,conditie(a1,b1,f)), n>0,m>0 si (a1-b1-f)<0
+
+invers(l1..ln) = inv(l1..ln,())
+
+inv(l1..ln,col)	= col, n=0
+			= inv(l2..ln,l1(+)col), n>0
+|#
+
+; a numărul reprezentat sub forma de lista din care se scade numărul b
+; b numărul reprezentat sub forma de lista din care se scade numărul a
+(Defun diferenta(a b)
+	(cond
+		((equal a b) (list 0))
+		(t (invers (aux (invers a) (invers b) 0)))
+	)
+)
+
+
+
+
+;l lista din care se elimina toate 0 urile de la început pana la primul număr diferit de 0
+;returnează lista din care s-au șters 0 urile de la început
+(Defun elimina(l)
+	(cond
+		((null l) nil)
+		((not (= 0 (car l))) l)
+		((= 0 (car l)) (elimina (cdr l)))
+	)
+)	
+
+
+
+
+;a primul participant la scădere
+;b al doilea
+;f ale treile
+;se returnează 1 daca diferența e negativa si 0 altfel
+(Defun conditie(a b f)
+	(cond
+		((< (- a b f) 0) 1)
+		(t 0)
+	)
+)
+
+
+; a numărul reprezentat sub forma de lista din care se scade numărul b
+; b numărul reprezentat sub forma de lista din care se scade numărul a
+; f reprezintă flagul de împrumut
+; se returnează un număr reprezentat sub forma de lista, invers care reprezintă a-b
+(Defun aux(a b f)
+	(cond
+		((and (null a) (null b) (= f 0)) nil)
+		((and (null a) (null b) (= f 1)) (list '-))
+		((null b) (cons (mod (- (car a) f) 10) (aux (cdr a) nil (conditie (car a) 0 f))))
+		((null a) (cons (mod (- (car b) f) 10) (aux nil (cdr b) (conditie 0 (car b) f))))
+		(t (cons (mod (- (car a) (car b) f) 10) (aux (cdr a) (cdr b) (conditie (car a) (car b) f))))
+	)
+)
+
+
+
+; l lista care se inversesaza
+(Defun invers(l)
+	(inv l nil)
+)
+
+
+;l lista care se inversează
+;col variabila colectoare in care adunam elementele pentru a obține lista inversată
+(Defun inv(l col)
+	(cond
+		((null l) col)
+		(t (inv (cdr l) (cons (car l) col)))
+	)
+)

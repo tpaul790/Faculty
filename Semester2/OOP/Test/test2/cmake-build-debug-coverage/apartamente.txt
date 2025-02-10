@@ -1,0 +1,5 @@
+Hasdeu,50m^2,1000 euro,
+Intre Lacuri,50m^2,700 euro,
+Gheorgheni, 30m^2,500 euro,
+Manasturi,45m^2,450 euro,
+Floresti,70m^2,800 euro,

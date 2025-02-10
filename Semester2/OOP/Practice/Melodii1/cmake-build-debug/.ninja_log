@@ -1,0 +1,6 @@
+# ninja log v5
+1	301	1719157915715269067	CMakeFiles/Melodii1.dir/Domain/Melodie.cpp.o	9e63fdc38dc8994d
+7	281	1719158193671975395	CMakeFiles/Melodii1.dir/Teste/teste.cpp.o	80ed3d219c6cbabe
+282	307	1719158193698517153	Melodii1	e22f9692478be23e
+1	258	1719156512875548775	CMakeFiles/Melodii1.dir/main.cpp.o	60994b08471528dd
+3	398	1719157970083107044	CMakeFiles/Melodii1.dir/Repo/RepoFile.cpp.o	9689f02f078c6db9

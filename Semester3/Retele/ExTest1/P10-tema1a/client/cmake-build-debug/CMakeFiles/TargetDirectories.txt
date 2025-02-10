@@ -1,0 +1,3 @@
+/Users/titienipaul/Desktop/Facultate/sem3/Retele/ExTest1/P10-tema1a/client/cmake-build-debug/CMakeFiles/client_c.dir
+/Users/titienipaul/Desktop/Facultate/sem3/Retele/ExTest1/P10-tema1a/client/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/titienipaul/Desktop/Facultate/sem3/Retele/ExTest1/P10-tema1a/client/cmake-build-debug/CMakeFiles/rebuild_cache.dir

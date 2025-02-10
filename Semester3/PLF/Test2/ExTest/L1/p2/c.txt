@@ -1,0 +1,27 @@
+#|
+
+start(l) = l(+)lista(l)
+
+lista(l1..ln)	= aux(l1..ln,())
+
+aux(l1..ln, col)	= col, n=0
+				= aux(l1,())(+)aux(l2..ln, l1(+)col), l1 lista
+				= aux(l2..ln, col), l1 atom
+
+|#
+
+(Defun start(l)
+	(cons l (lista l))
+)
+
+(Defun lista(l)
+	(aux l nil)
+)
+
+(Defun aux(l col)
+	(cond
+		((null l) col)
+		((atom (car l)) (aux (cdr l) col))
+		(t (append (aux (car l) nil) (aux (cdr l) (cons (car l) col))))
+	)
+)

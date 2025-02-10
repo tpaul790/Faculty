@@ -1,0 +1,16 @@
+#|
+
+suma(l)	= l, atom numeric
+		= 0, atom
+		= SUMA(suma(l1),...,suma(ln)), l=(l1..ln) lista
+
+|#
+
+(Defun suma(l)
+	(cond 
+		((numberp l) l)
+		((atom l) 0)
+		(t (apply #'+ (mapcar #'suma l)))
+	)
+)	
+

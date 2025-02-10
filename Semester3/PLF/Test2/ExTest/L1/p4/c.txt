@@ -1,0 +1,11 @@
+(Defun principal(l)
+	(aux l nil)
+)
+
+(Defun aux(l col)
+	(cond
+		((null l) col)
+		((atom (car l)) (aux (cdr l) (cons (car l) col)))
+		(t (append col (list (aux (car l) nil)) (aux (cdr l) nil)))
+	)
+)

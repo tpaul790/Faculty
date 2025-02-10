@@ -1,0 +1,7 @@
+(Defun adancime(l)
+	(cond
+		((null l) 1)
+		((atom l) 0)
+		(t (+ 1 (apply #'max (mapcar #'adancime l))))
+	)
+)

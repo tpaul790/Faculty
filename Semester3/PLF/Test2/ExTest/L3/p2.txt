@@ -1,0 +1,12 @@
+q#|
+
+lista(l)		= (l), l e atom
+			= U (lista li), l = (l1..ln) e lista
+
+|#
+(Defun lista(l)
+	(cond
+		((atom l) (list l))
+		(t (apply #'append (mapcar #'lista l)))
+	)
+)

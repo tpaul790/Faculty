@@ -1,0 +1,29 @@
+#|
+
+inversare(l)	= l, l e atom
+			= U inversare(ln),..,inversare(l1), l=(l1..ln) lista
+
+inv(l1..ln) = aux(l1..ln,())
+
+aux(l1..ln,col)	= col, n=0
+				= aux(l2..ln,l1(+)col), n>0
+
+|#
+
+(Defun inversare(l)
+	(cond
+		((atom l) l)
+		(t (mapcar #'inversare (inv l)))
+	)
+)
+
+(Defun inv(l)
+	(aux l nil)
+)
+
+(Defun aux(l col)
+	(cond
+		((null l) col)
+		(t (aux (cdr l) (cons (car l) col)))
+	)
+)

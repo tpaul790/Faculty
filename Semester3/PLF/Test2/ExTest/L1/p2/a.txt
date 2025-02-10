@@ -1,0 +1,13 @@
+#|
+			= (), n=0
+get(l1..ln,k)	= l1, k=1 si n>0
+			= get(l2..ln, k-1)
+|#
+
+(Defun ia(l k)
+	(cond 
+		((null l) nil)
+		((= k 1) (car l))
+		(t (ia (cdr l) (- k 1)))
+	)
+)

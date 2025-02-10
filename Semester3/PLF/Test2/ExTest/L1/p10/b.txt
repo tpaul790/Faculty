@@ -1,0 +1,13 @@
+(Defun principal(l)
+	(cond
+		((null l) nil)
+		(t (append (perechi (cdr l) (car l))))
+	)
+)
+
+(Defun perechi(l e)
+	(cond
+		((null l) nil)
+		(t (cons (list e (car l)) (perechi (cdr l) e)))
+	)
+)

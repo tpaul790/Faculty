@@ -1,0 +1,27 @@
+#|
+
+membru(l, e)	= true, l = e
+			= false, l != e si l atom
+			= SAU(membru(l1)...membru(ln)), l=(l1..ln) lista
+
+sau(l1..ln)	= false, n=0
+			= true, l1 = t
+			= sau(l2..ln), altfel
+
+|#
+
+(Defun membru(l e)
+	(cond
+		((equal l e) t)
+		((atom l) nil)
+		(t (sau (mapcar #'(lambda(L)(membru L e)) l)))
+	)
+)
+
+(Defun sau(l)
+	(cond
+		((null l) nil)
+		((equal (car l) t) t)
+		(t (sau (cdr l)))
+	)
+)

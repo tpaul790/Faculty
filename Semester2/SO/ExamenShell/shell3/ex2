@@ -1,0 +1,26 @@
+#!/bin/bash
+
+if [ ! $# -eq 1 ] || [ ! -f $1 ]
+then 
+	echo "Argumente insuficiente sau prea multe"
+	echo "Utilizare: $0 fisier_text"
+	exit 1
+fi
+
+F=$1
+
+L_max=""
+max=0
+NRL=`cat $F | wc -l`
+for i in `seq 1 $NRL`
+do
+	L=`cat $F | sed -n ''$i'p'`
+	NRC=`echo $L | wc -m`
+	if [ $NRC -gt $max ]
+	then
+		max=$NRC
+		L_max=$L
+	fi
+done
+echo "Linia cu numar maxim de caractere este: $L_max"
+echo "Linia contine $max caractere"

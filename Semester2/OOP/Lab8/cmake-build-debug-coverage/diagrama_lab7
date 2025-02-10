@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" modified="2024-04-08T14:53:00.574Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15" etag="bpri9ZQKI4P9YFarrgAS" version="24.2.2" type="device">
+  <diagram name="Pagină-1" id="levEveYMBfTocmPQ7wLu">
+    <mxGraphModel dx="986" dy="646" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2Oj4Kj9T4TDedPyYEpTx-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Produs&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;nume&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;tip&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;pret&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;producatoor&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;get_pret()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;get_nume()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;get_producator()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;get_tip()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;set_nume()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;set_pret()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="30" y="90" width="160" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="2Oj4Kj9T4TDedPyYEpTx-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2Oj4Kj9T4TDedPyYEpTx-3" target="2Oj4Kj9T4TDedPyYEpTx-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Oj4Kj9T4TDedPyYEpTx-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2Oj4Kj9T4TDedPyYEpTx-3" target="2Oj4Kj9T4TDedPyYEpTx-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Oj4Kj9T4TDedPyYEpTx-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Repo&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;lista_produse&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;store()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;șterge()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;modifica()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;caută()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;get_all()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="580" y="300" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="2Oj4Kj9T4TDedPyYEpTx-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="2Oj4Kj9T4TDedPyYEpTx-5" target="2Oj4Kj9T4TDedPyYEpTx-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Oj4Kj9T4TDedPyYEpTx-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2Oj4Kj9T4TDedPyYEpTx-5" target="2Oj4Kj9T4TDedPyYEpTx-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Oj4Kj9T4TDedPyYEpTx-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2Oj4Kj9T4TDedPyYEpTx-5" target="2Oj4Kj9T4TDedPyYEpTx-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Oj4Kj9T4TDedPyYEpTx-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Service&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;repo&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;add()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;get_all()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;modifica_service()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;caută_service()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;filtrare_pret()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;filtrare_nume()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;filtrare_producator()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;sortare_generica()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;sortare_generica2()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="30" y="380" width="160" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="2Oj4Kj9T4TDedPyYEpTx-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2Oj4Kj9T4TDedPyYEpTx-6" target="2Oj4Kj9T4TDedPyYEpTx-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Oj4Kj9T4TDedPyYEpTx-6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;MyVector&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;cp&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;n&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;elems&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;push_back()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;pop_back()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;size()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;empty()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="310" y="90" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="2Oj4Kj9T4TDedPyYEpTx-11" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Excepții&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;msg&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;get_msg()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="320" y="320" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="2Oj4Kj9T4TDedPyYEpTx-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2Oj4Kj9T4TDedPyYEpTx-16" target="2Oj4Kj9T4TDedPyYEpTx-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Oj4Kj9T4TDedPyYEpTx-16" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Ui&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;Service&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;print_m_ui()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;adăugare_ui()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;șterge_ui()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;afișare_ui()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;filtrare_ui()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;sortare_ui()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;start()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="470" y="510" width="160" height="180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

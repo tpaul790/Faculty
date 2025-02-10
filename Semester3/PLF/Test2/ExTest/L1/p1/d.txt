@@ -1,0 +1,14 @@
+#|
+
+cnt(l, e)	= 1, l e atom si l = e 
+		= 0, l e atom l != e
+		= cnt(l1)+cnt(l2..ln), l = (l1..ln) lista
+|#
+
+(Defun cnt(l e)
+	(cond 
+		((equal l e) 1)
+		((atom l) 0)
+		(t (+ (cnt (car l) e) (cnt (cdr l) e)))
+	)
+)

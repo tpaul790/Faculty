@@ -1,0 +1,23 @@
+#!/bin/bash
+
+if [ ! $# -eq 1 ]
+then
+	echo "Trebuie sa introduceti un director in linia de comanda"
+	exit 1
+fi
+
+D=$1
+CNT=0
+
+#iterez pe rand prin toate fisierele din directorul dat ca argument in linia de comanda
+for F in `find $D -type f`
+do
+	#verificare daca contine numere cu peste 5 cifre
+	if cat $F | grep -q  -E "[0-9]{6,}"
+	then
+		CNT=$(($CNT+1))
+		#afisez numele fisierlui
+		echo -n "Fisier $CNT: " 
+		echo $F | awk -F/ '{print $NF}'
+	fi
+done

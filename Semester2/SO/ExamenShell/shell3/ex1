@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if [ ! $# -eq 1 ] || [ ! -f $1 ]
+then 
+	echo "Trebuie sa introduceti un singur fisier"
+	echo "Utilizare: $0 fisier"
+	exit 1
+fi
+
+F=$1
+if file $F | grep -E -v -q "ASCII text$"
+then
+	echo "$F nu este fisier text"
+	exit 1
+fi
+
+NRL=`cat $F | wc -l`
+for i in `seq 1 $NRL`
+do
+	L=`cat $F | sed -n ''$(($NRL-$i+1))'p'`
+	echo $L
+done

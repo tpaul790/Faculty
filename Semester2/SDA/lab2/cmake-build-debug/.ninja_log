@@ -1,0 +1,8 @@
+# ninja log v5
+2	313	1712839105529554543	CMakeFiles/lab2.dir/TAD_Lista_Ordonata/Teste/TestExtins.cpp.o	2fae561bbdde1516
+2	152	1712837492733370167	CMakeFiles/lab2.dir/TAD_Lista_Ordonata/Teste/TestScurt.cpp.o	d3c6202bacac1449
+2	315	1712837929283370499	CMakeFiles/lab2.dir/TAD_Lista_Ordonata/Proiect_C++/LO.cpp.o	4ac5cf2caf0bea92
+3	216	1712834426445066203	CMakeFiles/lab2.dir/TAD_Lista_Ordonata/Proiect_C++/Iterator.cpp.o	d301fe80c06ca468
+325	363	1712839105578367853	lab2	cea515f8dc1465db
+0	49	1712065983516206058	build.ninja	5706239cec45cf62
+2	392	1712837492972792301	CMakeFiles/lab2.dir/main.cpp.o	8dd0dd0980abf3ea

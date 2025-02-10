@@ -1,0 +1,9 @@
+# ninja log v5
+3	834	1719475800027080054	CMakeFiles/Practic.dir/main.cpp.o	4d0ad7ab42a3affc
+4	483	1719475799677788401	CMakeFiles/Practic.dir/Teste/teste.cpp.o	fa4ced5d1b18d484
+4	127	1719424050534019312	CMakeFiles/Practic.dir/TableModel/TableModel.cpp.o	47693621dc29e0e7
+4	534	1719475799729593243	CMakeFiles/Practic.dir/Repo/RepoFile.cpp.o	9203dbeb5c730c8c
+834	991	1719475800185208315	Practic	3b9095555c437038
+4	32	1719474758250882519	CMakeFiles/Practic.dir/GUI/GUI.cpp.o	c8639767e1f2e2dd
+4	376	1719475799570102345	CMakeFiles/Practic.dir/Domain/Parcare.cpp.o	66d4a4934a3283f4
+4	33	1719474758251115687	CMakeFiles/Practic.dir/Service/Service.cpp.o	5ec285fb1df0ca8b

@@ -1,0 +1,14 @@
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Baschet/Baschet/obj/Debug/net8.0/Baschet.GeneratedMSBuildEditorConfig.editorconfig
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Baschet/Baschet/obj/Debug/net8.0/Baschet.AssemblyInfoInputs.cache
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Baschet/Baschet/obj/Debug/net8.0/Baschet.AssemblyInfo.cs
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Baschet/Baschet/obj/Debug/net8.0/Baschet.csproj.CoreCompileInputs.cache
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Baschet/Baschet/bin/Debug/net8.0/Baschet
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Baschet/Baschet/bin/Debug/net8.0/Baschet.deps.json
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Baschet/Baschet/bin/Debug/net8.0/Baschet.runtimeconfig.json
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Baschet/Baschet/bin/Debug/net8.0/Baschet.dll
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Baschet/Baschet/bin/Debug/net8.0/Baschet.pdb
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Baschet/Baschet/obj/Debug/net8.0/Baschet.dll
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Baschet/Baschet/obj/Debug/net8.0/refint/Baschet.dll
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Baschet/Baschet/obj/Debug/net8.0/Baschet.pdb
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Baschet/Baschet/obj/Debug/net8.0/Baschet.genruntimeconfig.cache
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Baschet/Baschet/obj/Debug/net8.0/ref/Baschet.dll

@@ -1,0 +1,35 @@
+(Defun maxim(l)
+	(cond
+		((null l) nil)
+		(t (aux l (nivele l) 1 0 (nivelK l 0)))
+	)
+)
+ #|
+L este arborele
+N este numărul de nivele ale arborelui
+K este nivelul curent 
+Nm este nivelul maxim 
+M lista de elemente de pe nivelul maxim
+|#
+(Defun aux(l n k nm m)
+	(cond
+		((= n k) (list nm m))
+		((>= (length m) (length (nivelK l k))) (aux l n (+ k 1) nm m))
+		(t (aux l n (+ k 1) k (nivelK l k)))
+	)
+)
+
+(Defun nivelK(l k)
+	(cond
+		((null l) nil)
+		((= k 0) (list (car l)))
+		(t (append (nivelK (cadr l) (- k 1)) (nivelK (caddr l) (- k 1))))
+	)
+)
+
+(Defun nivele(l)
+	(cond
+		((null l) 0)
+		(t (+ 1 (max (nivele (cadr l)) (nivele (caddr l)))))
+	)
+)

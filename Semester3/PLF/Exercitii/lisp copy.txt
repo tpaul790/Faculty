@@ -1,0 +1,34 @@
+(Defun principal(l)
+	(apply #'+ (mapcar #'numara l))
+)
+
+(Defun numara(l)
+	(cond
+		((atom l) 0)
+		((verifica l) (+ 1 (apply #'+ (mapcar #'numara l))))
+		(t (apply #'+ (mapcar #'numara l)))
+	)
+)
+
+(Defun verifica(l)
+	(cond
+		((primImpar (liniarizare l)) t)
+		(t nil)
+	)
+)
+
+(Defun primImpar(l)
+	(cond
+		((null l) nil)
+		((= 1 (mod (car l) 2)) t)
+		(t nil)
+	)
+)
+
+(Defun liniarizare(l)
+	(cond
+		((numberp l) (list l))
+		((atom l) nil)
+		(t (apply #'append (mapcar #'liniarizare l)))
+	)
+)

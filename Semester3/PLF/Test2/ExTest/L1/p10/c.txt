@@ -1,0 +1,22 @@
+(Defun expresie(l)
+	(aux (invers l) nil)
+)
+
+(Defun aux(l col)
+	(cond 
+		((null l) (car col))
+		((numberp (car l)) (aux (cdr l) (cons (car l) col)))
+		(t (aux (cdr l) (cons (funcall (car l) (car col) (cadr col)) (cddr col))))
+	)
+)
+
+(Defun invers(l)
+	(inv l nil)
+)
+
+(Defun inv(l col)
+	(cond
+		((null l) col)
+		(t (inv (cdr l) (cons (car l) col)))
+	)
+)

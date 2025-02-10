@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if [ $# -eq 0 ] 
+then
+	echo "Numar insuficient de argumente"
+	echo "Utilizare: $0 fis1 fis2 ..."
+	exit 1
+fi
+
+echo -n "Introduceti un cuvant: "
+read cuv
+
+for F in $@
+do
+	if [ -f $F ]
+	then
+		NRA=`cat $F | grep -E -o "\<$cuv\>" | wc -l`
+		echo "Fisier $F: $NRA"
+	else
+		echo "$F nu este fisier"
+	fi
+done

@@ -1,0 +1,79 @@
+#|
+Sa se tipărească lista nodurilor de pe nivelul k dintr un arbore de tipul 1
+
+Model matematic
+
+nivelK(l1..ln, k)	= [], n = 0
+				= [l1], k = 0 si n != 0
+				= nivelK(stanga(l1..ln), k-1) (+) nivelK(dreapta(l1..ln), k-1)
+
+stanga(l1..ln) = parcurg_st(l3..ln, 0, 0)
+
+parcurg_st(l1..ln, nv, nm) 	= [], n = 0
+					= [], nv+1 = nm
+					= l1(+)l2(+)parcurg_st(l3..ln, nv+1,nm+l2)
+
+dreapta(l1..ln) = parcurg_dr(l3..ln, 0, 0)
+
+parcurg_dr(l1..ln, nv, nm)	= [], n = 0
+					= l1..ln, nv = nm + 1
+					= parcurg_dr(l3..ln, nv+1, nm+l2)
+
+Cazuri de testare
+(SETQ arb '(a 2 b 2 c 0 d 0 e 2 f 0 h 0))
+(nivelK arb 2) => (C D F H)
+(nivelK arb 1) => (B E)
+(nivelK arb 0) => (A)
+(nivelK arb 5) => nil
+(nivelK arb -1) => nil
+
+
+|#
+
+
+
+(defun nivelK (arb k)
+	(cond
+		((null arb) nil)
+		((= k 0) (list (car arb)))
+		(t (append (nivelK (stanga arb) (- k 1)) (nivelK (dreapta arb) (- k 1))))
+	)
+)
+
+(defun stanga(l)
+	(parcurg_st (cddr l) 0 0)
+)
+
+(defun parcurg_st(l nv nm)
+	(cond
+		((null l) nil)
+		((= nv (+ 1 nm)) nil)
+		(t (cons (car l) (cons (cadr l) (parcurg_st (cddr l) (+ 1 nv) (+ nm (cadr l))))))
+	)
+)
+
+(defun dreapta(l)
+	(parcurg_dr (cddr l) 0 0)
+)
+
+(defun parcurg_dr(l nv nm)
+	(cond
+		((null l) nil)
+		((= nv (+ 1 nm)) l)
+		(t (parcurg_dr (cddr l) (+ 1 nv) (+ nm (cadr l))))
+	)
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

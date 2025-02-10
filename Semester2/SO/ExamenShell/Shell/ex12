@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]
+then
+	echo "Argumente insuficiente"
+	echo "Utilizare: $0 dir"
+	exit 1
+fi
+
+D=$1;
+
+for F in `find $D -type f -perm -ugo+w`
+do
+	mv $F $F.all
+	echo $F.all
+done

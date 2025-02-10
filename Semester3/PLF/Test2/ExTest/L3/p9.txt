@@ -1,0 +1,20 @@
+#|
+
+principal(l,e,L) = x1, unde x = subs(l,e,L) o lista
+
+subs(l, e, L)	 = (l), atom si nu-i e
+			 = L, l=e
+			 = U (subs(l1)..subs(ln)), l = (l1..ln) lista
+|#
+
+(Defun principal(l e s)
+	(car (subs l e s))
+)
+
+(Defun subs(l e s)
+	(cond
+		((equal l e) s)
+		((atom l) (list l))
+		(t (list (apply #'append (mapcar #'(lambda(L)(subs L e s)) l))))
+	)
+)

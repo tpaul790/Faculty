@@ -1,0 +1,5 @@
+Fiat Someica,Fiat,2003,7890,
+Fiat Agri,Fiat,2019,8000,
+FT789,Deutz,2018,8000,
+GT991,Ford,1998,9000,
+Big Jhon,Jhon Dere,2022,10000,

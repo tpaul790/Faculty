@@ -1,0 +1,8 @@
+# ninja log v5
+2	170	1716210830074304234	CMakeFiles/Partial.dir/Service/Service.cpp.o	59fe1c26de16db39
+3	440	1716210942283357084	CMakeFiles/Partial.dir/Domain/Elev.cpp.o	bc3f0c22cee82ed3
+3	851	1716211675036796405	CMakeFiles/Partial.dir/main.cpp.o	e8390df8cafde858
+2	830	1716210830734143766	CMakeFiles/Partial.dir/GUI/GUI.cpp.o	c7f9207f3178f02c
+258	433	1716211680887923454	Partial	b7b0a73a4d09ae08
+4	258	1716211680714616191	CMakeFiles/Partial.dir/Teste/teste.cpp.o	360631fed426b544
+3	538	1716211674725741748	CMakeFiles/Partial.dir/Repo/RepoFile.cpp.o	e2f8bc45e32b711f

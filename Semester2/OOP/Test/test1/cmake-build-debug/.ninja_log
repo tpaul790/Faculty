@@ -1,0 +1,6 @@
+# ninja log v5
+0	83	1715260735677230212	CMakeFiles/test1.dir/main.cpp.o	d115270eab545807
+5	375	1715260934400599899	CMakeFiles/test1.dir/Domain/PlacaDeBaza.cpp.o	b4d908d303f46bc8
+0	310	1715260735902529030	CMakeFiles/test1.dir/Domain/Procesor.cpp.o	555ff29d10cfadc4
+384	478	1715260934502471695	test1	903e3398ce77f0c2
+4	384	1715260934409311677	CMakeFiles/test1.dir/Teste/teste.cpp.o	185b5c0e430a0423

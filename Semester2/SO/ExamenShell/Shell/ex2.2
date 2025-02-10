@@ -1,0 +1,27 @@
+#!/bin/bash
+
+if [ ! $# -eq 1 ]
+then 
+	echo "Argumente insuficiente sau prea multe"
+	echo "Utilizare: $0 dir"
+	exit 1
+fi
+
+D=$1
+
+for F in `find $D -type f`
+do	
+	if file $F | grep -q "ASCII text$"
+	then
+		nume=`echo $F | awk -F/ '{print $NF}'`
+		echo "Fisier: $nume"
+		nrl=`cat $F | wc -l`
+		if [ $nrl -lt 7 ]
+		then
+			cat $F
+		else
+			head -3 $F
+			tail -3 $F
+		fi
+	fi
+done

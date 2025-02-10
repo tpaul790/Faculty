@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]
+then
+	echo "Numar insuficient de argumente"
+	echo "Utilizare: $0 fis1 fis2 ..."
+	exit 1
+fi
+
+for F in $@ 
+do
+	max=`cat $F | sort | uniq -c | sort -r | head -1`
+	echo "Fisier: $F"
+	echo -n "	Linia maxima este: "
+	echo $max | sed -E 's/.*[0-9] //'
+done

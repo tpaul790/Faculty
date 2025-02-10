@@ -1,0 +1,3 @@
+id1,USOARA,5
+id2,MEDIE,10
+id3,GREA,20

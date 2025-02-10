@@ -1,0 +1,13 @@
+#|
+
+adancime(l)	= 0, l atom
+		= 1+max(adâncime(l1)..adancime(ln)), l = (l1..ln) lista
+
+|#
+
+(Defun adancime(l)
+	(cond
+		((atom l) 0)
+		(t (+ 1 (apply #'max (mapcar #'adancime l))))
+	)
+)

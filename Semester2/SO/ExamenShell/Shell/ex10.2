@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if [ $# -ne 1 ] || [ ! -d $1 ]
+then
+	echo "Argumente insuficiente,prea multe sau incorecte"
+	echo "Utilizare: $0 dir"
+	exit 1
+fi
+
+D=$1
+
+for F in `find $D -type f`
+do
+	nume=`echo $F | awk -F/ '{print $NF}'`
+	if file $F | grep -q -E "ASCII text$"
+	then
+		echo "Fisier: '$nume'"
+		head -10 $F
+	else
+		echo "Fisierul '$nume' nu este text"
+	fi
+done 

@@ -1,0 +1,5 @@
+/Users/titienipaul/Desktop/Facultate/sem2/OOP/test_qt/cmake-build-debug/CMakeFiles/test_qt.dir
+/Users/titienipaul/Desktop/Facultate/sem2/OOP/test_qt/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/titienipaul/Desktop/Facultate/sem2/OOP/test_qt/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/titienipaul/Desktop/Facultate/sem2/OOP/test_qt/cmake-build-debug/CMakeFiles/test_qt_autogen_timestamp_deps.dir
+/Users/titienipaul/Desktop/Facultate/sem2/OOP/test_qt/cmake-build-debug/CMakeFiles/test_qt_autogen.dir

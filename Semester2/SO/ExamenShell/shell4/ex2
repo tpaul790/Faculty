@@ -1,0 +1,27 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]
+then
+	echo "Argumente insuficiente"
+	echo "Utilizare: $0 extensie_fisier path_dir1 path_dir2 ..."
+fi
+
+E=$1
+shift 1
+
+for arg in $@
+do
+	for F in `find $arg`
+	do
+		name=`echo $F | awk -F/ '{print $NF}'`
+		if echo $name | grep -q "$E$"
+		then
+			NRL=`cat $F | wc -l`
+			DIM=`ls -l $F | awk '{print $5}'`
+			DIR=`echo $F | sed -E "s/${name}//"`
+			echo "$name (in $DIR)"
+			echo "	LINII: $NRL"
+			echo "	DIMENSIUNE: $DIM"
+		fi
+	done
+done

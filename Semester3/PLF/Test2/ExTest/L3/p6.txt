@@ -1,0 +1,17 @@
+#|
+
+suma(l)	= l, numeric par
+		= -l, numeric impar
+		= 0, atom
+		= SUMA(suma(l1)..suma(ln)), l=(l1..ln) lista
+
+|#
+
+(Defun suma(l)
+	(cond
+		((and (numberp l) (= 0 (mod l 2))) l)
+		((numberp l) (- l))
+		((atom l) 0)
+		(t (apply #'+ (mapcar #'suma l)))
+	)
+)

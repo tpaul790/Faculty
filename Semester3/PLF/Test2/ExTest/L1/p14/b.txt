@@ -1,0 +1,26 @@
+(Defun vale(l)
+	(cond
+		((or (null l) (null (cdr l)) (null (cddr l))) nil)
+		((< (car l) (cadr l)) nil)
+		(t (cresc (desc l)))
+	)
+)
+
+(Defun desc(l)
+	(cond
+		((null l) nil)
+		((null (cdr l)) nil)
+		((= (car l) (cadr l)) nil)
+		((< (car l) (cadr l)) (cdr l))	
+		(t (desc (cdr l)))
+	)
+)
+
+(Defun cresc(l)
+	(cond
+		((null l) nil)
+		((null (cdr l)) t)
+		((> (car l) (cadr l)) nil)
+		(t (cresc (cdr l)))
+	)
+)

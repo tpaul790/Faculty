@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [ ! $# -eq 1 ]
+then 
+	echo "Argumente insuficiente sau prea multe"
+	echo "Utilizare: $0 dir"
+	exit 1
+fi
+
+D=$1
+cnt=0
+for F in `find $D -type f`
+do
+	nume=`echo $F | awk -F/ '{print $NF}'`
+	if cat $F | grep -q -E "[1-9][0-9]{4,}"
+	then
+		cnt=$(($cnt+1))
+		echo "Fisier $cnt: $nume"
+	fi
+done

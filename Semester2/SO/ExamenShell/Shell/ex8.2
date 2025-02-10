@@ -1,0 +1,38 @@
+#!/bin/bash
+
+if [ $# -lt 3 ] 
+then
+	echo "Numar insuficient de argumente"
+	echo "Utilizare: $0 fis1 cuv1 nr1 fis2 cuv2 nr2 ..."
+	exit 1
+fi
+
+while [ $# -ne 0 ]
+do
+	F=$1
+	C=$2
+	K=$3
+	if [ -f $F ]
+	then
+		NRL=`cat $F | wc -l`
+		echo "Fisierul $F"
+		ok=0
+		for i in `seq 1 $NRL`
+		do
+			L=`cat $F | sed -n "${i}p"`
+			NRA=`echo $L | grep -o "\<${C}\>" | wc -l`
+			if [ $NRA -eq $K ]
+			then
+				echo "	-Linia $i: $L"
+				ok=1
+			fi
+		done
+		if [ $ok -eq 0 ]
+		then
+			echo "	-Nu exista linii"
+		fi
+	else
+		echo "'$F' nu este fisier"
+	fi
+	shift 3
+done 

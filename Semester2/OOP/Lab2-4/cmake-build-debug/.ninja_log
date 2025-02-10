@@ -1,0 +1,9 @@
+# ninja log v5
+0	23	1710152552105252502	CMakeFiles/Lab2_4.dir/domain/domain.c.o	dd08ff4c51cbeaf2
+1	30	1710152876168907294	CMakeFiles/Lab2_4.dir/repo/store.c.o	7354d940829e1e08
+1	31	1710152876169120381	CMakeFiles/Lab2_4.dir/validari/validator.c.o	59494c8d389b0b36
+28	60	1710166883910910855	Lab2_4	cacc919d73e4352a
+0	28	1710166883878353515	CMakeFiles/Lab2_4.dir/main.c.o	bb658d85d37da3a7
+1	35	1710152876173697078	CMakeFiles/Lab2_4.dir/service/manager.c.o	b636868922534929
+0	35	1710153683398821599	CMakeFiles/Lab2_4.dir/ui/ui.c.o	10115bd724693d4a
+0	33	1710153002447542042	CMakeFiles/Lab2_4.dir/teste/teste.c.o	8a12002793f56932

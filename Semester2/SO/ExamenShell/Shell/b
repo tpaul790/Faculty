@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for arg in `find . -type f -name "*.c" -perm -u=r`
+do
+	chmod 777 $arg
+done

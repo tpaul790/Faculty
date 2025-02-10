@@ -1,0 +1,6 @@
+(Defun suma(a b)
+	(cond
+		((or (null a) (null b)) 0)
+		(t (+ (* (car a) (car b)) (suma (cdr a) (cdr b))))
+	)
+)

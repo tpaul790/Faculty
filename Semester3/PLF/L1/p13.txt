@@ -1,0 +1,210 @@
+;--------------------------------------a)----------------------------------------------
+
+;funcție care intercaleaza un element pe o poziție data, intr o lista data
+#|
+Model matematic
+	intercalare(l1..ln,k,e)		= [e], n=0 si k=0
+						= [], n=0 si k>0
+						= e(+)l1..ln, k=0 si n>0
+						= l1(+)intercalare(l2..ln,k-1,e), altfel
+
+Specificatii
+interclasare(L,K,E)
+-L reprezintă lista in care o sa intercalam elementul E
+-K reprezintă poziția din L pe care se va intercala elementul E
+-E reprezintă elementul care se va intercala in lista L pe poziția K
+
+Cazuri de testare
+(intercalare '(1 2 3) 2 5) => (1 2 5 3)
+(intercalare '(1 2 3) 3 5) => (1 2 3 5)
+(intercalare '(1 2 3) 7 5) => (1 2 3)
+|#
+
+(defun intercalare(l k e)
+	(cond
+		((null l) (cond
+				((= k 0) (list e))
+				(t nil)
+			    )
+		)
+		((= k 0) (cons e l))
+		(t (cons (car l) (intercalare (cdr l) (- k 1) e)))
+	)
+)
+
+
+
+;--------------------------------------b)----------------------------------------------
+
+
+
+;funcție care determina suma atomilor numerici de pe orice nivel
+#|
+Model matematic
+	sum(l1..ln) 	= 0, n=0
+				= l1+sum(l2..ln), l1 este atom numeric
+				= 1 + sum(l2..ln), l1 nu este nici atom numeric nici lista
+				= sum(l1)+sum(l2..ln), l1 este lista
+
+Specificatii
+sum(L)
+-L reprezintă lista pentru care vom calcula suma atomilor numerici de pe orice nivel
+
+Cazuri de testare
+(sum '(1 (2 3) 4 (5 (6 7)))) => 28
+(sum '(1 2 3 4)) => 10
+|#
+
+(defun sum(l)
+	(cond
+		((null l) 0)
+		((numberp(car l)) (+(car l)(sum(cdr l))))
+		((atom(car l)) (+ 1 (sum(cdr l))))
+		(T (+(sum(car l))(sum(cdr l))))
+	)
+)
+
+;--------------------------------------c)----------------------------------------------
+
+;funcție care calculează mulțimea sublistelor unei liste date
+#|
+Modele matematice
+	setSub(l)	= setAux(listaSub(l),())
+
+	setAux(l1..ln, col)	= col, n = 0
+					= setAux(l2..ln, l1(+)col), l1 nu e membru in colectoare
+					= setAux(l2..ln, col), altfel
+
+	membru(l1..ln, e)		= false, n=0
+					= true, l1 = e (daca au aceeași structura, (equal l1 e))
+					= membru(l2..ln,e), altfel
+	
+	listaSub(l) = listaAux(l, ())
+	
+	listaAux(l1..ln, col)		= col, n=0
+						= listaAux(l1, [])(+)listaAux(l2..ln, l1(+)col), l1 lista
+						= listaAux(l2..ln,col), altfel
+Specificatii
+
+setSub(L)
+-L reprezintă lista pentru care vom determina mulțimea sublistelor
+
+setAux(L,Col)
+-L reprezintă lista pentri care vom determina mulțimea sublistelor
+-Col reprezintă variabila colectoare in care vom construi pe parcurs soluția
+
+membru(L,E)
+-L reprezintă lista in care cautam elementul E
+-E reprezintă elementul pe care îl căutăm in lista L
+
+listaSub(L)
+-L reprezintă lista pentru care vom determina lista sublistelor
+
+listaAux(L, Col)
+-L reprezintă lista pentru care vom determina lista sublistelor
+-Col reprezintă variabila colectoare in care vom construi pe parcurs soluția
+
+Cazuri de testare
+(setSub '((1 (1 2)) (1 (1 2)))) => ((1 2) (1 (1 2)))
+(setSub '((1 2) (1 (1 2)) (1 2) (1 (1 2)))) => ((1 2) (1 (1 2)))
+
+(membru '(1 (1 2)) '(1 2)) => T
+(membru '(1 2 3) '(1 2) => nil
+
+(listaSub '((1 (1 2)) (1 (1 2)))) => ((1 2) (1 2) (1 (1 2)) (1 (1 2)))
+(listaSub '((1 (1 (1 (1 2))))) => ((1 2) (1 (1 2)) (1 (1 (1 2))) (1 (1 (1 (1 2))))
+
+|#
+
+(defun setSub(l)
+	(setAux (listaSub l) nil)
+)
+
+(defun setAux(l col)
+	(cond
+		((null l) col)
+		((not (membru col (car l))) (setAux (cdr l) (append col (list (car l)))))
+		(T (setAux (cdr l) col))
+	)	
+)
+
+(defun membru(l e)
+	(cond
+		((null l) nil)
+		((equal (car l) e) T)
+		(T (membru (cdr l) e ))
+	)
+)
+
+(defun listaSub(l)
+	(listaAux l ())
+)
+
+(defun listaAux(l col)
+	(cond
+		((null l) col)
+		((listp (car l)) (append (listaAux (car l) nil) (listaAux (cdr l) (append col (list (car l))))))
+		(T (listaAux (cdr l) col))
+	)
+	
+)
+
+;--------------------------------------d)----------------------------------------------
+
+;funcție care verifica egalitatea a doua mulțimi
+#|
+Modele matematice
+	egalitateMultime(l,k)	= egalitate(l,k) AND egalitate(k,l)
+
+	egalitate(l1..ln, k)		= true, n = 0
+						= egalitate(l2..ln, k), membru(l1, k) = T
+						= nil, altfel
+
+Specificatii 
+
+egalitateMultime(L,K)
+L si K sunt mulțimile pentru care testam egalitatea
+
+egalitate(L, K)
+-L este lista pentru care verificam daca toate elementele sale apar si in K
+-K este lista pentru care testam daca toate elementele din L apar aici
+
+membru(L, E)
+-L reprezintă lista in care căutăm elementul E
+-E reprezintă elementul pe care îl căutăm in lista L
+
+Cazuri de testare
+(egalitateMultime '(1 2 3) '(1 2 3)) => T
+(egalitateMultime '(1 2 3 4) '(1 2 3)) => Nil
+(egalitateMultime '(1 2 3) '(1 2 3 4)) => Nil
+
+(egalitate '(1 2 3) '(1 2 3 4)) => T
+(Egalitate '(1 2 3 4) '(1 2 3)) => nil
+
+|#
+
+
+(defun egalitate(l k)
+	(cond
+		((null l) T)
+		((membru k (car l)) (egalitate (cdr l) k))
+		(T nil)
+	)
+)
+
+(defun egalitateMultime (l k)
+	(AND (egalitate l k) (egalitate k l))
+)
+
+
+
+
+
+
+
+
+
+
+
+
+

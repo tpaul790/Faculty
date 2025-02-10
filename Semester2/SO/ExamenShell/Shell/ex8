@@ -1,0 +1,34 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]
+then
+	echo "Numar insuficient de argumente"
+	echo "Utilizare: "$0" fisier1 cuv1 nr1 fisier2 cuv2 nr2 ..."
+	exit 1
+fi
+
+while [ ! $# -eq 0 ]
+do
+	#iau pe rand triplete
+	F=$1
+	CUV=$2
+	K=$3
+	echo "Fisier: "$F
+	#numarul de linii din fisier
+	NRL=`cat $F | wc -l`
+	#iterez fiecare linie
+	for i in `seq 1 $NRL`
+	do
+		#obtin fiecare linie
+		LINIE=`sed -n ''$i'p' $F`
+		#obtin numarul de aparitii ale cuvantului in linie curenta
+		CNT=`echo $LINIE | grep -E -o '\<'$CUV'\>' | wc -l`
+		if [ $CNT -eq $K ]
+		then
+			echo "Linia "$i": "$LINIE
+		fi
+	done
+	#trec la urmatorul triplet
+	shift 3
+done
+

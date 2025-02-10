@@ -1,0 +1,72 @@
+
+#|
+
+adancime(l1..ln, e)	= (), n=0
+				= 0, l1 = e
+				= 1+adancime(stang(l),e), e apare in stâng(l)
+				= 1+adâncime(drept(l),e), e apare in drept(l)
+				= (), altfel
+
+|#
+
+(Defun stang(l)
+	(aux (cddr l) 0 0)
+)
+
+(Defun aux(l nv nm)
+	(cond
+		((null l) nil)
+		((= nv (+ nm 1)) nil)
+		(t (cons (car l) (cons (cadr l) (aux (cddr l) (+ nv 1) (+ nm (cadr l))))))
+	)
+)
+
+(Defun drept(l)
+	(aux2 (cddr l) 0 0)
+)
+
+(Defun aux2(l nv nm)
+	(cond
+		((null l) nil)
+		((= nv (+ nm 1)) l)
+		(t (aux2 (cddr l) (+ nv  1) (+ nm (cadr l))))
+	)
+)
+
+(Defun adancime(l e)
+	(cond 
+		((null l) nil)
+		((equal (car l) e) 0)
+		((apare (stang l) e) (+ 1 (adancime (stang l) e)))
+		((apare (drept l) e) (+ 1 (adancime (drept l) e)))
+		(t nil)
+	)
+)
+
+(Defun apare(l e)
+	(cond
+		((null l) nil)
+		((equal (car l) e) t)
+		(t (or (apare (stang l) e) (apare (drept l) e)))
+	)
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

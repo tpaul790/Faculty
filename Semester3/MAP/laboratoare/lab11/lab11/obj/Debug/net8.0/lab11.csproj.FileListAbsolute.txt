@@ -1,0 +1,14 @@
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/lab11/lab11/bin/Debug/net8.0/lab11
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/lab11/lab11/bin/Debug/net8.0/lab11.deps.json
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/lab11/lab11/bin/Debug/net8.0/lab11.runtimeconfig.json
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/lab11/lab11/bin/Debug/net8.0/lab11.dll
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/lab11/lab11/bin/Debug/net8.0/lab11.pdb
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/lab11/lab11/obj/Debug/net8.0/lab11.GeneratedMSBuildEditorConfig.editorconfig
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/lab11/lab11/obj/Debug/net8.0/lab11.AssemblyInfoInputs.cache
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/lab11/lab11/obj/Debug/net8.0/lab11.AssemblyInfo.cs
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/lab11/lab11/obj/Debug/net8.0/lab11.csproj.CoreCompileInputs.cache
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/lab11/lab11/obj/Debug/net8.0/lab11.dll
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/lab11/lab11/obj/Debug/net8.0/refint/lab11.dll
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/lab11/lab11/obj/Debug/net8.0/lab11.pdb
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/lab11/lab11/obj/Debug/net8.0/lab11.genruntimeconfig.cache
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/lab11/lab11/obj/Debug/net8.0/ref/lab11.dll

@@ -1,0 +1,14 @@
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Sem10/Sem10/bin/Debug/net8.0/Sem10
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Sem10/Sem10/bin/Debug/net8.0/Sem10.deps.json
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Sem10/Sem10/bin/Debug/net8.0/Sem10.runtimeconfig.json
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Sem10/Sem10/bin/Debug/net8.0/Sem10.dll
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Sem10/Sem10/bin/Debug/net8.0/Sem10.pdb
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Sem10/Sem10/obj/Debug/net8.0/Sem10.GeneratedMSBuildEditorConfig.editorconfig
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Sem10/Sem10/obj/Debug/net8.0/Sem10.AssemblyInfoInputs.cache
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Sem10/Sem10/obj/Debug/net8.0/Sem10.AssemblyInfo.cs
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Sem10/Sem10/obj/Debug/net8.0/Sem10.csproj.CoreCompileInputs.cache
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Sem10/Sem10/obj/Debug/net8.0/Sem10.dll
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Sem10/Sem10/obj/Debug/net8.0/refint/Sem10.dll
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Sem10/Sem10/obj/Debug/net8.0/Sem10.pdb
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Sem10/Sem10/obj/Debug/net8.0/Sem10.genruntimeconfig.cache
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/Sem10/Sem10/obj/Debug/net8.0/ref/Sem10.dll

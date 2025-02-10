@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ ! $# -eq 1 ] || [ ! -f $1 ]
+then
+	echo "Argumente insuficiente sau prea multe"
+	echo "Utilizare: $0 fisier_text"
+	exit 1
+fi
+
+F=$1
+NRL=`cat $F | wc -l`
+for i in `seq 1 $NRL`
+do
+	L=`cat $F | sed -n ''$i'p'`
+	NRC=`echo $L | awk '{print NF}'`
+	NRC2=`echo $L | sed 's/ /\n/g' | sort | uniq | wc -l`
+	if [ $NRC -gt $NRC2 ]
+	then
+		echo $L
+	fi
+done

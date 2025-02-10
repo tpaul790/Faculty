@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ ! $# -eq 1 ] || [ ! -f $1 ]
+then
+	echo "Argumente insuficiente sau prea multe"
+	echo "Utilizare: $0 fisier_text"
+	exit 1
+fi
+
+F=$1
+V=`cat $F | grep -E -o "[aeiouAEIOU]" | wc -l`
+C=`cat $F | grep -E -o "[a-zA-Z]" | wc -l`
+C=$(($C-$V))
+echo "Numarul de vocale este $V iar numarul de consoane este $C"
+
+
+

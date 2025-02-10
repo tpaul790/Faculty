@@ -1,0 +1,6 @@
+granciceri 2 2 -X--
+dunarii 2 3 X--X--
+marasi 3 2 XX-X--
+garii 4 2 XX-X--X-
+eroilor 3 3 XX-X--X--
+muntelui 4 2 XX-X--X-

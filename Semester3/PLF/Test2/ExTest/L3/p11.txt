@@ -1,0 +1,21 @@
+#|
+principal(l,e) = x1, x=(x1..xn)=sterge(l,e) lista
+
+sterge(l,e)	= (), l = e
+		 	= (l), l atom si nu-i e
+			= U(sterge(l1),..,sterge(ln)), l=(l1..ln) lista
+|#
+(Defun principal(l e)
+	(car (sterge l e))
+)
+
+(Defun sterge(l e)
+	(cond 
+		((equal l e) nil)
+		((atom l) (list l))
+		(t (list (apply #'append (mapcar #'(lambda(L)(sterge L e)) l))))
+	)
+)
+
+
+

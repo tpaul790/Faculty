@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]
+then 
+	echo "Introdu niste argumente bossule"
+	exit 1
+fi
+
+echo -n "Introduceti un cuvant: "
+read cuv
+
+for F in $@
+do
+	CNT=0
+	if [ -r $F ]
+	then
+		CNT=`cat $F | grep -E -o '\<'$cuv'\>' | wc -l`
+		echo 'Pentru '$F' sunt '$CNT' aparitii ale lui '$cuv''
+	else
+		echo "'$F' nu exista sau nu se poate citi"
+	fi
+done

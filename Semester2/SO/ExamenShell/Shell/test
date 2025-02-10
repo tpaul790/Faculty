@@ -1,0 +1,44 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]
+then
+	echo "Numar incorect de argumente"
+	echo "Utilizare: $0 fis1 fis2 ..."
+	exit 1
+fi
+
+while true
+do
+	echo -n "Cuvant: "
+	read cuv
+	if [ $cuv == "stop" ]
+	then
+		break
+	fi
+	for F in $@
+	do
+		if [ -f $F ]
+		then
+			if file $F | grep -q -E "ASCII text$"
+			then
+				name=`echo $F | awk -F/ '{print $NF}'`
+				echo "Fisier: $name"
+				NRL=`cat $F | wc -l`
+				echo "Linii: $NRL"
+				for i in `seq 1 $NRL`
+				do
+					L=`cat $F | sed -n "${i}p"`
+					NRC=`echo $L | wc -w`
+					echo "Linia $i: $NRC cuvinte"
+					if [ `expr $NRC % 2` -eq 0 ]
+					then
+						NEW_L=`echo $L | sed -E "s/(\<[aeiouAEIOU][a-z]*\>)/${cuv} \1/"`
+						sed -i "${i}c ${NEW_L}" $F
+					fi
+				done
+			fi
+		else
+			echo "$F nu este fisier"
+		fi
+	done
+done

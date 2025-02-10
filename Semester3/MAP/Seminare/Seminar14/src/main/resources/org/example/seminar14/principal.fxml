@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="383.0"
+            xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.seminar14.Controlere.PrincipalControler">
+   <children>
+      <TableView fx:id="tableView" layoutX="-1.0" layoutY="-2.0" prefHeight="278.0" prefWidth="381.0">
+        <columns>
+          <TableColumn fx:id="tableColumnNume" prefWidth="129.8622488975525" text="Nume angajat" />
+          <TableColumn fx:id="tableColumnSenioritate" prefWidth="127.40489196777344" text="Senioritate" />
+            <TableColumn fx:id="tableColumnVenit" prefWidth="123.09512329101562" text="Venit pe ora" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

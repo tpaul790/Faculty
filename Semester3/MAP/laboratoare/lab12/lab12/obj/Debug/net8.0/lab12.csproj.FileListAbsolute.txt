@@ -1,0 +1,14 @@
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/laboratoare/lab12/lab12/bin/Debug/net8.0/lab12
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/laboratoare/lab12/lab12/bin/Debug/net8.0/lab12.deps.json
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/laboratoare/lab12/lab12/bin/Debug/net8.0/lab12.runtimeconfig.json
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/laboratoare/lab12/lab12/bin/Debug/net8.0/lab12.dll
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/laboratoare/lab12/lab12/bin/Debug/net8.0/lab12.pdb
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/laboratoare/lab12/lab12/obj/Debug/net8.0/lab12.GeneratedMSBuildEditorConfig.editorconfig
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/laboratoare/lab12/lab12/obj/Debug/net8.0/lab12.AssemblyInfoInputs.cache
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/laboratoare/lab12/lab12/obj/Debug/net8.0/lab12.AssemblyInfo.cs
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/laboratoare/lab12/lab12/obj/Debug/net8.0/lab12.csproj.CoreCompileInputs.cache
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/laboratoare/lab12/lab12/obj/Debug/net8.0/lab12.dll
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/laboratoare/lab12/lab12/obj/Debug/net8.0/refint/lab12.dll
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/laboratoare/lab12/lab12/obj/Debug/net8.0/lab12.pdb
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/laboratoare/lab12/lab12/obj/Debug/net8.0/lab12.genruntimeconfig.cache
+/Users/titienipaul/Desktop/Facultate/sem3/MAP/laboratoare/lab12/lab12/obj/Debug/net8.0/ref/lab12.dll

@@ -1,0 +1,43 @@
+#!/bin/bash
+
+if [ $# -lt 1 ]
+then
+	echo "Numar insuficient de argumente"
+	exit 1
+fi
+
+while true
+do
+	echo -n "Cuvant 1: "
+	read C1
+	if [ $C1 == "stop" ]
+	then
+		break
+	fi
+	echo -n "Cuvant 2: "
+	read C2
+	for F in $@
+	do
+		if file $F | grep -Eq "ASCII text$"
+		then
+			NUME=`echo $F | awk -F/ '{print $NF}'`
+			echo "Fisier: "$NUME
+			NRV=`cat $F | grep -E -o "[aeiouAEIOU]" | wc -l`
+			NRC=`cat $F | grep -E -o "[a-zA-Z]" | wc -l`
+			NRC=$(($NRC-$NRV))
+			echo "Vocale/Consoane: "$NRV"/"$NRC
+			NRL=`cat $F | wc -l`
+			for i in `seq 1 $NRL`
+			do
+				P=`expr $i % 2`
+				if [ $P -eq 0 ]
+				then
+					L=`cat $F | sed -n ''$i'p' | sed 's/'$C1'/'$C2'/'`
+					sed -i ''$i'c '$L'' $F
+				fi
+			done
+		else
+			echo "Fisierul "$F" nu este de tip text!"
+		fi 
+	done
+done

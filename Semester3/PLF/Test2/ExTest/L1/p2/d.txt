@@ -1,0 +1,24 @@
+#|
+set(l1..ln)	= (), n=0
+			= l1(+)set(l2..ln), n>0 si l1 nu apare in l2..ln
+			= set(l2..ln), n>0 si l1 apare in l2..ln
+apare(l1..ln, e)	= false, n = 0
+				= true, n > 0 si l1 = e
+				= apare(l2..ln, e), n > 0 si l1 != e
+|#
+
+(Defun multime(l)
+	(cond
+		((null l) nil)
+		((not (apare (cdr l) (car l))) (cons (car l) (multime (cdr l))))
+		(t (multime (cdr l)))
+	)
+)
+
+(Defun apare(l e)
+	(cond
+		((null l) nil)
+		((equal (car l) e) T)
+		(T (apare (cdr l) e))
+	)
+)

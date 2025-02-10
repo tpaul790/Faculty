@@ -1,0 +1,38 @@
+#!/bin/bash
+
+if [ ! $# -eq 1 ] 
+then
+	echo "Usage: $0 <1>">2
+	exit 1
+fi
+
+
+gasit=0
+max=0
+f_max=""
+touch candidati
+for F in `find usr -type f`
+do
+	if cat $F | grep -q '#include <'$1'>'
+	then 
+		echo $F
+		gasit=1
+		NRI=`cat $F | grep -E -c "#include"`
+		echo "$NRI,$F">>candidati
+		if [ $NRI -gt $max ]
+		then
+			max=$NRI
+			f_max=$F
+		fi
+	fi
+done
+if [ $gasit -eq 0 ]
+then
+        echo "Nu am gasit nimic"
+	exit 1
+fi
+#daca ajung aici inseamna ca am candidati
+echo "Maximul este: $f_max! Mai jos sunt candidatii:"
+cat candidati | sort -r -g | awk -F, 'BEGIN{OFS=","}{print $2,$1}'
+rm candidati
+

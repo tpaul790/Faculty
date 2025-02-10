@@ -1,0 +1,18 @@
+#|
+
+subs(l,a,b)	= b, l=a
+			= l, l atom 
+			= U(subs(l1,a,b)...subs(l2,a,b)), l=(l1.ln) lista
+
+|#
+
+(Defun subs(l a b)
+	(cond
+		((equal l a) b)
+		((atom l) l)
+		(t (mapcar #'(lambda(L)(subs L a b)) l))
+	)
+)
+
+
+

@@ -1,0 +1,14 @@
+#|
+
+apare(l, e)	= true, l e atom si l = e
+			= false, l e atom si l != e
+			= apare(l1) || apare(l2..ln), l = (l1..ln) lista
+|#
+
+(Defun apare(l e)
+	(cond
+		((equal l e) T)
+		((atom l) nil)
+		(t (or (apare (car l) e) (apare (cdr l) e)))
+	)
+)

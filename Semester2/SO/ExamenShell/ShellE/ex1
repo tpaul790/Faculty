@@ -1,0 +1,17 @@
+#!/bin/bash
+
+
+D=$1
+for F in `find $D -type f`
+do
+	if ls -l $F | grep -Eq "^-rwxr-xr-x"
+	then
+		echo -n "Doriti sa schimbati drepturile fisierului $F? -> "
+		read C
+		if [ $C == "da" ]
+		then
+			chmod 744 $F
+		fi
+		
+	fi
+done

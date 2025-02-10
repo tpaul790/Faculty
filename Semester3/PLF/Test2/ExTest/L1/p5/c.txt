@@ -1,0 +1,42 @@
+#|
+
+suma(a1..an,b1...bm)	= invers(aux(invers(a1..an),invers(b1..bm),0))
+
+aux(a1..an,b1..bm,f)	= (), n=0,m=0 si f=0
+				= (f), n=0,m=0 si f=1
+				= (a1+f)%10(+)aux(a2..an,(),(a1+f)\10), n>0 si m=0
+				= (b1+f)%10(+)aux((),b2..bm,(b1+f)\10), n=0 si m>0
+				= (a1+b1+f)%10(+)aux(a2..an,b2..bm,(a1+b1+f)\10), n>0 si m>0
+
+|#
+
+(Defun suma(a b)
+	(invers (aux (invers a) (length a) (invers b) (length b) 0))
+)
+
+(Defun aux(a n b m f)
+	(cond
+		((and (null a) (null b) (= f 0)) nil)
+		((and (null a) (null b) (= f 1)) (list f))
+		((and (> n 0) (= m 0)) (cons 
+					         (mod (+ (car a) f) 10) 
+   						   (aux (cdr a) (- n 1) nil 0 (round (+ (car a) f) 10))))
+		((and (> m 0) (= n 0)) (cons 
+						   (mod (+ (car b) f) 10) 
+						   (aux nil 0 (cdr b) (- m 1) (round (+ (car b) f) 10))))
+		(t (cons 
+			(mod (+ (car a) (car b) f) 10) 
+			(aux (cdr a) (- n 1) (cdr b) (- m 1) (round (+ (car a) (car b) f) 10))))
+	)
+)
+
+(Defun invers(l)
+	(inv l nil)
+)	
+
+(Defun inv(l col)
+	(cond
+		((null l) col)
+		(t (inv (cdr l) (cons (car l) col)))
+	)
+)

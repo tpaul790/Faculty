@@ -1,0 +1,24 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]
+then
+	echo "Numar insuficient de argumente"
+	echo "Utilizare: $0 dir"
+	exit 1
+fi
+
+D=$1
+
+for F in `find $D -type f`
+do
+	DREPT=`ls -l $F | awk '{print $1}'`
+	if [ $DREPT == "-rwxr-xr-x" ]
+	then
+		echo -n "Doresti sa modifici drepturile fisierului '$F'?(da/nu): "
+		read R
+		if [ $R == "da" ]
+		then
+			chmod 744 $F
+		fi
+	fi
+done

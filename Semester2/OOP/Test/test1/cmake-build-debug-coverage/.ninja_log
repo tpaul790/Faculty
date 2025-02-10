@@ -1,0 +1,13 @@
+# ninja log v5
+4	756	1715331422824624693	CMakeFiles/test1.dir/Service/ProcesorService.cpp.o	f40e636eab6e7a77
+13	548	1715329229409474540	CMakeFiles/test1.dir/Service/PlacaService.cpp.o	7a0a2c8d5aff6b71
+4	896	1715331422972280509	CMakeFiles/test1.dir/Teste/teste.cpp.o	102ccba7a785f788
+4	802	1715331422868640712	CMakeFiles/test1.dir/Repo/ProcesorInFileRepo.cpp.o	a718e4a409022b46
+4	1977	1715331424056738499	CMakeFiles/test1.dir/GUI/GUI.cpp.o	f2beeabaa5171eb6
+1977	2163	1715331424242669708	test1	4838b7e3d821662e
+3	465	1715282188102476218	CMakeFiles/test1.dir/Domain/Procesor.cpp.o	648e811eaaea4399
+4	431	1715282188068502528	CMakeFiles/test1.dir/Domain/PlacaDeBaza.cpp.o	46c19c8d6555d29a
+13	557	1715329229421417904	CMakeFiles/test1.dir/Repo/PlacaInFileRepo.cpp.o	81f698aea83d2085
+4	1879	1715331423956096328	CMakeFiles/test1.dir/main.cpp.o	aa23bed276e06db2
+3	1121	1715331691520409825	CMakeFiles/test1.dir/GUI/GUI.cpp.o	f2beeabaa5171eb6
+1131	1288	1715331691691571944	test1	4838b7e3d821662e

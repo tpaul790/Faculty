@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for D in `find . -type d`
+do
+	L=""
+	L=`find $D -type f -name "*.c"`
+	if [ $L -ne 0 ]
+	then
+		echo $D
+	fi
+done

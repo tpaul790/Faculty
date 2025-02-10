@@ -1,0 +1,47 @@
+#|
+	nivel(l1..ln, e)	= (), n = 0
+				= 0, l1 = e 
+				= 1+nivel(l2), e apare in l2
+				= 1+nivel(l3), e apare in l3
+				= (), altfel
+
+	apare(l1..ln, e)	= true, l1 = e
+				= false, n = 0
+				= apare(l2,e) or apare(l3,e), n>0
+|#
+
+
+(Defun nivel(l e)
+	(cond 
+		((null l) nil)
+		((equal (car l) e) 0)
+		((apare (cadr l) e) (+ 1 (nivel (cadr l) e)))
+		((apare (caddr l) e) (+ 1 (nivel (caddr l) e)))
+		(t nil)
+	)
+)
+
+(Defun apare(l e)
+	(cond 
+		((null l) nil)
+		((equal (car l) e) t)
+		(t (or (apare (cadr l) e) (apare (caddr l) e)))
+	)	
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

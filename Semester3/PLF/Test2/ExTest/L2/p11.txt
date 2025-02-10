@@ -1,0 +1,95 @@
+#|
+	
+	maxim(l1..ln)	= aux(l1..ln, nivelK(l1..ln,1),1)
+
+	aux(l1..ln, col, k)	= col, k = nivel(l1..ln)
+					= aux(l1..ln,col,k+1), 
+						lungimea col >= lungimea nivelK(l1..ln,k+1)
+					= aux(l1..ln,nivelK(l1..ln,k+1),k+1), altfel
+
+	nivelK(l1..ln,k)	= () ,n=0
+					= (l1), k = 1
+					= nivelK(l1,k-1)(+)nivelK(l2,k-1), n>0 si k>0
+
+	nivel(l1..ln)	= 0, n=0
+				= 1+max(nivel(l2),nivel(l3)), n>0
+
+|#
+
+(Defun maxim(l)
+	(aux l (nivelK l 1) 1)
+)
+
+(Defun aux(l col k)
+	(cond
+		((= (nivel l) k) col)
+		((>= (length col) (length (nivelK l (+ k 1)))) (aux l col (+ k 1)))
+		(t (aux l (nivelK l (+ k 1)) (+ k 1)))
+	)
+)
+
+(Defun nivel(l)
+	(cond 
+		((null l) 0)
+		(t (+ 1 (max (nivel (cadr l)) (nivel (caddr l)))))
+	)
+)
+
+(Defun nivelK(l k)
+	(cond
+		((null l) nil)
+		((= k 1) (list (car l)))
+		(t (append (nivelK (cadr l) (- k 1)) (nivelK (caddr l) (- k 1))))
+	)
+)
+
+
+
+
+VARIANTA IN CARE PUN SI NUMARUL NIVELULUI RESPECTIV
+
+(Defun maxim(l)
+	(cond
+		((null l) nil)
+		(t (aux l (nivele l) 1 0 (nivelK l 0)))
+	)
+)
+ #|
+L este arborele
+N este numărul de nivele ale arborelui
+K este nivelul curent 
+Nm este nivelul maxim 
+M lista de elemente de pe nivelul maxim
+|#
+(Defun aux(l n k nm m)
+	(cond
+		((= n k) (list nm m))
+		((>= (length m) (length (nivelK l k))) (aux l n (+ k 1) nm m))
+		(t (aux l n (+ k 1) k (nivelK l k)))
+	)
+)
+
+(Defun nivelK(l k)
+	(cond
+		((null l) nil)
+		((= k 0) (list (car l)))
+		(t (append (nivelK (cadr l) (- k 1)) (nivelK (caddr l) (- k 1))))
+	)
+)
+
+(Defun nivele(l)
+	(cond
+		((null l) 0)
+		(t (+ 1 (max (nivele (cadr l)) (nivele (caddr l)))))
+	)
+)
+
+
+
+
+
+
+
+
+
+

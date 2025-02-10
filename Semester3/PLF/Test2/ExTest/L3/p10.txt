@@ -1,0 +1,17 @@
+#|
+
+
+nivelK(l,k)	= 1, l atom si k=0
+			= 0, l nu e atom si k=0
+			= SUMA(nivelK(l1,k-1),...,nivelK(ln, k-1)), l=(l1..ln) lista,k>0
+
+|#
+
+(Defun nivelK(l k)
+	(cond
+		((and (atom l) (= k 0)) 1)
+		((atom l) 0)
+		((= k 0) 0)
+		(t (apply #'+ (mapcar #'(lambda(L)(nivelK L (- k 1))) l)))
+	)
+)

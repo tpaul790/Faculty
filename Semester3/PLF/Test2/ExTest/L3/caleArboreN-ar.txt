@@ -1,0 +1,41 @@
+#|
+
+cale(l,e) 	= (l), l e atom
+			= (), !apare(l,e)
+			= U(cale(li,e), l=(l1..ln) lista si apare(l,e)
+
+apare(l,e)	= true, l = e
+			= false, l e atom si l != e
+			= SAU(apare(li,e)), l=(l1..ln) lista
+
+sau(l1..ln)	= false, n=0
+			= true, l1 = true
+			= sau(l2..ln), n>0 si l1=false
+|#
+
+(Defun cale(l e)
+	(cond
+		((atom l) (list l))	
+		((not (apare l e)) nil)
+		(t (apply #'append (mapcar #'(lambda(L)(cale L e)) l)))
+	)
+)
+
+(Defun apare(l e)
+	(cond
+		((equal l e) t)
+		((atom l) nil)
+		(t (apply #'sau (mapcar #'(lambda(L)(apare L e)) l)))
+	)
+)
+
+(Defun sau(l)
+	(cond
+		((null l) nil)
+		((car l) t)
+		(t (sau (cdr l)))
+	)
+)
+
+
+

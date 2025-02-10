@@ -1,0 +1,28 @@
+#!/bin/bash
+
+if [ ! $# -eq 1 ]
+then
+        echo "Trebuie sa introduceti ca argument un director"
+        exit 1
+fi
+
+D=$1
+
+for F in `find $D -type f | sort`
+do
+        if file $F | grep -q "ASCII text$"
+        then
+                echo -n "Fisier: "
+                echo $F | awk -F/ '{print $NF}'
+                NR_L=`wc -l $F | awk '{print $1}'`
+                if [ $NR_L -lt 7 ]
+                then
+                        cat $F
+                else
+                        echo "CAP"
+                        head -3 $F
+                        echo "COADA"
+                        tail -3 $F
+                fi
+        fi
+done

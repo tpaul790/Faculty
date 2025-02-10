@@ -1,0 +1,6 @@
+# ninja log v5
+3	198	1719330254196067397	CMakeFiles/Masini.dir/Domain/Masina.cpp.o	6ab6058273249e2e
+3	389	1719330254385597221	CMakeFiles/Masini.dir/Repo/RepoFile.cpp.o	1df78b74eca90642
+3	341	1719330254334919583	CMakeFiles/Masini.dir/Teste/teste.cpp.o	696b7860b6513266
+5	853	1719329532627361779	CMakeFiles/Masini.dir/main.cpp.o	87b087caf272f8a
+389	608	1719330254605834441	Masini	7fd71b80b5541e2

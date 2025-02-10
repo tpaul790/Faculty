@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if [ $# -ne 1 ] || [ ! -d $1 ]
+then
+	echo "Argumente insuficiente,prea multe sau incorecte"
+	echo "Utilizare: $0 dir"
+	exit 1
+fi
+
+D=$1
+
+for F in `find $D -type f -perm u=rwx,g=rx,o=rx`
+do
+	name=`echo $F | awk -F/ '{print $NF}'`
+	echo "Doriti sa schimbati permisiunile fisierului '$name'?"
+	echo -n "	Introduceti raspunsul(da/nu):"
+	read R
+	if [ $R == "da" ]
+	then
+		chmod 744 $F
+	fi
+done 

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]
+then 
+	echo "Invalid"
+	exit 1
+fi
+
+for F in $@
+do
+	L=`cat $F | sort | uniq -c | sort -r | head -1`
+	echo "$L,$F">>aux
+done
+cat aux | sort -r | sed -E "s/[ ]*[1-9][0-9]* //" | awk -F, '{print "Fisier:",$2,".Linia:",$1}'
+rm aux

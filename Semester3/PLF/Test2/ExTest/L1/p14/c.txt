@@ -1,0 +1,16 @@
+
+
+(Defun construieste(l)
+	(cond
+		((atom l) nil)
+		((verifica l) (cons (car l) (apply #'append (mapcar #'construieste l))))
+		(t (apply #'append (mapcar #'construieste l)))
+	)
+)
+
+(Defun verifica(l)
+	(cond
+		((= 1 (mod (length l) 2)) t)
+		(t nil)
+	)
+)

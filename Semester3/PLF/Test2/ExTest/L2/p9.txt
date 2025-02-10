@@ -1,0 +1,57 @@
+
+#|
+
+conversie(l1..ln)	= (), n=0
+			= (l1), n = 2
+			= (l1,conversie(stang(l1..ln)),conversie(drept(l1..ln))), n>0
+|#
+
+(Defun stang(l)
+	(aux (cddr l) 0 0)
+)
+
+(Defun aux(l nv nm)
+	(cond
+		((null l) nil)
+		((= nv (+ nm 1)) nil)
+		(t (cons (car l) (cons (cadr l) (aux (cddr l) (+ nv 1) (+ nm (cadr l))))))
+	)
+)
+
+(Defun drept(l)
+	(aux2 (cddr l) 0 0)
+)
+
+(Defun aux2(l nv nm)
+	(cond
+		((null l) nil)
+		((= nv (+ nm 1)) l)
+		(t (aux2 (cddr l) (+ nv  1) (+ nm (cadr l))))
+	)
+)
+
+(Defun conversie(l)
+	(cond 
+		((null l) nil)
+		((null (cddr l)) (list (car l)))
+		(t (list (car l) (conversie (stang l)) (conversie (drept l))))
+	)
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

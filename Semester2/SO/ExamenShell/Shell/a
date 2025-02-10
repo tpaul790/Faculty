@@ -1,0 +1,14 @@
+#!/bin/bash
+sum=0
+poz=0
+for arg in $@
+do
+	poz=$(($poz+1))
+	div=$(($poz%3))
+	if [ $div -eq 0 ]
+	then
+		sum=$(($sum+$arg))
+	fi
+done
+
+echo "Suma este "$sum

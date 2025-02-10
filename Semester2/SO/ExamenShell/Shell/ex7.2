@@ -1,0 +1,24 @@
+#!/bin/bash
+
+if [ $# -eq 0 ] 
+then
+	echo "Numar insuficient de argumente"
+	echo "Utilizare: $0 fis1 fis2 ..."
+	exit 1
+fi
+
+echo -n "Introduceti primul cuvant: "
+read cuv1
+echo -n "Introduceti al doilea cuvant: "
+read cuv2
+
+for F in $@
+do
+	if [ -f $F ]
+	then
+		sed -i -E "s/\<${cuv1}\>/${cuv2}/g" $F
+		echo "Inlocuirea a fost facuta cu succes"
+	else
+		echo "$F nu este fisier"
+	fi
+done

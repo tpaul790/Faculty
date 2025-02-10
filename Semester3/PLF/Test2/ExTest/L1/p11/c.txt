@@ -1,0 +1,34 @@
+(Defun elimina(l)
+	(aux l (maxim (liniarizare l)))
+)
+
+(Defun aux(l e)
+	(cond
+		((equal l e) nil)
+		((atom l) (list l))
+		(t (list (apply #'append (mapcar #'(lambda(L)(aux L e)) l))))
+	)
+)
+
+(Defun liniarizare(l)
+	(cond
+		((numberp l) (list l))
+		((atom l) nil)
+		(t (apply #'append (mapcar #'liniarizare l)))
+	)
+)
+
+(Defun maxim(l)
+	(cond
+		((null l) nil)
+		(t (maxi (cdr l) (car l)))
+	)
+)
+
+(Defun maxi(l m)
+	(cond
+		((null l) m)
+		((> m (car l)) (maxi (cdr l) m))
+		(t (maxi (cdr l) (car l)))
+	)
+)

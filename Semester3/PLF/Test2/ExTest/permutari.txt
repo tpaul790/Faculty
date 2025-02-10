@@ -1,0 +1,53 @@
+#|
+Funcție care înserează un element dat pe fiecare poziție din listele unei liste
+principal(e, l1..ln) 	= (), n=0
+			= ins(e, l1)(+)principa(e,l2..ln)
+
+Wrapper pentru funcția care insereaza un element e pe toate pozițiile in lista l1..ln
+ins(e,l1..ln) = inserare(e,n,l1..ln)
+
+Insereaza un element e pe toate pozițiile in lista l1..ln
+inserare(e, n, l1..ln)	= (), n=0
+				= insert(e,n,l1..ln)(+)inserare(e,n-1,l1..ln)
+
+Înserează un element pe o poziție n data
+insert(e, k, l1..ln)	= (e) daca n = 0
+				= e(+)l1..ln, k = 1
+				= l1(+)insert(e,k-1,l2..ln), n > 1 si k > 1
+
+permutari(l1..ln)  	= (()), n=0
+		       	= principal(l1,permutari(l2..ln))
+|#
+(Defun principal(e l)
+	(cond
+		((null l) nil)
+		(t (append (ins e (car l)) (principal e (cdr l))))
+	)
+)
+
+
+(Defun ins(e l)
+	(inserare e (+ (length l) 1) l)
+)
+
+(Defun inserare(e n l)
+	(cond 
+		((= n 0) nil)
+		(t (cons (insert e n l) (inserare e (- n 1) l)))
+	)
+)
+
+(Defun insert(e n l)
+	(cond
+		((null l) (list e))
+		((= n 1) (cons e l))
+		(t (cons (car l) (insert e (- n 1) (cdr l))))
+	)
+)
+
+(Defun permutari(l)
+	(cond 
+		((null l) (list nil))
+		(t (principal (car l) (permutari (cdr l))))
+	)
+)

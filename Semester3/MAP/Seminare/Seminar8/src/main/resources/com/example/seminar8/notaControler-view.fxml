@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+           xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1"
+           fx:controller="com.example.seminar8.Controller.NotaController">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <children>
+                <TableView fx:id="notaTable" layoutX="28.0" layoutY="23.0" prefHeight="362.0" prefWidth="243.0">
+                    <columns>
+                        <TableColumn fx:id="studentName" prefWidth="75.0" text="Student" />
+                        <TableColumn fx:id="idTema" prefWidth="91.0" text="Tema" />
+                        <TableColumn fx:id="nota" prefWidth="76.0" text="Nota" />
+                    </columns>
+                </TableView>
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <children>
+                <Label layoutX="22.0" layoutY="14.0" text="Filtreaza notele dupa:">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="22.0" layoutY="61.0" text="Nume Student:" />
+                <Label layoutX="22.0" layoutY="94.0" text="NotaMaiMareDecat:" />
+                <Label layoutX="22.0" layoutY="130.0" text="Tema:" />
+                <TextField fx:id="textFieldNume" layoutX="143.0" layoutY="59.0" prefHeight="26.0" prefWidth="110.0" />
+                <TextField fx:id="textFieldNota" layoutX="146.0" layoutY="93.0" prefHeight="26.0" prefWidth="110.0" />
+                <TextField fx:id="textFieldTema" layoutX="145.0" layoutY="127.0" prefHeight="26.0" prefWidth="110.0" />
+                <ComboBox layoutX="19.0" layoutY="186.0" prefHeight="26.0" prefWidth="263.0" promptText="Selecteaza Tema" />
+            </children></AnchorPane>
+    </items>
+</SplitPane>

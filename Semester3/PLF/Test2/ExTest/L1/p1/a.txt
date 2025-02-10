@@ -1,0 +1,20 @@
+#|
+
+ins(l1..ln, e) = aux(l1..ln,1,e)
+
+aux(l1..ln,k,e)	= [], n=0
+			= l1(+)e(+)aux(l2..ln,k+1,e), n>0 si k%2=0
+			= l1(+)aux(l2..ln,k+1,e), n>0 si k%2=1
+|#
+
+(Defun ins(l e)
+	(aux l 1 e)
+)
+
+(defun aux(l k e)
+	(cond 
+		((null l) nil)
+		((= (mod (car l) 2) 0) (cons (car l) (cons e (aux (cdr l) (+ k 1) e))))
+		(t (cons (car l) (aux (cdr l) (+ k 1) e)))
+	)
+)

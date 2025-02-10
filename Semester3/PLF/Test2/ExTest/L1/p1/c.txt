@@ -1,0 +1,44 @@
+#|
+
+principal(l1..ln) = cmmdcList(lista(l1..ln))
+
+lista(l)		= (l), l atom numeric
+			= (), l e atom dar nu numeric
+			= lista(l1)(+)lista(l2..ln), l = (l1..ln) lista
+
+cmmdcList(l1..ln)	= l1, n = 1
+				= cmmdcList(cmmdc(l1,2)(+)l3..ln)), n>1
+
+cmmdc(a,b)		= a, b=0
+			= b, a=0
+			= cmmdc(a-b,b), a>=b si a!=0 si b != 0
+			= cmmdc(a,b-a), a<b si a!=0 si b != 0			
+|#
+
+(Defun principal(l)
+	(cmmdcList (lista l))
+)
+
+(Defun lista(l)
+	(cond
+		((numberp l) (list l))
+		((atom l) nil)
+		(t (append (lista (car l)) (lista (cdr l))))
+	)
+)
+
+(Defun cmmdcList(l)
+	(cond
+		((null (cdr l)) (car l))
+		(t (cmmdcList (cons (cmmdc (car l) (cadr l)) (cddr l))))
+	)
+)
+
+(Defun cmmdc(a b)
+	(cond
+		((= b 0) a)
+		((= a 0) b)
+		((>= a b) (cmmdc (- a b) b))
+		(t (cmmdc a (- b a)))
+	)
+)

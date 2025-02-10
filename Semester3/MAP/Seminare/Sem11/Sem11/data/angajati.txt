@@ -1,0 +1,3 @@
+id1,Paul,100,SENIOR
+id2,Denis,95,MEDIUM
+id3,Vladu,10,JUNIOR

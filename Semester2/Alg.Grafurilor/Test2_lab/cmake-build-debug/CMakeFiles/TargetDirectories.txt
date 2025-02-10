@@ -1,0 +1,3 @@
+/Users/titienipaul/Desktop/Facultate/sem2/Alg.Grafurilor/Test2_lab/cmake-build-debug/CMakeFiles/Test2_lab.dir
+/Users/titienipaul/Desktop/Facultate/sem2/Alg.Grafurilor/Test2_lab/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/titienipaul/Desktop/Facultate/sem2/Alg.Grafurilor/Test2_lab/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,14 @@
+# ninja log v5
+275	303	1711696235166577104	lab1	9fc121a5101bdd13
+2	162	1711628330048836751	CMakeFiles/lab1.dir/TAD_Colectie/Proiect_C++/Colectie/IteratorColectie.cpp.o	6180f1a5e454b4ce
+2	328	1711633863068477936	CMakeFiles/lab1.dir/TAD_Colectie/Proiect_C++/Teste/TestExtins.cpp.o	57821ff4cefec228
+1	53	1711035802101635651	build.ninja	c4767e64e05cdce5
+2	26	1711632908087901308	CMakeFiles/lab1.dir/TAD_Colectie/Proiect_C++/Colectie/Colectie.cpp.o	d4dfe0414051abed
+3	157	1711628330033746111	CMakeFiles/lab1.dir/TAD_Colectie/Proiect_C++/Teste/TestScurt.cpp.o	8e2fcb351f78bc85
+2	274	1711696235137827964	CMakeFiles/lab1.dir/TAD_Colectie/Proiect_C++/App.cpp.o	b515263cb667452b
+4	164	1713455047037094369	CMakeFiles/lab1.dir/TAD_Colectie/Proiect_C++/Teste/TestScurt.cpp.o	8e2fcb351f78bc85
+164	254	1713455047136184091	lab1	9fc121a5101bdd13
+1	299	1713455061947695893	CMakeFiles/lab1.dir/TAD_Colectie/Proiect_C++/App.cpp.o	b515263cb667452b
+303	330	1713455061981903078	lab1	9fc121a5101bdd13
+1	281	1713455073425870560	CMakeFiles/lab1.dir/TAD_Colectie/Proiect_C++/App.cpp.o	b515263cb667452b
+281	308	1713455073453179950	lab1	9fc121a5101bdd13

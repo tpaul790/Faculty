@@ -1,0 +1,28 @@
+#|
+
+apare(l,e)	= true, l = e
+			= false, l atom si nu-i e
+			= SAU(apare(l1),..,(apare(ln)), l=(l1..ln) lista
+
+sau(l1..ln)	= false, n=0
+			= true, l1 = t
+			= sau(l2..ln), altfel
+
+|#
+
+(Defun apare(l e)
+	(cond 
+		((equal l e) t)
+		((atom l) nil)
+		(t (sau (mapcar #'(lambda(L)(apare L e)) l)))
+	)
+)
+
+
+(Defun sau(l)
+	(cond
+		((null l) nil)
+		((equal (car l) t) t)
+		(t (sau (cdr l)))
+	)
+)

@@ -1,0 +1,16 @@
+#| sortare fără pastrarea dublurilor|#
+
+(Defun sortare(l)
+	(cond
+		((null l) nil)
+		(t (cons (apply #'min l) (sortare (sterge l (apply #'min l)))))
+	)
+)
+
+(Defun sterge(l e)
+	(cond
+		((null l) nil)
+		((equal (car l) e) (sterge (cdr l) e))	
+		(t (cons (car l) (sterge (cdr l) e)))
+	)
+)

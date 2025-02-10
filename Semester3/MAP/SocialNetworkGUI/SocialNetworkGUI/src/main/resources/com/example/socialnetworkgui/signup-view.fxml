@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="239.0" prefWidth="271.0"
+            xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.socialnetworkgui.controller.SignUpController">
+    <children>
+        <TextField fx:id="textFieldUsername" layoutX="102.0" layoutY="40.0" />
+        <TextField fx:id="textFieldEmail" layoutX="102.0" layoutY="80.0" />
+        <PasswordField fx:id="textFieldPassword" layoutX="102.0" layoutY="120.0" />
+        <Label layoutX="14.0" layoutY="40.0" text="Username">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="80.0" text="Email">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="120.0" text="Password">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Label>
+        <Button layoutX="108.0" layoutY="160.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="58.0" text="SignUp" onAction="#onSignUpButtonClick"/>
+        <Button layoutX="180.0" layoutY="160.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="58.0"  text="LogIn" onAction="#onLogInButtonClick"/>
+    </children>
+</AnchorPane>
+
