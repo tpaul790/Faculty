@@ -1,0 +1,13 @@
+# ninja log v5
+2	161	1739726749206811755	CMakeFiles/Set.dir/Project/Iterator.cpp.o	6ce2810ae8814378
+2	452	1739726749497329609	CMakeFiles/Set.dir/Project/Set.cpp.o	1bdbd3fa4fb48159
+462	552	1739726749597526112	Set	8a9fb9420e6364c5
+3	459	1739726749505009881	CMakeFiles/Set.dir/Tests/ShortTest.cpp.o	17e42715388d2c3
+1	449	1739726749494561934	CMakeFiles/Set.dir/main.cpp.o	5c4e9b9b53062728
+2	462	1739726749508253433	CMakeFiles/Set.dir/Tests/LargeTest.cpp.o	5b69c02bfa95b4be
+2	56	1739730054396771070	CMakeFiles/Set.dir/Project/Iterator.cpp.o	10cc17b4c00ae59c
+2	528	1739730054864193196	CMakeFiles/Set.dir/main.cpp.o	8ef831ec437fb8eb
+2	542	1739730054881686134	CMakeFiles/Set.dir/Tests/LargeTest.cpp.o	4df6ed7ed1639e96
+2	546	1739730054886035515	CMakeFiles/Set.dir/Project/Set.cpp.o	dac7502ec4cb1e51
+2	567	1739730054906063582	CMakeFiles/Set.dir/Tests/ShortTest.cpp.o	8bb5f9ce2f00652
+567	622	1739730054962917653	Set	8a9fb9420e6364c5

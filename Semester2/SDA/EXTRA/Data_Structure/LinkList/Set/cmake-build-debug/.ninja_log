@@ -1,0 +1,7 @@
+# ninja log v5
+1	157	1739730337153779298	CMakeFiles/Set.dir/Project/Iterator.cpp.o	6a8867217a989a0d
+1	370	1739730337365701438	CMakeFiles/Set.dir/Project/Set.cpp.o	98697e7b6c1baca2
+0	376	1739730337372479738	CMakeFiles/Set.dir/main.cpp.o	c1e47336f42c7ac
+1	378	1739730337374672865	CMakeFiles/Set.dir/Tests/ShortTest.cpp.o	6fd9c186f482cbc8
+1	380	1739730337376999285	CMakeFiles/Set.dir/Tests/LargeTest.cpp.o	bc323e6b2c512d00
+380	476	1739730337472615196	Set	edf97e707c0e92d5
