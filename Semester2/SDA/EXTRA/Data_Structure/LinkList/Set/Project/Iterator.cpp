@@ -3,21 +3,26 @@
 
 
 Iterator::Iterator(const Set& m) : set(m){
+    curent = set.first;
 }
 
 TElem Iterator::element() const {
-    return -1;
+    return curent->e;
 }
 
 bool Iterator::valid() const {
-	return false;
+	return curent != nullptr;
 }
 
 void Iterator::urmator() {
+    curent = curent->next;
+}
 
+void Iterator::anterior() {
+    curent = curent->previous;
 }
 
 void Iterator::prim() {
-
+    curent = set.first;
 }
 

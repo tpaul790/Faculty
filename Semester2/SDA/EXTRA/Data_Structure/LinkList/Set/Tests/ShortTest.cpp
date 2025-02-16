@@ -29,7 +29,7 @@ void testAll() { //apelam fiecare functie sa vedem daca exista
 
 
 	Set m;
-	//return;
+//	return;
 	assert(m.vida() == true);
 	assert(m.dim() == 0); //adaug niste elemente
 	assert(m.adauga(5)==true);

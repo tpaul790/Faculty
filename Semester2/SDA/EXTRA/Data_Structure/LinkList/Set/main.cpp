@@ -1,6 +1,14 @@
 #include <iostream>
+#include "Project/Set.h"
+#include "Project/Iterator.h"
+#include "Tests/ShortTest.h"
+#include "Tests/LargeTest.h"
+#include <iostream>
+
+using namespace std;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    testAll();
+    testAllExtins();
     return 0;
 }

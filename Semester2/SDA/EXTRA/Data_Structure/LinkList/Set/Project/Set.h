@@ -1,24 +1,45 @@
 #pragma once
 
+class Iterator;
+class Nod;
+
 typedef int TElem;
 
 typedef bool(*Relation)(TElem, TElem);
 
-//in implementarea operatiilor se va folosi functia (relatia) rel (de ex, pentru <=)
-// va fi declarata in .h si implementata in .cpp ca functie externa colectiei
+typedef Nod* PNod;
+
 bool rel(TElem, TElem);
 
-class Iterator;
+class Nod{
+    friend class Set;
+    friend class Iterator;
+private:
+    TElem e;
+    PNod next;
+    PNod previous;
+public:
+    Nod(TElem e);
+
+    TElem getValue();
+};
 
 class Set {
-
 	friend class Iterator;
-
+    friend  class Nod;
 private:
-
+    PNod first, last;
+    int size;
+//    Relation rel;
 public:
+        PNod getFirst();
+
+        PNod getLast();
+
 		//constructorul implicit
 		Set();
+
+        Set(Relation relation);
 
 		//adauga un element in multime
 		//returneaza adevarat daca elementul a fost adaugat (nu exista deja in multime)
