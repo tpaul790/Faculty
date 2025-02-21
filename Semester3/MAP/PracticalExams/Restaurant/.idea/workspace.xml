@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="293aa401-7dee-48d7-a08b-a4bd15b61ea5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/restaurant/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/restaurant/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/restaurant/Controlere/TableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/restaurant/Controlere/TableController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/restaurant/Service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/restaurant/Service/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/restaurant/staff.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/restaurant/staff.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="293aa401-7dee-48d7-a08b-a4bd15b61ea5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,6 +129,7 @@
       <workItem from="1738673509644" duration="6000" />
       <workItem from="1738751608975" duration="1826000" />
       <workItem from="1738769420872" duration="2670000" />
+      <workItem from="1740065030168" duration="247000" />
     </task>
     <servers />
   </component>
