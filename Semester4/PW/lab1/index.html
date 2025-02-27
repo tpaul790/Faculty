@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Delevery Formular</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Titieni Paul"> 
+        <meta name="description" content="Real life formular for the lab1">
+    </head>
+
+    <body>
+        <header>
+            <h1>Delevery Formular</h1>
+            <nav>
+                <h2>Navigation</h2>
+                <ul>
+                    <li>
+                        <p>Complete your <a href="#personalData">personal data</a></p>
+                    </li>
+                    <li>
+                        <p>Complete your <a href="#deliveryData">delivery data</a></p>
+                    </li>
+                    <li>
+                        <p>Complete your <a href="#paymentData">payment data</a></p>
+                    </li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+
+        <main>
+            <div>
+                <form action="https://httpbin.org/get" method="get">
+                    <fieldset id="personalData">
+                        <legend>Personal Data</legend>
+                        <p>
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" name="firstName">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label for="lastName">Last name:</label>
+                            <input type="text" name="lastName" id="lastName">
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" name="phone" id="phone" pattern="[07][0-9]{1}-[0-9]{3}-[0-9]{4}">
+                        </p>
+                    </fieldset>
+                    <fieldset id="deleveryData">
+                        <legend>Delivery data</legend>
+                        <p>
+                            <label for="address">Delivery address</label><br>
+                            <textarea name="address" id="address" placeholder="Delivery adress" rows="8" cols="40"></textarea>
+                        </p>
+                        <p>
+                            <label for="">Choose the Delivery Type</label>
+                                <br>
+                            <input type="radio" name="delivType" id="delivType1" value="Personal Adress">
+                            <label for="delivType1">Personal Adress</label>
+                                <br>
+                            <input type="radio" name="delivType" id="delivType2" value="Easy Box">
+                            <label for="delivType2">Easy Box</label>
+        
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
