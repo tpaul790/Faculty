@@ -1,0 +1,217 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+    <head>
+        <title>Formular de Livrare</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">   
+    </head>
+
+    <body>
+        <div>
+            <h1 align="center">Formular de Livrare</h1>
+            <div>
+                <h2>Navigare</h2>
+                <ul>
+                    <li>
+                        <p>Completeazǎ <a href="#personalData"><b>datele personale</b></a></p>
+                    </li>
+                    <li>
+                        <p>Completeazǎ <a href="#deliveryData"><b>datele pentru livrare</b></a></p>
+                    </li>
+                    <li>
+                        <p>Completeazǎ <a href="#paymentData"><b>>detaliile de platǎ</b></a></p>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+        </div>
+
+        <div>
+            <div>
+                <div>
+                    <h2>Informații Obligatorii</h2>
+                    <ol>
+                        <li>
+                            Secțiuniea 'Date Personale'
+                            <ol start="1" type="A">
+                                <li>Nume</li>
+                                <li>Prenume</li>
+                                <li>Email</li>
+                                <li>Nr de Telefon</li>
+                            </ol>
+                        </li>
+                        <li>
+                            Secțiunea 'Date de Livrare'
+                            <ol type="A">
+                                <li>Adresa de Livrare</li>
+                                <li>Județul</li>
+                                <li>Tipul de Livrare</li>
+                            </ol>
+                        </li>
+                        <li>
+                            Secțiunea 'Detalii de Platǎ'
+                            <ol type="A">
+                                <li>Numǎr de Card</li>
+                                <li>Data de Expirare</li>
+                                <li>CVV</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <hr>
+
+            <div>
+                <h2>Produse Comandate</h2>
+                <table border="1px">
+                     <tr>
+                        <th bgcolor="tomato" colspan="3">Produse</th>
+                    </tr>
+                    <tr>
+                        <th>Cod Produs</th>
+                        <th>Pret</th>
+                        <th>Specificații</th>
+                    </tr>
+                    <tr>
+                        <td valign="top" >6H5GDs</td>
+                        <td valign="top">$6789</td>
+                        <td>
+                            <table border="1px">        
+                                 <tr>
+                                    <th>Procesor</th>
+                                    <th>Placǎ Video</th>
+                                    <th colspan="2">Memorie</th>
+                                </tr>
+                                <tr>
+                                    <td>AMD Ryzen</td>
+                                    <td>RTX 4060</td>    
+                                    <td>32GB RAM</td>                                            
+                                    <td>1TB SSD</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div>
+                <h2>Formular</h2>
+                <form target="_blank" action="https://httpbin.org/get" method="get">
+                    <fieldset id="personalData">
+                        <legend>Date Personale</legend>
+                        <table border="1px">
+                            <tr>
+                                <td><label for="firstName">Nume:</label></td>
+                                <td><input type="text" id="firstName" name="firstName"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="lastName">Prenume:</label></td>
+                                <td><input type="text" name="lastName" id="lastName"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">Email:</label></td>
+                                <td><input type="text" name="email" id="email"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="phone">Numǎr de telefon:</label></td>
+                                <td><input type="text" name="phone" id="phone"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="varsta">Vârstǎ:</label></td>
+                                <td><input type="text" name="varsta" id="varsta"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <fieldset id="deliveryData">
+                        <legend>Date de Livrare</legend>
+                        <p>
+                            <label for="address">Adresa de Livrare</label><br>
+                            <textarea name="address" id="address" rows="8" cols="40"></textarea>
+                        </p>
+                        <p>
+                            <label for="judet">Alege Județul</label>
+                            <select name="judet" id="judet">
+                                <option selected value="cj">Cluj-Napoca</option>
+                                <option value="bn">Bistrița-Nǎsǎud</option>
+                                <option value="b">Bucureşti</option>
+                                <option value="tm">Târgu-Mureș</option>
+                                <option value="bv">Braşov</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label>Alege Tipul de Livrare</label>
+                                <br>
+                            <input type="radio" name="delivType" id="delivType1" value="Personal Adress">
+                            <label for="delivType1">La Adresa Personalǎ</label>
+                                <br>
+                            <input type="radio" name="delivType" id="delivType2" value="Easy Box">
+                            <label for="delivType2">La Easy Box</label>
+                                <br>
+                            <input type="radio" name="delivType" id="delivType3" value="Other" checked>
+                            <label for="delivType3">Altul</label>
+                        </p>
+                        <p>
+                            <label for="curier">Alegeți una sau mai multe companii de curierat: </label>
+                            <br>
+                            <select name="curier" id="curier" multiple size="3">
+                                <option value="Fan Curier">Fan Curier</option>
+                                <option value="Sameday">Sameday</option>
+                                <option value="Fedex">Fedex</option>
+                            </select>
+                        </p>
+                    </fieldset>
+                    <fieldset id="paymentData">
+                        <legend>Detalii de Platǎ</legend>
+                        <p>
+                            <label for="nrCard">Numǎr de Card: </label>
+                            <input type="text" name="nrCard" id="nrCard">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label for="dataExpirare">Expirǎ: </label>
+                            <input type="text" name="dataExpirare" id="dataExpirare">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label for="cvv">CVV:</label>
+                            <input type="text" name="cvv" id="cvv" size="3" maxlength="3">
+                        </p>
+                        <img title="Mini tutorial pentru gasirea datelor pe card" src="/lab1/imgs/credit_card.jpg" alt="Card de credit" width="500" height="333">
+                        <p>Unde gǎsiți <span>datele necesare</span></p>
+                        <p>Ce metode de platǎ preferați?</p>
+                        <input type="checkbox" id="m1Card" name="m1Card" value="Card">
+                        <label for="m1Card">Card</label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" id="m2Ramburs" name="m2Ramburs" value="Ramburs">
+                        <label for="m2Ramburs">Ramburs</label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" id="m3Alta" name="m3Alta" value="Ramburs">
+                        <label for="m3Alta">Alta</label>
+                    </fieldset>
+                    <input type="submit" name="submit" id="submit">
+                    <input type="reset" value="Reset">
+                    <button type="button" value="save" disabled>Save</button>
+                </form>
+            </div>
+            <hr>
+            <div>
+                <h2>Contacteazǎ-ne</h2>
+                <div>
+                    <h4>Pentru orice problemǎ puteti sǎ ne apelați prin unul dintre mijloacele pe care vi le punem la dispoziție.</h4>
+                    <p>
+                        <label for="telefonContact">Telefon: </label>
+                        <input id="telefonContact" type="text" value="555-555-5555" size="12" readonly> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="emailContact">Email: </label>
+                        <input id="emailContact" type="text" value="ceva@gmail.com" size="13" readonly>       
+                    </p>    
+                </div>
+                <div>
+                    <center>
+                        <p>
+                            <strong>Fǎ-ne o vizitǎ</strong>
+                            <br>
+                            <em>  Strada Tulcea,Numǎrul 161,Cluj-Napoca, România</em>
+                        </p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

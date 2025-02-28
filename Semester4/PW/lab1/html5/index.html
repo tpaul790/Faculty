@@ -8,9 +8,10 @@
         <style>
             table,th,td {
                 border: 4px solid black;
+                border-collapse: collapse;
             }
             th,td{
-                width: 100px;
+                width: 120px;
             }
         </style>
     </head>
@@ -42,7 +43,7 @@
                     <ol>
                         <li>
                             Secțiuniea 'Date Personale'
-                            <ol type="A">
+                            <ol start="1" type="A">
                                 <li>Nume</li>
                                 <li>Prenume</li>
                                 <li>Email</li>
@@ -146,7 +147,7 @@
                         <p>
                             <label for="judet">Alege Județul</label>
                             <select name="judet" id="judet">
-                                <option value="cj">Cluj-Napoca</option>
+                                <option selected value="cj">Cluj-Napoca</option>
                                 <option value="bn">Bistrița-Nǎsǎud</option>
                                 <option value="b">Bucureşti</option>
                                 <option value="tm">Târgu-Mureș</option>
@@ -165,6 +166,15 @@
                             <input type="radio" name="delivType" id="delivType3" value="Other" checked>
                             <label for="delivType3">Altul</label>
                         </p>
+                        <p>
+                            <label for="curier">Alegeți una sau mai multe companii de curierat: </label>
+                            <br>
+                            <select name="curier" id="curier" multiple size="3">
+                                <option value="Fan Curier">Fan Curier</option>
+                                <option value="Sameday">Sameday</option>
+                                <option value="Fedex">Fedex</option>
+                            </select>
+                        </p>
                     </fieldset>
                     <fieldset id="paymentData">
                         <legend>Detalii de Platǎ</legend>
@@ -178,10 +188,21 @@
                             <label for="cvv">CVV:</label>
                             <input type="text" name="cvv" id="cvv" size="3" minlength="3" maxlength="3">
                         </p>
+
                         <figure>
                             <img title="Mini tutorial pentru gasirea datelor pe card" src="/lab1/imgs/credit_card.jpg" alt="Card de credit" width="500" height="333">
                             <figcaption>Unde gǎsiți <span>datele necesare</span></figcaption>
                         </figure>
+
+                        <p>Ce metode de platǎ preferați?</p>
+                        <input type="checkbox" id="m1Card" name="m1Card" value="Card">
+                        <label for="m1Card">Card</label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" id="m2Ramburs" name="m2Ramburs" value="Ramburs">
+                        <label for="m2Ramburs">Ramburs</label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" id="m3Alta" name="m3Alta" value="Ramburs">
+                        <label for="m3Alta">Alta</label>
                     </fieldset>
                     <input type="submit" name="submit" id="submit">
                     <input type="reset" value="Reset">
@@ -202,19 +223,13 @@
                     </p>    
                 </div>
                 <div>
-                    <section>
-                        <h4>Fǎ-ne o vizitǎ</h4>
-                        <address>
-                            Strada Tulcea,
-                            Numǎrul 161,
-                            Cluj-Napoca,s
-                            România
-                        </address>
-                    </section>
-                    <section>
-                        <h4>Ceva Tabel</h4>
-                        
-                    </section>
+                    <div>
+                        <p>
+                            <strong>Fǎ-ne o vizitǎ</strong>
+                            <br>
+                            <em>  Strada Tulcea,Numǎrul 161,Cluj-Napoca, România</em>
+                        </p>
+                    </div>
                 </div>
             </div>
         </main>
