@@ -17,6 +17,7 @@ public class Car {
         return price;
     }
 
+    @Override
     public String toString(){
         return("Year: " + year + " | Price: " + price);
     }
