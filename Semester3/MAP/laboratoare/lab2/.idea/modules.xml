@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Lab2-VehicleManagement/Lab2-VehicleManagement.iml" filepath="$PROJECT_DIR$/Lab2-VehicleManagement/Lab2-VehicleManagement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StudentManager/StudentManager.iml" filepath="$PROJECT_DIR$/StudentManager/StudentManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TaskManager/TaskManager.iml" filepath="$PROJECT_DIR$/TaskManager/TaskManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/lab2.iml" filepath="$PROJECT_DIR$/.idea/lab2.iml" />
+    </modules>
+  </component>
+</project>
