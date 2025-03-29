@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+}
+
+.group label{
+    font-weight: bold;
+    font-size: 30px;
+    width: 135px;
+}
+
+.group input{
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 30px;
+    padding: 8px;
+    background-image: url(sprite.png);
+    background-size: 850px 40px;
+    overflow: hidden;
+}
+
+#nume,#prenume{
+    width:850px;
+}
+
+#cnp{
+    width: 555px;
+    letter-spacing: 30.5px;
+}

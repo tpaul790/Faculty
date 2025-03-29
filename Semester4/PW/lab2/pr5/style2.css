@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: yellow;
+    border: 3px solid;
+}
+
+.portret{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 0px 20px;
+}
+
+.container .portret:last-child{
+    margin-bottom: 20px;
+}
+
+.portret img{
+    width: 200px;
+    height: 250px;
+}
+
+.portret p{
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}

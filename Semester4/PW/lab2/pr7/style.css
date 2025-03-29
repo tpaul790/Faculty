@@ -1,0 +1,43 @@
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.dialog{
+    display: flex;
+    flex-direction: column;
+}
+
+li{
+    font-size: 30px;
+}
+
+.alice, .bob{
+    position: relative;
+    border: 4px solid;
+    border-radius: 40px;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0px 40px 120px
+}
+
+.alice::before,.bob::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -120px;
+    top: -15px;
+    width: 100px;
+    height: 100px;
+    background-image: url(sprite.avif);
+    border-radius: 80px;
+}
+
+.alice::before{
+    background-position: -50px -30px;
+}
+
+.bob::before{
+    background-position: -190px -30px;
+}

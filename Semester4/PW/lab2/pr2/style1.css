@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+  }  
+
+body{
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+}
+
+
+.header{
+    padding: 30px 0;
+    background-color: red;
+    margin: 0;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.menu{
+    display: flex;
+    background-color: yellow;
+    width: 100%;
+    margin: 0;
+}
+
+.menu li{
+    list-style-type: none;
+    flex-grow: 1;
+    border-right: 2px solid;
+    padding-left: 10px;
+}
+
+.continut{
+    background-color: green;
+    padding: 380px 0px;
+    width: 100%;
+}
+
+.footer{
+    padding: 40px 0px;
+    background-color: palevioletred;
+}
+
