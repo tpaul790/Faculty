@@ -1,7 +1,7 @@
 
 .navbar{
     display: flex;
-    flex-direction: column; /*vertical => fara linia 4 pentru orizontal*/
+    flex-direction: line; /*vertical => fara linia 4 pentru orizontal*/
     padding: 0;
 }
 
