@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+
+.left{
+    width: 200px;
+    padding: 12px;
+    text-align: center;
+}
+
+.right{
+    text-align: center;
+}
+
+#image{
+    max-width: 200px;
+}
