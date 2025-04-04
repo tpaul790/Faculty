@@ -13,7 +13,7 @@ namespace Lab1
 {
     public partial class Form1: Form
     {
-        private SqlConnection sqlConnection = new SqlConnection("Server=192.168.1.20;Database=CompanieCurierat;User Id=sa;Password=MyStrongPass123;TrustServerCertificate=true");
+        private SqlConnection sqlConnection = new SqlConnection("Server=DESKTOP-4NSQ3BK\\SQLEXPRESS;Database=CompanieCurierat;Integrated Security=true;TrustServerCertificate=True;");
         private SqlDataAdapter dataAdapter = new SqlDataAdapter();
         private DataSet dataSetParent = new DataSet(); 
         private DataSet dataSetChild = new DataSet();
@@ -43,32 +43,46 @@ namespace Lab1
             {
                 if (textBox2.TextLength != 0 && textBox3.TextLength != 0 && textBox4.TextLength != 0 && textBox5.TextLength != 0)
                 {
-                    string registrationNumber = (string)dataGridView2.SelectedRows[0].Cells[0].Value;
-                    string brand = textBox2.Text;
-                    int boxesCapacity = int.Parse(textBox3.Text);
-                    string fuel = textBox4.Text;
-                    int mileage = int.Parse(textBox5.Text);
+                    try
+                    {
+                        string registrationNumber = (string)dataGridView2.SelectedRows[0].Cells[0].Value;
+                        string brand = textBox2.Text;
+                        int boxesCapacity = int.Parse(textBox3.Text);
+                        string fuel = textBox4.Text;
+                        int mileage = int.Parse(textBox5.Text);
 
-                    SqlCommand command = new SqlCommand("UPDATE Masini SET marca = @brand, capacitateCuti = @boxesCapacity, combustibil = @fuel, kilometraj = @mileage WHERE nrInmatriculare = @registrationNr", sqlConnection);
-                    command.Parameters.AddWithValue("@brand", brand);
-                    command.Parameters.AddWithValue("@boxesCapacity", boxesCapacity);
-                    command.Parameters.AddWithValue("@fuel", fuel);
-                    command.Parameters.AddWithValue("@mileage", mileage);
-                    command.Parameters.AddWithValue("@registrationNr", registrationNumber);
+                        SqlCommand command = new SqlCommand("UPDATE Masini SET marca = @brand, capacitateCuti = @boxesCapacity, combustibil = @fuel, kilometraj = @mileage WHERE nrInmatriculare = @registrationNr", sqlConnection);
+                        command.Parameters.AddWithValue("@brand", brand);
+                        command.Parameters.AddWithValue("@boxesCapacity", boxesCapacity);
+                        command.Parameters.AddWithValue("@fuel", fuel);
+                        command.Parameters.AddWithValue("@mileage", mileage);
+                        command.Parameters.AddWithValue("@registrationNr", registrationNumber);
 
-                    dataAdapter.UpdateCommand = command;
-                    dataAdapter.UpdateCommand.ExecuteNonQuery();
-                    dataSetChild.Clear();
-                    dataAdapter.Fill(dataSetChild);
-                    dataGridView2.DataSource = dataSetChild.Tables[0];
+                        dataAdapter.UpdateCommand = command;
+                        dataAdapter.UpdateCommand.ExecuteNonQuery();
+                        dataSetChild.Clear();
+                        dataAdapter.Fill(dataSetChild);
+                        dataGridView2.DataSource = dataSetChild.Tables[0];
 
-                    textBox1.Clear();
-                    textBox2.Clear();
-                    textBox3.Clear();
-                    textBox4.Clear();
-                    textBox5.Clear();
-                    MessageBox.Show("The car with registration plate: " + registrationNumber + " succesfully updated!");
+                        textBox1.Clear();
+                        textBox2.Clear();
+                        textBox3.Clear();
+                        textBox4.Clear();
+                        textBox5.Clear();
+                        MessageBox.Show("The car with registration plate: " + registrationNumber + " succesfully updated!");
+                    }catch(Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
                 }
+                else
+                {
+                    MessageBox.Show("You have to complete all the text fields");
+                }
+            }
+            else
+            {
+                MessageBox.Show("You have to select a driver");
             }
         }
 
@@ -76,16 +90,24 @@ namespace Lab1
         {
             if (dataGridView2.SelectedRows.Count > 0)
             {
-                string registrationNr = (string)dataGridView2.SelectedRows[0].Cells[0].Value;
-                SqlCommand command = new SqlCommand("DELETE FROM Masini WHERE nrInmatriculare = @rp", sqlConnection);
-                command.Parameters.AddWithValue("@rp", registrationNr);
-
-                dataAdapter.DeleteCommand = command;
-                dataAdapter.DeleteCommand.ExecuteNonQuery();
-                dataSetChild.Clear();
-                dataAdapter.Fill(dataSetChild);
-                dataGridView2.DataSource = dataSetChild.Tables[0];
-                MessageBox.Show("The car with registration plate: " + registrationNr + " succesfully deleted");
+                try
+                {
+                    string registrationNr = (string)dataGridView2.SelectedRows[0].Cells[0].Value;
+                    SqlCommand command = new SqlCommand("DELETE FROM Masini WHERE nrInmatriculare = @rp", sqlConnection);
+                    command.Parameters.AddWithValue("@rp", registrationNr);
+                    dataAdapter.DeleteCommand = command;
+                    dataAdapter.DeleteCommand.ExecuteNonQuery();
+                    dataSetChild.Clear();
+                    dataAdapter.Fill(dataSetChild);
+                    dataGridView2.DataSource = dataSetChild.Tables[0];
+                    MessageBox.Show("The car with registration plate: " + registrationNr + " succesfully deleted");
+                }catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }else
+            {
+                MessageBox.Show("You have to select a car");
             }
         }
 
@@ -95,34 +117,48 @@ namespace Lab1
             {
                 if (textBox1.TextLength != 0 && textBox2.TextLength != 0 && textBox3.TextLength != 0 && textBox4.TextLength != 0 && textBox5.TextLength != 0)
                 {
-                    string registrationNumber = textBox1.Text;
-                    string brand = textBox2.Text;
-                    int boxesCapacity = int.Parse(textBox3.Text);
-                    string fuel = textBox4.Text;
-                    int mileage = int.Parse(textBox5.Text);
-                    int idSofer = (int)dataGridView1.SelectedRows[0].Cells[0].Value;
-                    SqlCommand command = new SqlCommand("INSERT INTO Masini Values(@rp,@brand,@capacity,@fuel,@mileage,@driver)", sqlConnection);
-                    command.Parameters.AddWithValue("@rp", registrationNumber);
-                    command.Parameters.AddWithValue("@brand", brand);
-                    command.Parameters.AddWithValue("@capacity", boxesCapacity);
-                    command.Parameters.AddWithValue("@fuel", fuel);
-                    command.Parameters.AddWithValue("@mileage", mileage);
-                    command.Parameters.AddWithValue("@driver", idSofer);
+                    try
+                    {
+                        string registrationNumber = textBox1.Text;
+                        string brand = textBox2.Text;
+                        int boxesCapacity = int.Parse(textBox3.Text);
+                        string fuel = textBox4.Text;
+                        int mileage = int.Parse(textBox5.Text);
+                        int idSofer = (int)dataGridView1.SelectedRows[0].Cells[0].Value;
+                        SqlCommand command = new SqlCommand("INSERT INTO Masini Values(@rp,@brand,@capacity,@fuel,@mileage,@driver)", sqlConnection);
+                        command.Parameters.AddWithValue("@rp", registrationNumber);
+                        command.Parameters.AddWithValue("@brand", brand);
+                        command.Parameters.AddWithValue("@capacity", boxesCapacity);
+                        command.Parameters.AddWithValue("@fuel", fuel);
+                        command.Parameters.AddWithValue("@mileage", mileage);
+                        command.Parameters.AddWithValue("@driver", idSofer);
 
-                    dataAdapter.InsertCommand = command;
-                    dataAdapter.InsertCommand.ExecuteNonQuery();
-                    dataSetChild.Clear();
-                    dataAdapter.Fill(dataSetChild);
-                    dataGridView2.DataSource = dataSetChild.Tables[0];
+                        dataAdapter.InsertCommand = command;
+                        dataAdapter.InsertCommand.ExecuteNonQuery();
+                        dataSetChild.Clear();
+                        dataAdapter.Fill(dataSetChild);
+                        dataGridView2.DataSource = dataSetChild.Tables[0];
 
-                    textBox1.Clear();
-                    textBox2.Clear();
-                    textBox3.Clear();
-                    textBox4.Clear();
-                    textBox5.Clear();
+                        textBox1.Clear();
+                        textBox2.Clear();
+                        textBox3.Clear();
+                        textBox4.Clear();
+                        textBox5.Clear();
 
-                    MessageBox.Show("New car succesfully added");
+                        MessageBox.Show("New car succesfully added");
+                    }catch(Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
                 }
+                else
+                {
+                    MessageBox.Show("You have to complete all the text fields");
+                }
+            }
+            else
+            {
+                MessageBox.Show("You have to select a driver");
             }
         }
 
@@ -130,16 +166,22 @@ namespace Lab1
         {
             if (dataGridView1.SelectedRows.Count > 0)
             {
-                if (sqlConnection.State != ConnectionState.Open)
-                    sqlConnection.Open();
-                DataGridViewRow row = dataGridView1.SelectedRows[0];
-                int idSofer = (int)row.Cells[0].Value;
-                SqlCommand selectCommand = new SqlCommand("SELECT * FROM Masini WHERE idSofer = @idS", sqlConnection);
-                selectCommand.Parameters.AddWithValue("@idS", idSofer);
-                dataAdapter.SelectCommand = selectCommand;
-                dataSetChild.Clear();
-                dataAdapter.Fill(dataSetChild);
-                dataGridView2.DataSource = dataSetChild.Tables[0];
+                try
+                {
+                    if (sqlConnection.State != ConnectionState.Open)
+                        sqlConnection.Open();
+                    DataGridViewRow row = dataGridView1.SelectedRows[0];
+                    int idSofer = (int)row.Cells[0].Value;
+                    SqlCommand selectCommand = new SqlCommand("SELECT * FROM Masini WHERE idSofer = @idS", sqlConnection);
+                    selectCommand.Parameters.AddWithValue("@idS", idSofer);
+                    dataAdapter.SelectCommand = selectCommand;
+                    dataSetChild.Clear();
+                    dataAdapter.Fill(dataSetChild);
+                    dataGridView2.DataSource = dataSetChild.Tables[0];
+                }catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
 
