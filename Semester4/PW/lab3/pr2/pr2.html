@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Formular Validare</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Formular de completat</h2>
+  <form id="formular" onsubmit="return valideazaFormular();">
+    <label for="nume">Nume:</label>
+    <input type="text" id="nume" name="nume">
+
+    <label for="dataNasterii">Data nașterii:</label>
+    <input type="date" id="dataNasterii" name="dataNasterii">
+
+    <label for="varsta">Vârstă:</label>
+    <input type="number" id="varsta" name="varsta">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <button type="submit">Trimite</button>
+  </form>
+
+  <div id="mesaj"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
