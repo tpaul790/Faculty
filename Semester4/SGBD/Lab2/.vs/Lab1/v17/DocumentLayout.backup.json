@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{70FF3454-F6A4-4A72-A87A-5FDB60CFF1F8}|Lab1\\Lab1.csproj|solutionrelative:lab1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70FF3454-F6A4-4A72-A87A-5FDB60CFF1F8}|Lab1\\Lab1.csproj|c:\\users\\user\\desktop\\github_paul\\faculty\\semester4\\sgbd\\lab2\\lab1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{70FF3454-F6A4-4A72-A87A-5FDB60CFF1F8}|Lab1\\Lab1.csproj|C:\\Users\\User\\Desktop\\GitHub_Paul\\Faculty\\Semester4\\SGBD\\Lab2\\lab1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70FF3454-F6A4-4A72-A87A-5FDB60CFF1F8}|Lab1\\Lab1.csproj|solutionrelative:lab1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -53,7 +53,7 @@
               "RelativeDocumentMoniker": "Lab1\\Form1.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\GitHub_Paul\\Faculty\\Semester4\\SGBD\\Lab2\\Lab1\\Form1.cs",
               "RelativeToolTip": "Lab1\\Form1.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAqwHEAAABMAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAwHEAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-08T09:28:51.802Z",
               "IsPinned": true,
@@ -69,8 +69,7 @@
               "RelativeToolTip": "Lab1\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T12:30:53.977Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T12:30:53.977Z"
             },
             {
               "$type": "Document",
@@ -80,7 +79,7 @@
               "RelativeDocumentMoniker": "Lab1\\App.config",
               "ToolTip": "C:\\Users\\User\\Desktop\\GitHub_Paul\\Faculty\\Semester4\\SGBD\\Lab2\\Lab1\\App.config*",
               "RelativeToolTip": "Lab1\\App.config*",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2025-04-03T11:01:08.532Z",
               "EditorCaption": ""
