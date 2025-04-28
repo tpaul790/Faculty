@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+  }
+  table {
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  td {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #000;
+    font-size: 24px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #fff;
+    cursor: pointer;
+    user-select: none;
+  }
+  td.revealed {
+    background-color: #a0e7a0;
+    cursor: default;
+  }
+  td.hidden {
+    background-color: #dddddd;
+  }
