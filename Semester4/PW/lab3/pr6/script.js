@@ -85,12 +85,12 @@ const n = 4;
       swap(emptyRow, emptyCol, newRow, newCol);
       emptyRow = newRow;
       emptyCol = newCol;
-    //   renderMatrix();
+      // renderMatrix();
       renderMatrixImage();
     }
   });
 
   generateMatrix();
-//   renderMatrix();
+  // renderMatrix();
   renderMatrixImage();
 
