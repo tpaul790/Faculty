@@ -87,7 +87,7 @@ public class CeoMainPageController implements Observer<ChangeEvent> {
                 service.saveTask(description, LocalDateTime.now());
                 taskDescription.clear();
                 initTasks();
-            }catch (RepoException e) {
+            }catch (ServiceException e) {
                 MessageAlert.showErrorMessage(stage,e.getMessage());
             }
         }else{

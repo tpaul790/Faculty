@@ -39,7 +39,7 @@ public class TaskRepositoryDB implements ITaskRepository {
         logger.info("Finding all tasks");
         Connection connection = jdbcUtils.getConnection();
         List<Task> tasks = new ArrayList<>();
-        try(PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM Tasks where solveTime ISNULL")) {
+        try(PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM Tasks where solveTime ISNULL and assignedEmployeeId ISNULL")) {
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
                 Integer id = resultSet.getInt("id");
@@ -108,5 +108,19 @@ public class TaskRepositoryDB implements ITaskRepository {
         }
         logger.info("Task: "+task+ " - updated successfully");
         return Optional.empty();
+    }
+
+    @Override
+    public void setAllAssignedIdToNull(Integer id) {
+        logger.info("Set to null the assigned employee id where assigned id =: " + id);
+        Connection connection = jdbcUtils.getConnection();
+        try(PreparedStatement preparedStatement = connection.prepareStatement("update Tasks set assignedEmployeeId = NULL where assignedEmployeeId = ?")){
+            preparedStatement.setInt(1, id);
+            preparedStatement.executeUpdate();
+        }catch (SQLException e){
+            logger.error(e);
+            System.out.println("Updating tasks");
+        }
+        logger.info("Tasks updated successfully");
     }
 }

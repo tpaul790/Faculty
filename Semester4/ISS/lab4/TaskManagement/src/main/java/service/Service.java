@@ -35,10 +35,14 @@ public class Service implements Observable<ChangeEvent> {
         return employeeRepository.findByUsername(username);
     }
 
-    public void saveTask(String description, LocalDateTime createTime) throws RepoException {
+    public void saveTask(String description, LocalDateTime createTime) throws ServiceException {
         Task task = new Task(description);
         task.setCreateTime(createTime);
-        taskRepository.save(task);
+        try{
+            taskRepository.save(task);
+        }catch (RepoException e){
+            throw new ServiceException(e.getMessage());
+        }
     }
 
     public List<Task> findAllTasks() {
@@ -70,6 +74,7 @@ public class Service implements Observable<ChangeEvent> {
     }
 
     public void logOut(Employee employee) {
+        taskRepository.setAllAssignedIdToNull(employee.getId());
         notify(new ChangeEvent(EventType.EMPLOYEE_LOGGED_OUT, employee));
     }
 
