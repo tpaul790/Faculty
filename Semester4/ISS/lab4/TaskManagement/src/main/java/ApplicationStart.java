@@ -9,8 +9,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import repository.EmployeeRepositoryDB;
-import repository.TaskRepositoryDB;
+import repository.*;
 import service.Service;
 
 import java.io.IOException;
@@ -37,14 +36,16 @@ public class ApplicationStart extends Application {
         Validator<Employee> employeeValidator = new EmployeeValidator();
         Validator<Task> taskValidator = new TaskValidator();
 
-        EmployeeRepositoryDB empRepo = new EmployeeRepositoryDB(properties,employeeValidator);
-        TaskRepositoryDB taskRepo = new TaskRepositoryDB(properties,taskValidator);
+//        IEmployeeRepository empRepo = new EmployeeRepositoryDB(properties,employeeValidator);
+//        ITaskRepository taskRepo = new TaskRepositoryDB(properties,taskValidator);
+        IEmployeeRepository empRepo = new EmployeeHibernateRepository();
+        ITaskRepository taskRepo = new TaskHibernateRepository();
 
         Service service = new Service(empRepo, taskRepo);
 
         List<Employee> employees = service.findAllEmployees();
         System.out.println(employees.size());
-        for(int i = 0 ; i < employees.size() + 1; i++){
+        for(int i = 0 ; i < employees.size(); i++){
             FXMLLoader fxmlLoader = new FXMLLoader();
             fxmlLoader.setLocation(Main.class.getResource("login-view.fxml"));
             Parent root = fxmlLoader.load();

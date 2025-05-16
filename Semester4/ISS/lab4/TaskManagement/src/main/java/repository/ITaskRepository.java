@@ -1,12 +1,8 @@
 package repository;
 
+import domain.Employee;
 import domain.Task;
-import domain.validator.RepoException;
-
-import java.util.Optional;
 
 public interface ITaskRepository extends Repository<Integer, Task> {
-    Optional<Task> update(Task task) throws RepoException;
-
-    void setAllAssignedIdToNull(Integer id);
+    void setAllAssignedIdToNull(Employee employee);
 }

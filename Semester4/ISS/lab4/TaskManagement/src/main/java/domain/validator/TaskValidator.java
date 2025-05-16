@@ -1,5 +1,6 @@
 package domain.validator;
 
+import domain.Employee;
 import domain.Task;
 
 import java.time.LocalDateTime;
@@ -11,7 +12,7 @@ public class TaskValidator extends Validator<Task> {
         StringBuilder errors = new StringBuilder();
         errors.append(validateDescription(entity.getDescription()));
         errors.append("\n");
-        errors.append(validateAssignedEmployeeId(entity.getAssignetEmployeeId()));
+        errors.append(validateAssignedEmployee(entity.getAssignetEmployee()));
         errors.append("\n");
         errors.append(validateDates(entity.getCreateTime(),entity.getSolveTime()));
         return errors.toString();
@@ -27,10 +28,10 @@ public class TaskValidator extends Validator<Task> {
         return "";
     }
 
-    private String validateAssignedEmployeeId(Integer assignedEmployeeId) {
-        if (assignedEmployeeId == null)
+    private String validateAssignedEmployee(Employee assignedEmployee) {
+        if (assignedEmployee == null)
             return "";
-        if(assignedEmployeeId < 0)
+        if(assignedEmployee.getId() < 0)
             return "The id of the assigned employee can not be negative";
         return "";
     }

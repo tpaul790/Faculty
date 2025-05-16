@@ -89,7 +89,7 @@ public class EmployeeMainPageController implements Observer<ChangeEvent>{
     @Override
     public void update(ChangeEvent event) {
         if(event.getEventType() == EventType.SEND_TASK){
-            if(employee.getId().equals(event.getTask().getAssignetEmployeeId())){
+            if(employee.getId().equals(event.getTask().getAssignetEmployee().getId())){
                 MessageAlert.showSuccesMessage(stage,"You have received a task");
                 model.add(event.getTask());
             }

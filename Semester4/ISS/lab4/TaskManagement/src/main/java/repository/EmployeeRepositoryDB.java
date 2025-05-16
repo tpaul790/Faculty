@@ -124,4 +124,14 @@ public class EmployeeRepositoryDB implements IEmployeeRepository {
         logger.info("Employee: "+entity+ " - saved successfully");
         return Optional.empty();
     }
+
+    @Override
+    public Optional<Employee> update(Employee entity) throws RepoException {
+        return Optional.empty();
+    }
+
+    @Override
+    public void delete(Integer integer) throws RepoException {
+
+    }
 }

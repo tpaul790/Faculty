@@ -1,10 +1,24 @@
 package domain;
 
-public class Employee extends Entity<Integer> {
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "Employees")
+public class Employee implements Identity<Integer> {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+    @Column(name = "name")
     private String name;
+    @Column(name = "username")
     private String username;
+    @Column(name = "password")
     private String password;
+    @Enumerated(EnumType.STRING)
+    @Column(name = "type")
     private EmployeeType type;
+
+    public Employee() {}
 
     public Employee(String name, String username, String password) {
         this.name = name;
@@ -43,5 +57,15 @@ public class Employee extends Entity<Integer> {
 
     public void setType(EmployeeType type) {
         this.type = type;
+    }
+
+    @Override
+    public Integer getId() {
+        return id;
+    }
+
+    @Override
+    public void setId(Integer integer) {
+        id = integer;
     }
 }

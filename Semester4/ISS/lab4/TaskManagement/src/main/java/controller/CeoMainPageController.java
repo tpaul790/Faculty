@@ -85,6 +85,7 @@ public class CeoMainPageController implements Observer<ChangeEvent> {
             String description = taskDescription.getText();
             try {
                 service.saveTask(description, LocalDateTime.now());
+                MessageAlert.showSuccesMessage(stage,"Task succesfully created");
                 taskDescription.clear();
                 initTasks();
             }catch (ServiceException e) {
@@ -131,7 +132,6 @@ public class CeoMainPageController implements Observer<ChangeEvent> {
     }
 
     public void onLogOutButtonClick(ActionEvent actionEvent) throws IOException {
-        service.logOut(employee);
         service.removeObserver(this);
         FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(getClass().getResource("/login-view.fxml"));

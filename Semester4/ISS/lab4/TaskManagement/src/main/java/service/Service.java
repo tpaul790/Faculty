@@ -74,12 +74,12 @@ public class Service implements Observable<ChangeEvent> {
     }
 
     public void logOut(Employee employee) {
-        taskRepository.setAllAssignedIdToNull(employee.getId());
+        taskRepository.setAllAssignedIdToNull(employee);
         notify(new ChangeEvent(EventType.EMPLOYEE_LOGGED_OUT, employee));
     }
 
     public void sendTask(Task task, Employee employee) throws ServiceException {
-        task.setAssignetEmployeeId(employee.getId());
+        task.setAssignetEmployee(employee);
         try {
             Optional<Task> op = updateTask(task);
             if(op.isPresent())

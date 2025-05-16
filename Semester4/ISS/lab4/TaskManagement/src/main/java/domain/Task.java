@@ -1,12 +1,28 @@
 package domain;
 
+import jakarta.persistence.*;
+
 import java.time.LocalDateTime;
 
-public class Task extends Entity<Integer> {
+@Entity
+@Table(name = "Tasks")
+public class Task implements Identity<Integer> {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+    @Column(name = "description")
     private String description;
-    private Integer assignetEmployeeId;
+    @ManyToOne
+    @JoinColumn(name = "assignedEmployeeId")
+    private Employee assignedEmployee;
+    @Column(name = "createTime")
+    @Convert(converter = LocalDateTimeToStringConverter.class)
     private LocalDateTime createTime;
+    @Column(name = "solveTime")
+    @Convert(converter = LocalDateTimeToStringConverter.class)
     private LocalDateTime solveTime;
+
+    public Task() {}
 
     public Task(String description){
         this.description = description;
@@ -28,12 +44,12 @@ public class Task extends Entity<Integer> {
         this.createTime = createTime;
     }
 
-    public Integer getAssignetEmployeeId() {
-        return assignetEmployeeId;
+    public Employee getAssignetEmployee() {
+        return assignedEmployee;
     }
 
-    public void setAssignetEmployeeId(Integer assignetEmployeeId) {
-        this.assignetEmployeeId = assignetEmployeeId;
+    public void setAssignetEmployee(Employee assignetEmployee) {
+        this.assignedEmployee = assignetEmployee;
     }
 
     public LocalDateTime getSolveTime() {
@@ -47,5 +63,15 @@ public class Task extends Entity<Integer> {
     @Override
     public String toString() {
         return "Task: " + description;
+    }
+
+    @Override
+    public Integer getId() {
+        return id;
+    }
+
+    @Override
+    public void setId(Integer integer) {
+        id = integer;
     }
 }

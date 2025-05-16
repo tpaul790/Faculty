@@ -95,7 +95,7 @@ public class TaskRepositoryDB implements ITaskRepository {
         Connection connection = jdbcUtils.getConnection();
         int result = 0;
         try(PreparedStatement preparedStatement = connection.prepareStatement("update Tasks set assignedEmployeeId = ?, solveTime = ? where id = ?")){
-            preparedStatement.setInt(1,task.getAssignetEmployeeId());
+            preparedStatement.setInt(1,task.getAssignetEmployee().getId());
             preparedStatement.setString(2,task.getSolveTime() == null ? null : task.getSolveTime().toString());
             preparedStatement.setInt(3,task.getId());
             result = preparedStatement.executeUpdate();
@@ -111,11 +111,16 @@ public class TaskRepositoryDB implements ITaskRepository {
     }
 
     @Override
-    public void setAllAssignedIdToNull(Integer id) {
-        logger.info("Set to null the assigned employee id where assigned id =: " + id);
+    public void delete(Integer integer) throws RepoException {
+
+    }
+
+    @Override
+    public void setAllAssignedIdToNull(Employee employee) {
+        logger.info("Set to null the assigned employee id where assigned id =: " + employee.getId());
         Connection connection = jdbcUtils.getConnection();
         try(PreparedStatement preparedStatement = connection.prepareStatement("update Tasks set assignedEmployeeId = NULL where assignedEmployeeId = ?")){
-            preparedStatement.setInt(1, id);
+            preparedStatement.setInt(1, employee.getId());
             preparedStatement.executeUpdate();
         }catch (SQLException e){
             logger.error(e);
