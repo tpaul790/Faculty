@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Tree View Directoare</title>
+  <style>
+    ul {
+      list-style-type: none;
+      padding-left: 20px;
+    }
+    li {
+      cursor: pointer;
+    }
+    .directory::before {
+      content: "📁 ";
+    }
+    .file::before {
+      content: "📄 ";
+    }
+    pre {
+      background: #f0f0f0;
+      padding: 10px;
+      white-space: pre-wrap;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h2>Structura directoare</h2>
+  <ul id="tree"></ul>
+
+  <h3>Conținut fișier:</h3>
+  <pre id="fileContent">Selectează un fișier din arbore.</pre>
+
+  <script src="treeview.js"></script>
+</body>
+</html>

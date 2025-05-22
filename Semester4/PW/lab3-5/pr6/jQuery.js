@@ -92,13 +92,13 @@ $(document).on('keydown', function (e) {
     swap(emptyRow, emptyCol, newRow, newCol);
     emptyRow = newRow;
     emptyCol = newCol;
-    // renderMatrixImage();
-    renderMatrix();
+    renderMatrixImage();
+    // renderMatrix();
   }
 });
 
 $(document).ready(function () {
   generateMatrix();
-  renderMatrix();
-//   renderMatrixImage();
+  // renderMatrix();
+  renderMatrixImage();
 });

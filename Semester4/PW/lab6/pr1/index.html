@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Statii Tren</title>
+  <style>
+    li:hover{
+        cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Selectează o rută de tren</h2>
+
+  <label for="plecare">Stație de plecare:</label>
+  <ul id="plecare">
+    <li onclick="getDestinations('Bistrita')">Bistrita</li>
+    <li onclick="getDestinations('Cluj')">Cluj</li>
+    <li onclick="getDestinations('Bucuresti')">Bucuresti</li>
+  </ul>
+
+  <br><br>
+
+  <label for="sosire">Stație de sosire:</label>
+  <ul id="sosire">
+    <li>-- Selectează stația de plecare mai întâi --</li>
+  </ul>
+
+  <script>
+function getDestinations(plecare) {
+  const sosiri = document.getElementById("sosire");
+  sosiri.innerHTML = '<li>Se încarcă...</li>';
+
+  if (plecare !== "") {
+    const xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) { 
+        sosiri.innerHTML = '';    
+        if (xhr.status === 200) {
+          const destinatii = JSON.parse(xhr.responseText);
+          if (destinatii.length > 0) {
+            destinatii.forEach(function (oras) {
+              const li = document.createElement("li");
+              li.textContent = oras;
+              sosiri.appendChild(li);
+            });
+          } else {
+            sosiri.innerHTML = '<li>Nu există destinații disponibile</li>';
+          }
+        } else {
+          sosiri.innerHTML = '<li>Eroare la încărcare</li>';
+        }
+      }
+    };
+    xhr.open("GET", "script.php?plecare=" + encodeURIComponent(plecare), true);
+    xhr.send();
+  } else {
+    sosiri.innerHTML = '<li>-- Selectează stația de plecare mai întâi --</li>';
+  }
+}
+  </script>
+</body>
+</html>

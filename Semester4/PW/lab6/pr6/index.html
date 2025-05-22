@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Filtru Notebook-uri</title>
+</head>
+<body>
+  <h2>Filtru notebook-uri</h2>
+
+  <label>Producător:
+    <select id="producator" onchange="fetchFiltered()">
+      <option value="">-- Toți --</option>
+      <option>Dell</option>
+      <option>HP</option>
+      <option>Lenovo</option>
+      <option>Asus</option>
+    </select>
+  </label>
+
+  <label>Procesor:
+    <select id="procesor" onchange="fetchFiltered()">
+      <option value="">-- Toți --</option>
+      <option>Intel i5</option>
+      <option>Intel i7</option>
+      <option>AMD Ryzen 5</option>
+    </select>
+  </label>
+
+  <label>Memorie:
+    <select id="memorie" onchange="fetchFiltered()">
+      <option value="">-- Toți --</option>
+      <option>8GB</option>
+      <option>16GB</option>
+    </select>
+  </label>
+
+  <label>HDD:
+    <select id="hdd" onchange="fetchFiltered()">
+      <option value="">-- Toți --</option>
+      <option>256GB</option>
+      <option>512GB</option>
+      <option>1TB</option>
+    </select>
+  </label>
+
+  <label>Placă video:
+    <select id="placa_video" onchange="fetchFiltered()">
+      <option value="">-- Toate --</option>
+      <option>Intel UHD</option>
+      <option>NVIDIA GTX 1650</option>
+      <option>Radeon Vega</option>
+      <option>Intel Iris</option>
+    </select>
+  </label>
+
+  <h3>Rezultate:</h3>
+  <ul id="rezultate"></ul>
+
+  <script>
+   function fetchFiltered() {
+    const params = new URLSearchParams({
+      producator: document.getElementById('producator').value,
+      procesor: document.getElementById('procesor').value,
+      memorie: document.getElementById('memorie').value,
+      hdd: document.getElementById('hdd').value,
+      placa_video: document.getElementById('placa_video').value
+    });
+
+    const req = new XMLHttpRequest();
+    req.onreadystatechange = function () {
+      if (req.readyState === 4 && req.status === 200) {
+        const ul = document.getElementById('rezultate');
+        ul.innerHTML = ''; // curăță lista anterioară
+
+        const data = JSON.parse(req.responseText);
+        if (data.length === 0) {
+          ul.innerHTML = '<li>Nu există rezultate</li>';
+        } else {
+          data.forEach((n) => {
+            const li = document.createElement('li');
+            li.textContent = `${n.producator}, ${n.procesor}, ${n.memorie}, ${n.hdd}, ${n.placa_video}`;
+            ul.appendChild(li);
+          });
+        }
+      }
+    };
+
+    req.open("GET", `server.php?${params.toString()}`, true);
+    req.send();
+  }
+
+  // Apelează inițial la pornire
+  window.onload = fetchFiltered;
+  </script>
+</body>
+</html>

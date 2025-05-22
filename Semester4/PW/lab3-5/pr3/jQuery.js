@@ -31,8 +31,8 @@
   }
 
   function creeazaTabla() {
-    valori = genereazaValori();
-    // valori = genereazaImagini();
+    // valori = genereazaValori();
+    valori = genereazaImagini();
     let index = 0;
 
     const $tabla = $("#tabla");
