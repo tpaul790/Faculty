@@ -73,7 +73,6 @@ BEGIN
         IF @@TRANCOUNT > 0
             ROLLBACK TRAN;
 
-        -- Logăm eroarea într-o tranzacție nouă, sigură
         BEGIN TRY
             INSERT INTO LogTable(info, time) VALUES ('An error occurs', GETDATE());
             INSERT INTO LogTable(info, time) VALUES ('Transaction rolled back', GETDATE());
@@ -100,7 +99,7 @@ select * from Students
 select * from Courses
 select * from Grades
 
-delete from Students
+delete from Students where id > 26
 delete from Courses
 delete from Grades
 delete from LogTable;

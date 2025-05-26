@@ -16,27 +16,28 @@ BEGIN
 	DECLARE @idS INT;
 	DECLARE @idC INT;
 	--TRANZACTIA 1
-	BEGIN TRAN
-		BEGIN TRY
-			IF (dbo.validateString(@studentName) = 0)
-				THROW 50000, 'Invalid student name', 1;
-			IF (dbo.validateString(@university) = 0)
-				THROW 50001, 'Invalid university', 1;
-			IF (dbo.validareEmail(@email) = 0)
-				THROW 50002, 'Invalid email', 1;
-			IF (dbo.validateString(@specialization) = 0)
-				THROW 50003, 'Invalid specialization', 1;
+	
+	BEGIN TRY
+			BEGIN TRAN
+				IF (dbo.validateString(@studentName) = 0)
+					THROW 50000, 'Invalid student name', 1;
+				IF (dbo.validateString(@university) = 0)
+					THROW 50001, 'Invalid university', 1;
+				IF (dbo.validareEmail(@email) = 0)
+					THROW 50002, 'Invalid email', 1;
+				IF (dbo.validateString(@specialization) = 0)
+					THROW 50003, 'Invalid specialization', 1;
 		
-			INSERT INTO LogTable(info, time) VALUES ('Student successfully validated', GETDATE());
+				INSERT INTO LogTable(info, time) VALUES ('Student successfully validated', GETDATE());
 
-			INSERT INTO Students(name, email, university, specialization) 
-			VALUES (@studentName, @email, @university, @specialization);
+				INSERT INTO Students(name, email, university, specialization) 
+				VALUES (@studentName, @email, @university, @specialization);
 
-			SET @idS = SCOPE_IDENTITY();
+				SET @idS = SCOPE_IDENTITY();
 
 			COMMIT TRAN
-			INSERT INTO LogTable(info, time) VALUES ('Student successfully inserted', GETDATE());
-			SELECT 'Student successfully inserted' as Tranzaction1;
+				INSERT INTO LogTable(info, time) VALUES ('Student successfully inserted', GETDATE());
+				SELECT 'Student successfully inserted' as Tranzaction1;
 		END TRY
 
 		BEGIN CATCH
@@ -162,7 +163,7 @@ select * from Students
 select * from Courses
 select * from Grades
 
-delete from Students
+delete from Students where id > 26;
 delete from Courses
 delete from Grades
 delete from LogTable;

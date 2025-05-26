@@ -8,7 +8,7 @@ begin
 end;
 go;
 
-create FUNCTION validareEmail(@email VARCHAR(100))
+create function validareEmail(@email VARCHAR(100))
 RETURNS BIT
 AS
 BEGIN
