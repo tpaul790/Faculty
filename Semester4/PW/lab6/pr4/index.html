@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>X și 0</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    td {
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 32px;
+      border: 1px solid black;
+      cursor: pointer;
+    }
+    td.disabled {
+      pointer-events: none;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <h2>Joc X și 0</h2>
+  <div id="status">Se decide cine începe...</div>
+  <table id="board"></table>
+
+  <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Mutare Elemente între Liste</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <select id="lista1" multiple ondblclick="mutaElement(this, 'lista2')">
+      <option>Element 1</option>
+      <option>Element 2</option>
+      <option>Element 3</option>
+      <option>Element 4</option>
+    </select>
+
+    <select id="lista2" multiple ondblclick="mutaElement(this, 'lista1')">
+      <option>Element A</option>
+      <option>Element B</option>
+      <option>Element C</option>
+    </select>
+  </div>
+
+  <script>
+    function mutaElement(sursa, destinatieId) {
+      const $sursa = $(sursa);
+      const $destinatie = $('#' + destinatieId);
+
+      $sursa.find('option:selected').each(function () {
+        const $optiune = $(this);
+        const $nouOpt = $('<option>', {
+          text: $optiune.text(),
+          value: $optiune.val()
+        });
+
+        $destinatie.append($nouOpt);
+        $optiune.remove();
+      });
+    }
+  </script>
+</body>
+</html>
