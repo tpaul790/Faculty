@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Căutare Trenuri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f2f2f2;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: auto;
+        }
+        input, select {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 8px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="checkbox"] {
+            width: auto;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<form action="script.php" method="GET">
+    <label for="plecare">Localitate plecare:</label>
+    <input type="text" name="plecare" id="plecare" required>
+
+    <label for="sosire">Localitate sosire:</label>
+    <input type="text" name="sosire" id="sosire" required>
+
+    <label>
+        <input type="checkbox" name="legaturi" value="1">
+        Afișează și curse cu legături
+    </label>
+
+    <input type="submit" value="Caută trenuri">
+</form>
+
+</body>
+</html>
