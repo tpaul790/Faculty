@@ -1,0 +1,10 @@
+rootProject.name = 'GasesteAnimalul'
+include 'Model'
+include 'Persistence'
+include 'Client'
+include 'Server'
+include 'Services'
+include 'Network'
+include 'Shared'
+include 'RestServices'
+

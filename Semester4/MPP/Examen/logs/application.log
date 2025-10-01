@@ -1,0 +1,341 @@
+2025-06-26 09:16:54 [main] INFO  PlayerRepo - Finding player with nickname 'paul'
+2025-06-26 09:16:54 [main] DEBUG logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2025-06-26 09:16:56 [main] INFO  PlayerRepo - Found player with id 1
+2025-06-26 09:17:28 [main] INFO  PlayerRepo - Saving configuration ro.mpp2025.Configuration@6989da5e
+2025-06-26 09:17:28 [main] DEBUG logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2025-06-26 09:17:29 [main] INFO  PlayerRepo - Configuration successfully saved with id 1
+2025-06-26 09:17:29 [main] INFO  PlayerRepo - Finding player with nickname 'paul'
+2025-06-26 09:17:30 [main] INFO  PlayerRepo - Found player with id 1
+2025-06-26 09:42:47 [main] INFO  PlayerRepo - Saving configuration ro.mpp2025.Configuration@6989da5e
+2025-06-26 09:42:47 [main] DEBUG logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2025-06-26 09:42:48 [main] INFO  PlayerRepo - Configuration successfully saved with id 1
+2025-06-26 09:42:48 [main] INFO  PlayerRepo - Finding player with nickname 'paul'
+2025-06-26 09:42:49 [main] INFO  PlayerRepo - Found player with id 1
+2025-06-26 09:51:43 [main] INFO  StartServer - Server properties set. {chat.server.port=55556} 
+2025-06-26 09:51:43 [main] DEBUG StartServer - Starting server on port: 55556
+2025-06-26 09:51:43 [main] DEBUG AbstractConcurrentServer - Concurrent AbstractServer created
+2025-06-26 09:51:43 [main] INFO  ConcurrentServer - Concurrent Server created
+2025-06-26 09:51:43 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 09:51:51 [JavaFX Application Thread] DEBUG StartClient - In start
+2025-06-26 09:51:51 [JavaFX Application Thread] INFO  StartClient - Client properties set {server.host=localhost, server.port=55556} 
+2025-06-26 09:51:51 [JavaFX Application Thread] INFO  StartClient - Using server IP localhost
+2025-06-26 09:51:51 [JavaFX Application Thread] INFO  StartClient - Using server port 55556
+2025-06-26 09:51:54 [JavaFX Application Thread] INFO  LogInController - Trying to login
+2025-06-26 09:51:55 [main] INFO  AbstractServer - Client connected ...
+2025-06-26 09:51:55 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 09:51:55 [Thread-0] DEBUG ClientWorker - Login request ...
+2025-06-26 09:51:55 [Thread-0] INFO  ServicesImpl - Trying to login with player: paul
+2025-06-26 09:51:55 [Thread-0] INFO  PlayerRepo - Finding player with nickname 'paul'
+2025-06-26 09:51:55 [Thread-0] DEBUG logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2025-06-26 09:51:56 [Thread-0] INFO  PlayerRepo - Found player with id 1
+2025-06-26 09:51:56 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.LogInResponse@6f809768
+2025-06-26 09:51:56 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.LogInResponse@302373d
+2025-06-26 09:51:56 [JavaFX Application Thread] INFO  LogInController - Successfully logged in
+2025-06-26 09:51:56 [Thread-0] DEBUG ClientWorker - GetConfiguration request ...
+2025-06-26 09:52:32 [main] INFO  StartServer - Server properties set. {chat.server.port=55556} 
+2025-06-26 09:52:32 [main] DEBUG StartServer - Starting server on port: 55556
+2025-06-26 09:52:32 [main] DEBUG AbstractConcurrentServer - Concurrent AbstractServer created
+2025-06-26 09:52:32 [main] INFO  ConcurrentServer - Concurrent Server created
+2025-06-26 09:52:32 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 09:52:38 [JavaFX Application Thread] DEBUG StartClient - In start
+2025-06-26 09:52:38 [JavaFX Application Thread] INFO  StartClient - Client properties set {server.host=localhost, server.port=55556} 
+2025-06-26 09:52:38 [JavaFX Application Thread] INFO  StartClient - Using server IP localhost
+2025-06-26 09:52:38 [JavaFX Application Thread] INFO  StartClient - Using server port 55556
+2025-06-26 09:52:41 [JavaFX Application Thread] INFO  LogInController - Trying to login
+2025-06-26 09:52:41 [main] INFO  AbstractServer - Client connected ...
+2025-06-26 09:52:41 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 09:52:41 [Thread-0] DEBUG ClientWorker - Login request ...
+2025-06-26 09:52:41 [Thread-0] INFO  ServicesImpl - Trying to login with player: paul
+2025-06-26 09:52:41 [Thread-0] INFO  PlayerRepo - Finding player with nickname 'paul'
+2025-06-26 09:52:41 [Thread-0] DEBUG logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2025-06-26 09:52:42 [Thread-0] INFO  PlayerRepo - Found player with id 1
+2025-06-26 09:52:42 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.LogInResponse@498b71ef
+2025-06-26 09:52:42 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.LogInResponse@3265c985
+2025-06-26 09:52:42 [JavaFX Application Thread] INFO  LogInController - Successfully logged in
+2025-06-26 09:52:42 [Thread-0] DEBUG ClientWorker - GetConfiguration request ...
+2025-06-26 09:53:17 [main] INFO  StartServer - Server properties set. {chat.server.port=55556} 
+2025-06-26 09:53:17 [main] DEBUG StartServer - Starting server on port: 55556
+2025-06-26 09:53:17 [main] DEBUG AbstractConcurrentServer - Concurrent AbstractServer created
+2025-06-26 09:53:17 [main] INFO  ConcurrentServer - Concurrent Server created
+2025-06-26 09:53:17 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 09:53:23 [JavaFX Application Thread] DEBUG StartClient - In start
+2025-06-26 09:53:23 [JavaFX Application Thread] INFO  StartClient - Client properties set {server.host=localhost, server.port=55556} 
+2025-06-26 09:53:23 [JavaFX Application Thread] INFO  StartClient - Using server IP localhost
+2025-06-26 09:53:23 [JavaFX Application Thread] INFO  StartClient - Using server port 55556
+2025-06-26 09:53:25 [JavaFX Application Thread] INFO  LogInController - Trying to login
+2025-06-26 09:53:25 [main] INFO  AbstractServer - Client connected ...
+2025-06-26 09:53:25 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 09:53:25 [Thread-0] DEBUG ClientWorker - Login request ...
+2025-06-26 09:53:25 [Thread-0] INFO  ServicesImpl - Trying to login with player: paul
+2025-06-26 09:53:25 [Thread-0] INFO  PlayerRepo - Finding player with nickname 'paul'
+2025-06-26 09:53:25 [Thread-0] DEBUG logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2025-06-26 09:53:27 [Thread-0] INFO  PlayerRepo - Found player with id 1
+2025-06-26 09:53:27 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.LogInResponse@498b71ef
+2025-06-26 09:53:27 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.LogInResponse@3265c985
+2025-06-26 09:53:27 [JavaFX Application Thread] INFO  LogInController - Successfully logged in
+2025-06-26 09:53:27 [Thread-0] DEBUG ClientWorker - GetConfiguration request ...
+2025-06-26 09:54:42 [main] INFO  StartServer - Server properties set. {chat.server.port=55556} 
+2025-06-26 09:54:42 [main] DEBUG StartServer - Starting server on port: 55556
+2025-06-26 09:54:42 [main] DEBUG AbstractConcurrentServer - Concurrent AbstractServer created
+2025-06-26 09:54:42 [main] INFO  ConcurrentServer - Concurrent Server created
+2025-06-26 09:54:42 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 09:54:46 [JavaFX Application Thread] DEBUG StartClient - In start
+2025-06-26 09:54:46 [JavaFX Application Thread] INFO  StartClient - Client properties set {server.host=localhost, server.port=55556} 
+2025-06-26 09:54:46 [JavaFX Application Thread] INFO  StartClient - Using server IP localhost
+2025-06-26 09:54:46 [JavaFX Application Thread] INFO  StartClient - Using server port 55556
+2025-06-26 09:54:49 [JavaFX Application Thread] INFO  LogInController - Trying to login
+2025-06-26 09:54:49 [main] INFO  AbstractServer - Client connected ...
+2025-06-26 09:54:49 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 09:54:49 [Thread-0] DEBUG ClientWorker - Login request ...
+2025-06-26 09:54:49 [Thread-0] INFO  ServicesImpl - Trying to login with player: paul
+2025-06-26 09:54:49 [Thread-0] INFO  PlayerRepo - Finding player with nickname 'paul'
+2025-06-26 09:54:49 [Thread-0] DEBUG logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2025-06-26 09:54:50 [Thread-0] INFO  PlayerRepo - Found player with id 1
+2025-06-26 09:54:50 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.LogInResponse@1ad10e29
+2025-06-26 09:54:50 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.LogInResponse@3265c985
+2025-06-26 09:54:50 [JavaFX Application Thread] INFO  LogInController - Successfully logged in
+2025-06-26 09:54:50 [Thread-0] DEBUG ClientWorker - GetConfiguration request ...
+2025-06-26 09:56:18 [main] INFO  StartServer - Server properties set. {chat.server.port=55556} 
+2025-06-26 09:56:18 [main] DEBUG StartServer - Starting server on port: 55556
+2025-06-26 09:56:18 [main] DEBUG AbstractConcurrentServer - Concurrent AbstractServer created
+2025-06-26 09:56:18 [main] INFO  ConcurrentServer - Concurrent Server created
+2025-06-26 09:56:18 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 09:56:24 [JavaFX Application Thread] DEBUG StartClient - In start
+2025-06-26 09:56:24 [JavaFX Application Thread] INFO  StartClient - Client properties set {server.host=localhost, server.port=55556} 
+2025-06-26 09:56:24 [JavaFX Application Thread] INFO  StartClient - Using server IP localhost
+2025-06-26 09:56:24 [JavaFX Application Thread] INFO  StartClient - Using server port 55556
+2025-06-26 09:56:27 [JavaFX Application Thread] INFO  LogInController - Trying to login
+2025-06-26 09:56:27 [main] INFO  AbstractServer - Client connected ...
+2025-06-26 09:56:27 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 09:56:27 [Thread-0] DEBUG ClientWorker - Login request ...
+2025-06-26 09:56:27 [Thread-0] INFO  ServicesImpl - Trying to login with player: paul
+2025-06-26 09:56:27 [Thread-0] INFO  PlayerRepo - Finding player with nickname 'paul'
+2025-06-26 09:56:27 [Thread-0] DEBUG logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2025-06-26 09:56:29 [Thread-0] INFO  PlayerRepo - Found player with id 1
+2025-06-26 09:56:29 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.LogInResponse@6f809768
+2025-06-26 09:56:29 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.LogInResponse@3265c985
+2025-06-26 09:56:29 [JavaFX Application Thread] INFO  LogInController - Successfully logged in
+2025-06-26 09:56:29 [Thread-0] DEBUG ClientWorker - GetConfiguration request ...
+2025-06-26 09:56:29 [Thread-0] INFO  PlayerRepo - Finding all the players
+2025-06-26 09:56:48 [main] INFO  StartServer - Server properties set. {chat.server.port=55556} 
+2025-06-26 09:56:48 [main] DEBUG StartServer - Starting server on port: 55556
+2025-06-26 09:56:48 [main] DEBUG AbstractConcurrentServer - Concurrent AbstractServer created
+2025-06-26 09:56:48 [main] INFO  ConcurrentServer - Concurrent Server created
+2025-06-26 09:56:48 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 09:56:50 [JavaFX Application Thread] DEBUG StartClient - In start
+2025-06-26 09:56:50 [JavaFX Application Thread] INFO  StartClient - Client properties set {server.host=localhost, server.port=55556} 
+2025-06-26 09:56:50 [JavaFX Application Thread] INFO  StartClient - Using server IP localhost
+2025-06-26 09:56:50 [JavaFX Application Thread] INFO  StartClient - Using server port 55556
+2025-06-26 09:56:53 [JavaFX Application Thread] INFO  LogInController - Trying to login
+2025-06-26 09:56:53 [main] INFO  AbstractServer - Client connected ...
+2025-06-26 09:56:53 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 09:56:53 [Thread-0] DEBUG ClientWorker - Login request ...
+2025-06-26 09:56:53 [Thread-0] INFO  ServicesImpl - Trying to login with player: paul
+2025-06-26 09:56:53 [Thread-0] INFO  PlayerRepo - Finding player with nickname 'paul'
+2025-06-26 09:56:53 [Thread-0] DEBUG logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2025-06-26 09:56:54 [Thread-0] INFO  PlayerRepo - Found player with id 1
+2025-06-26 09:56:54 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.LogInResponse@6f809768
+2025-06-26 09:56:54 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.LogInResponse@3265c985
+2025-06-26 09:56:54 [JavaFX Application Thread] INFO  LogInController - Successfully logged in
+2025-06-26 09:56:54 [Thread-0] DEBUG ClientWorker - GetConfiguration request ...
+2025-06-26 09:56:54 [Thread-0] INFO  PlayerRepo - Finding all the players
+2025-06-26 09:56:54 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.GetConfigurationResponse@6074bec6
+2025-06-26 09:56:54 [Thread-3] DEBUG logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2025-06-26 09:56:54 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.GetConfigurationResponse@1c8900d7
+2025-06-26 09:57:11 [Thread-0] DEBUG ClientWorker - Logout request ...
+2025-06-26 09:57:11 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.OkResponse@26492bf3
+2025-06-26 09:57:11 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.OkResponse@1246970d
+2025-06-26 09:57:11 [Thread-3] ERROR ServicesProxy - Reading error java.net.SocketException: Socket closed
+2025-06-26 10:00:57 [main] INFO  StartServer - Server properties set. {chat.server.port=55556} 
+2025-06-26 10:00:57 [main] DEBUG StartServer - Starting server on port: 55556
+2025-06-26 10:00:57 [main] DEBUG AbstractConcurrentServer - Concurrent AbstractServer created
+2025-06-26 10:00:57 [main] INFO  ConcurrentServer - Concurrent Server created
+2025-06-26 10:00:57 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 10:01:04 [JavaFX Application Thread] DEBUG StartClient - In start
+2025-06-26 10:01:04 [JavaFX Application Thread] INFO  StartClient - Client properties set {server.host=localhost, server.port=55556} 
+2025-06-26 10:01:04 [JavaFX Application Thread] INFO  StartClient - Using server IP localhost
+2025-06-26 10:01:04 [JavaFX Application Thread] INFO  StartClient - Using server port 55556
+2025-06-26 10:01:07 [JavaFX Application Thread] INFO  LogInController - Trying to login
+2025-06-26 10:01:07 [main] INFO  AbstractServer - Client connected ...
+2025-06-26 10:01:07 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 10:01:07 [Thread-0] DEBUG ClientWorker - Login request ...
+2025-06-26 10:01:07 [Thread-0] INFO  ServicesImpl - Trying to login with player: paul
+2025-06-26 10:01:07 [Thread-0] INFO  PlayerRepo - Finding player with nickname 'paul'
+2025-06-26 10:01:07 [Thread-0] DEBUG logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2025-06-26 10:01:08 [Thread-0] INFO  PlayerRepo - Found player with id 1
+2025-06-26 10:01:08 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.LogInResponse@45f095f9
+2025-06-26 10:01:08 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.LogInResponse@69ce210f
+2025-06-26 10:01:08 [JavaFX Application Thread] INFO  LogInController - Successfully logged in
+2025-06-26 10:01:09 [Thread-0] DEBUG ClientWorker - GetConfiguration request ...
+2025-06-26 10:01:09 [Thread-0] INFO  PlayerRepo - Finding all the players
+2025-06-26 10:01:09 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.GetConfigurationResponse@7d10e9ce
+2025-06-26 10:01:09 [Thread-3] DEBUG logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2025-06-26 10:01:09 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.GetConfigurationResponse@35b49f95
+2025-06-26 10:01:16 [Thread-0] DEBUG ClientWorker - Logout request ...
+2025-06-26 10:01:16 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.OkResponse@484f46ce
+2025-06-26 10:01:16 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.OkResponse@7f18f5e7
+2025-06-26 10:01:16 [Thread-3] ERROR ServicesProxy - Reading error java.net.SocketException: Socket closed
+2025-06-26 10:03:39 [main] INFO  StartServer - Server properties set. {chat.server.port=55556} 
+2025-06-26 10:03:39 [main] DEBUG StartServer - Starting server on port: 55556
+2025-06-26 10:03:39 [main] DEBUG AbstractConcurrentServer - Concurrent AbstractServer created
+2025-06-26 10:03:39 [main] INFO  ConcurrentServer - Concurrent Server created
+2025-06-26 10:03:39 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 10:03:45 [JavaFX Application Thread] DEBUG StartClient - In start
+2025-06-26 10:03:45 [JavaFX Application Thread] INFO  StartClient - Client properties set {server.host=localhost, server.port=55556} 
+2025-06-26 10:03:45 [JavaFX Application Thread] INFO  StartClient - Using server IP localhost
+2025-06-26 10:03:45 [JavaFX Application Thread] INFO  StartClient - Using server port 55556
+2025-06-26 10:03:47 [JavaFX Application Thread] INFO  LogInController - Trying to login
+2025-06-26 10:03:47 [main] INFO  AbstractServer - Client connected ...
+2025-06-26 10:03:47 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 10:03:47 [Thread-0] DEBUG ClientWorker - Login request ...
+2025-06-26 10:03:47 [Thread-0] INFO  ServicesImpl - Trying to login with player: paul
+2025-06-26 10:03:47 [Thread-0] INFO  PlayerRepo - Finding player with nickname 'paul'
+2025-06-26 10:03:48 [Thread-0] DEBUG logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2025-06-26 10:03:49 [Thread-0] INFO  PlayerRepo - Found player with id 1
+2025-06-26 10:03:49 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.LogInResponse@6f809768
+2025-06-26 10:03:49 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.LogInResponse@302373d
+2025-06-26 10:03:49 [JavaFX Application Thread] INFO  LogInController - Successfully logged in
+2025-06-26 10:03:49 [Thread-0] DEBUG ClientWorker - GetConfiguration request ...
+2025-06-26 10:03:49 [Thread-0] INFO  PlayerRepo - Finding all the players
+2025-06-26 10:03:49 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.GetConfigurationResponse@6074bec6
+2025-06-26 10:03:49 [Thread-3] DEBUG logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2025-06-26 10:03:49 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.GetConfigurationResponse@4185809a
+2025-06-26 10:03:51 [Thread-0] DEBUG ClientWorker - Logout request ...
+2025-06-26 10:03:51 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.OkResponse@26492bf3
+2025-06-26 10:03:51 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.OkResponse@acfa1a8
+2025-06-26 10:03:51 [Thread-3] ERROR ServicesProxy - Reading error java.net.SocketException: Socket closed
+2025-06-26 10:05:00 [main] INFO  StartServer - Server properties set. {chat.server.port=55556} 
+2025-06-26 10:05:00 [main] DEBUG StartServer - Starting server on port: 55556
+2025-06-26 10:05:00 [main] DEBUG AbstractConcurrentServer - Concurrent AbstractServer created
+2025-06-26 10:05:00 [main] INFO  ConcurrentServer - Concurrent Server created
+2025-06-26 10:05:00 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 10:05:07 [JavaFX Application Thread] DEBUG StartClient - In start
+2025-06-26 10:05:07 [JavaFX Application Thread] INFO  StartClient - Client properties set {server.host=localhost, server.port=55556} 
+2025-06-26 10:05:07 [JavaFX Application Thread] INFO  StartClient - Using server IP localhost
+2025-06-26 10:05:07 [JavaFX Application Thread] INFO  StartClient - Using server port 55556
+2025-06-26 10:05:09 [JavaFX Application Thread] INFO  LogInController - Trying to login
+2025-06-26 10:05:09 [main] INFO  AbstractServer - Client connected ...
+2025-06-26 10:05:09 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 10:05:09 [Thread-0] DEBUG ClientWorker - Login request ...
+2025-06-26 10:05:09 [Thread-0] INFO  ServicesImpl - Trying to login with player: paul
+2025-06-26 10:05:09 [Thread-0] INFO  PlayerRepo - Finding player with nickname 'paul'
+2025-06-26 10:05:09 [Thread-0] DEBUG logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2025-06-26 10:05:10 [Thread-0] INFO  PlayerRepo - Found player with id 1
+2025-06-26 10:05:10 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.LogInResponse@6f809768
+2025-06-26 10:05:10 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.LogInResponse@6b42df71
+2025-06-26 10:05:10 [JavaFX Application Thread] INFO  LogInController - Successfully logged in
+2025-06-26 10:05:10 [Thread-0] DEBUG ClientWorker - GetConfiguration request ...
+2025-06-26 10:05:10 [Thread-0] INFO  PlayerRepo - Finding all the players
+2025-06-26 10:05:11 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.GetConfigurationResponse@6074bec6
+2025-06-26 10:05:11 [Thread-3] DEBUG logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2025-06-26 10:05:11 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.GetConfigurationResponse@37dda566
+2025-06-26 10:05:36 [Thread-0] DEBUG ClientWorker - Logout request ...
+2025-06-26 10:05:36 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.OkResponse@26492bf3
+2025-06-26 10:05:36 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.OkResponse@14196b60
+2025-06-26 10:05:36 [Thread-3] ERROR ServicesProxy - Reading error java.net.SocketException: Socket closed
+2025-06-26 10:12:28 [main] INFO  StartServer - Server properties set. {chat.server.port=55556} 
+2025-06-26 10:12:28 [main] DEBUG StartServer - Starting server on port: 55556
+2025-06-26 10:12:28 [main] DEBUG AbstractConcurrentServer - Concurrent AbstractServer created
+2025-06-26 10:12:28 [main] INFO  ConcurrentServer - Concurrent Server created
+2025-06-26 10:12:28 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 10:12:38 [JavaFX Application Thread] DEBUG StartClient - In start
+2025-06-26 10:12:38 [JavaFX Application Thread] INFO  StartClient - Client properties set {server.host=localhost, server.port=55556} 
+2025-06-26 10:12:38 [JavaFX Application Thread] INFO  StartClient - Using server IP localhost
+2025-06-26 10:12:38 [JavaFX Application Thread] INFO  StartClient - Using server port 55556
+2025-06-26 10:12:41 [JavaFX Application Thread] INFO  LogInController - Trying to login
+2025-06-26 10:12:41 [main] INFO  AbstractServer - Client connected ...
+2025-06-26 10:12:41 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 10:12:41 [Thread-0] DEBUG ClientWorker - Login request ...
+2025-06-26 10:12:41 [Thread-0] INFO  ServicesImpl - Trying to login with player: paul
+2025-06-26 10:12:41 [Thread-0] INFO  PlayerRepo - Finding player with nickname 'paul'
+2025-06-26 10:12:41 [Thread-0] DEBUG logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2025-06-26 10:12:42 [Thread-0] INFO  PlayerRepo - Found player with id 1
+2025-06-26 10:12:42 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.LogInResponse@6f809768
+2025-06-26 10:12:42 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.LogInResponse@12f25ebd
+2025-06-26 10:12:42 [JavaFX Application Thread] INFO  LogInController - Successfully logged in
+2025-06-26 10:12:42 [Thread-0] DEBUG ClientWorker - GetConfiguration request ...
+2025-06-26 10:12:42 [Thread-0] INFO  PlayerRepo - Finding all the players
+2025-06-26 10:12:42 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.GetConfigurationResponse@6074bec6
+2025-06-26 10:12:42 [Thread-3] DEBUG logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2025-06-26 10:12:42 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.GetConfigurationResponse@6627176a
+2025-06-26 10:13:41 [main] INFO  StartServer - Server properties set. {chat.server.port=55556} 
+2025-06-26 10:13:41 [main] DEBUG StartServer - Starting server on port: 55556
+2025-06-26 10:13:41 [main] DEBUG AbstractConcurrentServer - Concurrent AbstractServer created
+2025-06-26 10:13:41 [main] INFO  ConcurrentServer - Concurrent Server created
+2025-06-26 10:13:41 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 10:13:49 [JavaFX Application Thread] DEBUG StartClient - In start
+2025-06-26 10:13:49 [JavaFX Application Thread] INFO  StartClient - Client properties set {server.host=localhost, server.port=55556} 
+2025-06-26 10:13:49 [JavaFX Application Thread] INFO  StartClient - Using server IP localhost
+2025-06-26 10:13:49 [JavaFX Application Thread] INFO  StartClient - Using server port 55556
+2025-06-26 10:13:53 [JavaFX Application Thread] INFO  LogInController - Trying to login
+2025-06-26 10:13:53 [main] INFO  AbstractServer - Client connected ...
+2025-06-26 10:13:53 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 10:13:53 [Thread-0] DEBUG ClientWorker - Login request ...
+2025-06-26 10:13:53 [Thread-0] INFO  ServicesImpl - Trying to login with player: paul
+2025-06-26 10:13:53 [Thread-0] INFO  PlayerRepo - Finding player with nickname 'paul'
+2025-06-26 10:13:53 [Thread-0] DEBUG logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2025-06-26 10:13:54 [Thread-0] INFO  PlayerRepo - Found player with id 1
+2025-06-26 10:13:54 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.LogInResponse@6f809768
+2025-06-26 10:13:54 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.LogInResponse@4d7bd070
+2025-06-26 10:13:54 [JavaFX Application Thread] INFO  LogInController - Successfully logged in
+2025-06-26 10:13:54 [Thread-0] DEBUG ClientWorker - GetConfiguration request ...
+2025-06-26 10:13:54 [Thread-0] INFO  PlayerRepo - Finding all the players
+2025-06-26 10:13:54 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.GetConfigurationResponse@6074bec6
+2025-06-26 10:13:54 [Thread-3] DEBUG logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2025-06-26 10:13:54 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.GetConfigurationResponse@18038e6f
+2025-06-26 10:14:12 [Thread-0] DEBUG ClientWorker - Logout request ...
+2025-06-26 10:14:12 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.OkResponse@26492bf3
+2025-06-26 10:14:12 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.OkResponse@137ac3f6
+2025-06-26 10:14:12 [Thread-3] ERROR ServicesProxy - Reading error java.net.SocketException: Socket closed
+2025-06-26 10:56:49 [main] INFO  StartServer - Server properties set. {chat.server.port=55556} 
+2025-06-26 10:56:49 [main] DEBUG StartServer - Starting server on port: 55556
+2025-06-26 10:56:49 [main] DEBUG AbstractConcurrentServer - Concurrent AbstractServer created
+2025-06-26 10:56:49 [main] INFO  ConcurrentServer - Concurrent Server created
+2025-06-26 10:56:49 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 10:56:57 [JavaFX Application Thread] DEBUG StartClient - In start
+2025-06-26 10:56:57 [JavaFX Application Thread] INFO  StartClient - Client properties set {server.host=localhost, server.port=55556} 
+2025-06-26 10:56:57 [JavaFX Application Thread] INFO  StartClient - Using server IP localhost
+2025-06-26 10:56:57 [JavaFX Application Thread] INFO  StartClient - Using server port 55556
+2025-06-26 10:57:02 [JavaFX Application Thread] INFO  LogInController - Trying to login
+2025-06-26 10:57:02 [main] INFO  AbstractServer - Client connected ...
+2025-06-26 10:57:02 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 10:57:02 [Thread-0] DEBUG ClientWorker - Login request ...
+2025-06-26 10:57:02 [Thread-0] INFO  ServicesImpl - Trying to login with player: paul
+2025-06-26 10:57:02 [Thread-0] INFO  PlayerRepo - Finding player with nickname 'paul'
+2025-06-26 10:57:02 [Thread-0] DEBUG logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2025-06-26 10:57:03 [Thread-0] INFO  PlayerRepo - Found player with id 1
+2025-06-26 10:57:03 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.LogInResponse@6f809768
+2025-06-26 10:57:03 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.LogInResponse@1b460bd9
+2025-06-26 10:57:03 [JavaFX Application Thread] INFO  LogInController - Successfully logged in
+2025-06-26 10:57:03 [Thread-0] DEBUG ClientWorker - GetConfiguration request ...
+2025-06-26 10:57:03 [Thread-0] INFO  PlayerRepo - Finding all the players
+2025-06-26 10:57:03 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.GetConfigurationResponse@6074bec6
+2025-06-26 10:57:03 [Thread-3] DEBUG logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2025-06-26 10:57:03 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.GetConfigurationResponse@508b00ce
+2025-06-26 10:57:19 [Thread-0] DEBUG ClientWorker - Logout request ...
+2025-06-26 10:57:19 [Thread-0] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.OkResponse@26492bf3
+2025-06-26 10:57:19 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.OkResponse@14d53615
+2025-06-26 10:57:19 [Thread-3] ERROR ServicesProxy - Reading error java.net.SocketException: Socket closed
+2025-06-26 10:57:22 [JavaFX Application Thread] DEBUG StartClient - In start
+2025-06-26 10:57:23 [JavaFX Application Thread] INFO  StartClient - Client properties set {server.host=localhost, server.port=55556} 
+2025-06-26 10:57:23 [JavaFX Application Thread] INFO  StartClient - Using server IP localhost
+2025-06-26 10:57:23 [JavaFX Application Thread] INFO  StartClient - Using server port 55556
+2025-06-26 10:57:27 [JavaFX Application Thread] INFO  LogInController - Trying to login
+2025-06-26 10:57:27 [main] INFO  AbstractServer - Client connected ...
+2025-06-26 10:57:27 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-26 10:57:27 [Thread-2] DEBUG ClientWorker - Login request ...
+2025-06-26 10:57:27 [Thread-2] INFO  ServicesImpl - Trying to login with player: paul
+2025-06-26 10:57:27 [Thread-2] INFO  PlayerRepo - Finding player with nickname 'paul'
+2025-06-26 10:57:27 [Thread-2] INFO  PlayerRepo - Found player with id 1
+2025-06-26 10:57:27 [Thread-2] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.LogInResponse@5eb66152
+2025-06-26 10:57:27 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.LogInResponse@12f25ebd
+2025-06-26 10:57:27 [JavaFX Application Thread] INFO  LogInController - Successfully logged in
+2025-06-26 10:57:27 [Thread-2] DEBUG ClientWorker - GetConfiguration request ...
+2025-06-26 10:57:27 [Thread-2] INFO  PlayerRepo - Finding all the players
+2025-06-26 10:57:27 [Thread-2] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.GetConfigurationResponse@3fc6d79d
+2025-06-26 10:57:27 [Thread-3] DEBUG logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2025-06-26 10:57:27 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.GetConfigurationResponse@6627176a
+2025-06-26 10:57:51 [Thread-2] DEBUG ClientWorker - Logout request ...
+2025-06-26 10:57:51 [Thread-2] DEBUG ClientWorker - sending response ro.mpp2025.object_protocol.responses.OkResponse@61960d01
+2025-06-26 10:57:51 [Thread-3] DEBUG ServicesProxy - response received ro.mpp2025.object_protocol.responses.OkResponse@17cf1eb1
+2025-06-26 10:57:51 [Thread-3] ERROR ServicesProxy - Reading error java.net.SocketException: Socket closed

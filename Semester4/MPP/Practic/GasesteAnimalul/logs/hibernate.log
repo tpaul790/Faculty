@@ -1,0 +1,73 @@
+2025-06-24 12:12:32 [Thread-0] INFO  Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-24 12:12:32 [Thread-0] INFO  Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.sqlite.JDBC, hibernate.connection.url=jdbc:sqlite:JocAnimaleMPP.db, hibernate.hbm2ddl.auto=update, hibernate.dialect=org.hibernate.community.dialect.SQLiteDialect, hibernate.show_sql=true}
+2025-06-24 12:12:32 [Thread-0] INFO  RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-24 12:12:32 [Thread-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-24 12:12:32 [Thread-0] INFO  pooling - HHH10001005: Loaded JDBC driver class: org.sqlite.JDBC
+2025-06-24 12:12:32 [Thread-0] INFO  pooling - HHH10001012: Connecting with JDBC URL [jdbc:sqlite:JocAnimaleMPP.db]
+2025-06-24 12:12:32 [Thread-0] INFO  pooling - HHH10001001: Connection properties: {}
+2025-06-24 12:12:32 [Thread-0] INFO  pooling - HHH10001003: Autocommit mode: false
+2025-06-24 12:12:32 [Thread-0] INFO  pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-24 12:12:33 [Thread-0] INFO  Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-24 12:12:33 [Thread-0] INFO  JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-24 12:12:33 [Thread-0] INFO  access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@34c80291] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-24 12:14:22 [Thread-0] INFO  Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-24 12:14:22 [Thread-0] INFO  Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.sqlite.JDBC, hibernate.connection.url=jdbc:sqlite:JocAnimaleMPP.db, hibernate.hbm2ddl.auto=update, hibernate.dialect=org.hibernate.community.dialect.SQLiteDialect, hibernate.show_sql=true}
+2025-06-24 12:14:22 [Thread-0] INFO  RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-24 12:14:22 [Thread-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-24 12:14:22 [Thread-0] INFO  pooling - HHH10001005: Loaded JDBC driver class: org.sqlite.JDBC
+2025-06-24 12:14:22 [Thread-0] INFO  pooling - HHH10001012: Connecting with JDBC URL [jdbc:sqlite:JocAnimaleMPP.db]
+2025-06-24 12:14:22 [Thread-0] INFO  pooling - HHH10001001: Connection properties: {}
+2025-06-24 12:14:22 [Thread-0] INFO  pooling - HHH10001003: Autocommit mode: false
+2025-06-24 12:14:22 [Thread-0] INFO  pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-24 12:14:22 [Thread-0] INFO  Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-24 12:14:23 [Thread-0] INFO  JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-24 12:14:23 [Thread-0] INFO  access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@34c80291] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-24 12:24:12 [Thread-0] INFO  Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-24 12:24:12 [Thread-0] INFO  Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.sqlite.JDBC, hibernate.connection.url=jdbc:sqlite:JocAnimaleMPP.db, hibernate.hbm2ddl.auto=update, hibernate.dialect=org.hibernate.community.dialect.SQLiteDialect, hibernate.show_sql=true}
+2025-06-24 12:24:12 [Thread-0] INFO  RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-24 12:24:12 [Thread-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-24 12:24:12 [Thread-0] INFO  pooling - HHH10001005: Loaded JDBC driver class: org.sqlite.JDBC
+2025-06-24 12:24:12 [Thread-0] INFO  pooling - HHH10001012: Connecting with JDBC URL [jdbc:sqlite:JocAnimaleMPP.db]
+2025-06-24 12:24:12 [Thread-0] INFO  pooling - HHH10001001: Connection properties: {}
+2025-06-24 12:24:12 [Thread-0] INFO  pooling - HHH10001003: Autocommit mode: false
+2025-06-24 12:24:12 [Thread-0] INFO  pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-24 12:24:13 [Thread-0] INFO  Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-24 12:24:13 [Thread-0] INFO  JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-24 12:24:13 [Thread-0] INFO  access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@34c80291] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-24 15:59:20 [Thread-0] INFO  Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-24 15:59:20 [Thread-0] INFO  Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.sqlite.JDBC, hibernate.connection.url=jdbc:sqlite:JocAnimaleMPP.db, hibernate.hbm2ddl.auto=update, hibernate.dialect=org.hibernate.community.dialect.SQLiteDialect, hibernate.show_sql=true}
+2025-06-24 15:59:20 [Thread-0] INFO  RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-24 15:59:20 [Thread-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-24 15:59:20 [Thread-0] INFO  pooling - HHH10001005: Loaded JDBC driver class: org.sqlite.JDBC
+2025-06-24 15:59:20 [Thread-0] INFO  pooling - HHH10001012: Connecting with JDBC URL [jdbc:sqlite:JocAnimaleMPP.db]
+2025-06-24 15:59:20 [Thread-0] INFO  pooling - HHH10001001: Connection properties: {}
+2025-06-24 15:59:20 [Thread-0] INFO  pooling - HHH10001003: Autocommit mode: false
+2025-06-24 15:59:20 [Thread-0] INFO  pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-24 15:59:21 [Thread-0] INFO  Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-24 15:59:21 [Thread-0] INFO  JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-24 15:59:21 [Thread-0] INFO  access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@34c80291] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-24 15:59:46 [Thread-0] INFO  Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-24 15:59:46 [Thread-0] INFO  Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.sqlite.JDBC, hibernate.connection.url=jdbc:sqlite:JocAnimaleMPP.db, hibernate.hbm2ddl.auto=update, hibernate.dialect=org.hibernate.community.dialect.SQLiteDialect, hibernate.show_sql=true}
+2025-06-24 15:59:46 [Thread-0] INFO  RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-24 15:59:46 [Thread-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-24 15:59:46 [Thread-0] INFO  pooling - HHH10001005: Loaded JDBC driver class: org.sqlite.JDBC
+2025-06-24 15:59:46 [Thread-0] INFO  pooling - HHH10001012: Connecting with JDBC URL [jdbc:sqlite:JocAnimaleMPP.db]
+2025-06-24 15:59:46 [Thread-0] INFO  pooling - HHH10001001: Connection properties: {}
+2025-06-24 15:59:46 [Thread-0] INFO  pooling - HHH10001003: Autocommit mode: false
+2025-06-24 15:59:46 [Thread-0] INFO  pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-24 15:59:47 [Thread-0] INFO  Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-24 15:59:47 [Thread-0] INFO  JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-24 15:59:47 [Thread-0] INFO  access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@34c80291] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-25 08:41:06 [Thread-0] INFO  Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-25 08:41:06 [Thread-0] INFO  Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.sqlite.JDBC, hibernate.connection.url=jdbc:sqlite:JocAnimaleMPP.sqlite, hibernate.hbm2ddl.auto=create, hibernate.dialect=org.hibernate.community.dialect.SQLiteDialect, hibernate.show_sql=true}
+2025-06-25 08:41:06 [Thread-0] INFO  RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-25 08:41:06 [Thread-0] WARN  pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-25 08:41:06 [Thread-0] INFO  pooling - HHH10001005: Loaded JDBC driver class: org.sqlite.JDBC
+2025-06-25 08:41:06 [Thread-0] INFO  pooling - HHH10001012: Connecting with JDBC URL [jdbc:sqlite:JocAnimaleMPP.sqlite]
+2025-06-25 08:41:06 [Thread-0] INFO  pooling - HHH10001001: Connection properties: {}
+2025-06-25 08:41:06 [Thread-0] INFO  pooling - HHH10001003: Autocommit mode: false
+2025-06-25 08:41:06 [Thread-0] INFO  pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-25 08:41:07 [Thread-0] INFO  Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-25 08:41:07 [Thread-0] INFO  JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-25 08:41:07 [Thread-0] INFO  access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@575d4c80] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-25 08:41:07 [Thread-0] INFO  access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3020306] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.

@@ -1,0 +1,128 @@
+2025-06-24 12:12:10 [main] INFO  StartServer - Server properties set. {chat.server.port=55556} 
+2025-06-24 12:12:10 [main] INFO  ConcurrentServer - Concurrent Server created
+2025-06-24 12:12:10 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-24 12:12:21 [JavaFX Application Thread] INFO  StartClient - Client properties set {server.host=localhost, server.port=55556} 
+2025-06-24 12:12:21 [JavaFX Application Thread] INFO  StartClient - Using server IP localhost
+2025-06-24 12:12:21 [JavaFX Application Thread] INFO  StartClient - Using server port 55556
+2025-06-24 12:12:32 [main] INFO  AbstractServer - Client connected ...
+2025-06-24 12:12:32 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-24 12:12:32 [Thread-0] INFO  ServicesImpl - Trying to login with player: tpaul
+2025-06-24 12:12:32 [Thread-0] INFO  AttemptRepo - Finding player with nickname tpaul
+2025-06-24 12:12:33 [Thread-0] INFO  AttemptRepo - Found player with id 2
+2025-06-24 12:12:34 [Thread-0] INFO  ConfigurationRepo - Finding all the configurations
+2025-06-24 12:12:35 [Thread-0] INFO  GameRepo - Finding all the games
+2025-06-24 12:12:42 [Thread-0] INFO  GameRepo - Saving game: ro.mpp2025.Game@1c0b4e52
+2025-06-24 12:12:42 [Thread-0] INFO  GameRepo - Saved game: ro.mpp2025.Game@1c0b4e52
+2025-06-24 12:12:43 [Thread-0] INFO  GameRepo - Finding all the games
+2025-06-24 12:13:24 [JavaFX Application Thread] INFO  StartClient - Client properties set {server.host=localhost, server.port=55556} 
+2025-06-24 12:13:24 [JavaFX Application Thread] INFO  StartClient - Using server IP localhost
+2025-06-24 12:13:24 [JavaFX Application Thread] INFO  StartClient - Using server port 55556
+2025-06-24 12:13:27 [main] INFO  AbstractServer - Client connected ...
+2025-06-24 12:13:27 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-24 12:13:27 [Thread-2] INFO  ServicesImpl - Trying to login with player: alex
+2025-06-24 12:13:27 [Thread-2] INFO  AttemptRepo - Finding player with nickname alex
+2025-06-24 12:13:27 [Thread-2] INFO  AttemptRepo - Found player with id 1
+2025-06-24 12:13:28 [Thread-2] INFO  ConfigurationRepo - Finding all the configurations
+2025-06-24 12:13:29 [Thread-2] INFO  GameRepo - Finding all the games
+2025-06-24 12:13:36 [Thread-2] INFO  GameRepo - Saving game: ro.mpp2025.Game@e3a682d
+2025-06-24 12:13:36 [Thread-2] INFO  GameRepo - Saved game: ro.mpp2025.Game@e3a682d
+2025-06-24 12:13:36 [Thread-0] INFO  GameRepo - Finding all the games
+2025-06-24 12:13:37 [Thread-2] INFO  GameRepo - Finding all the games
+2025-06-24 12:14:12 [main] INFO  StartServer - Server properties set. {chat.server.port=55556} 
+2025-06-24 12:14:12 [main] INFO  ConcurrentServer - Concurrent Server created
+2025-06-24 12:14:12 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-24 12:14:17 [JavaFX Application Thread] INFO  StartClient - Client properties set {server.host=localhost, server.port=55556} 
+2025-06-24 12:14:17 [JavaFX Application Thread] INFO  StartClient - Using server IP localhost
+2025-06-24 12:14:17 [JavaFX Application Thread] INFO  StartClient - Using server port 55556
+2025-06-24 12:14:21 [main] INFO  AbstractServer - Client connected ...
+2025-06-24 12:14:21 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-24 12:14:21 [Thread-0] INFO  ServicesImpl - Trying to login with player: tpaul
+2025-06-24 12:14:21 [Thread-0] INFO  AttemptRepo - Finding player with nickname tpaul
+2025-06-24 12:14:23 [Thread-0] INFO  AttemptRepo - Found player with id 2
+2025-06-24 12:14:24 [Thread-0] INFO  ConfigurationRepo - Finding all the configurations
+2025-06-24 12:14:25 [Thread-0] INFO  GameRepo - Finding all the games
+2025-06-24 12:14:33 [Thread-0] INFO  GameRepo - Saving game: ro.mpp2025.Game@59895190
+2025-06-24 12:14:33 [Thread-0] INFO  GameRepo - Saved game: ro.mpp2025.Game@59895190
+2025-06-24 12:14:34 [Thread-0] INFO  GameRepo - Finding all the games
+2025-06-24 12:15:25 [JavaFX Application Thread] INFO  StartClient - Client properties set {server.host=localhost, server.port=55556} 
+2025-06-24 12:15:25 [JavaFX Application Thread] INFO  StartClient - Using server IP localhost
+2025-06-24 12:15:25 [JavaFX Application Thread] INFO  StartClient - Using server port 55556
+2025-06-24 12:15:29 [main] INFO  AbstractServer - Client connected ...
+2025-06-24 12:15:29 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-24 12:15:29 [Thread-2] INFO  ServicesImpl - Trying to login with player: alex
+2025-06-24 12:15:29 [Thread-2] INFO  AttemptRepo - Finding player with nickname alex
+2025-06-24 12:15:29 [Thread-2] INFO  AttemptRepo - Found player with id 1
+2025-06-24 12:15:30 [Thread-2] INFO  ConfigurationRepo - Finding all the configurations
+2025-06-24 12:15:31 [Thread-2] INFO  GameRepo - Finding all the games
+2025-06-24 12:15:39 [Thread-2] INFO  GameRepo - Saving game: ro.mpp2025.Game@32dc22b0
+2025-06-24 12:15:39 [Thread-2] INFO  GameRepo - Saved game: ro.mpp2025.Game@32dc22b0
+2025-06-24 12:15:40 [Thread-2] INFO  GameRepo - Finding all the games
+2025-06-24 12:23:56 [JavaFX Application Thread] INFO  StartClient - Client properties set {server.host=localhost, server.port=55556} 
+2025-06-24 12:23:56 [JavaFX Application Thread] INFO  StartClient - Using server IP localhost
+2025-06-24 12:23:56 [JavaFX Application Thread] INFO  StartClient - Using server port 55556
+2025-06-24 12:24:04 [main] INFO  StartServer - Server properties set. {chat.server.port=55556} 
+2025-06-24 12:24:04 [main] INFO  ConcurrentServer - Concurrent Server created
+2025-06-24 12:24:04 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-24 12:24:12 [main] INFO  AbstractServer - Client connected ...
+2025-06-24 12:24:12 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-24 12:24:12 [Thread-0] INFO  ServicesImpl - Trying to login with player: tpaul
+2025-06-24 12:24:12 [Thread-0] INFO  AttemptRepo - Finding player with nickname tpaul
+2025-06-24 12:24:13 [Thread-0] INFO  AttemptRepo - Found player with id 2
+2025-06-24 12:24:14 [Thread-0] INFO  ConfigurationRepo - Finding all the configurations
+2025-06-24 12:24:15 [Thread-0] INFO  GameRepo - Finding all the games
+2025-06-24 12:24:35 [Thread-0] INFO  GameRepo - Saving game: ro.mpp2025.Game@43ae9e4b
+2025-06-24 12:24:35 [Thread-0] INFO  GameRepo - Saved game: ro.mpp2025.Game@43ae9e4b
+2025-06-24 12:24:36 [Thread-0] INFO  GameRepo - Finding all the games
+2025-06-24 12:24:58 [JavaFX Application Thread] INFO  StartClient - Client properties set {server.host=localhost, server.port=55556} 
+2025-06-24 12:24:58 [JavaFX Application Thread] INFO  StartClient - Using server IP localhost
+2025-06-24 12:24:58 [JavaFX Application Thread] INFO  StartClient - Using server port 55556
+2025-06-24 12:25:01 [main] INFO  AbstractServer - Client connected ...
+2025-06-24 12:25:01 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-24 12:25:01 [Thread-2] INFO  ServicesImpl - Trying to login with player: alex
+2025-06-24 12:25:01 [Thread-2] INFO  AttemptRepo - Finding player with nickname alex
+2025-06-24 12:25:01 [Thread-2] INFO  AttemptRepo - Found player with id 1
+2025-06-24 12:25:02 [Thread-2] INFO  ConfigurationRepo - Finding all the configurations
+2025-06-24 12:25:03 [Thread-2] INFO  GameRepo - Finding all the games
+2025-06-24 12:25:12 [Thread-2] INFO  GameRepo - Saving game: ro.mpp2025.Game@55d36886
+2025-06-24 12:25:12 [Thread-2] INFO  GameRepo - Saved game: ro.mpp2025.Game@55d36886
+2025-06-24 12:25:12 [Thread-0] INFO  GameRepo - Finding all the games
+2025-06-24 12:25:13 [Thread-2] INFO  GameRepo - Finding all the games
+2025-06-24 15:59:07 [main] INFO  StartServer - Server properties set. {chat.server.port=55556} 
+2025-06-24 15:59:07 [main] INFO  ConcurrentServer - Concurrent Server created
+2025-06-24 15:59:07 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-24 15:59:17 [JavaFX Application Thread] INFO  StartClient - Client properties set {server.host=localhost, server.port=55556} 
+2025-06-24 15:59:17 [JavaFX Application Thread] INFO  StartClient - Using server IP localhost
+2025-06-24 15:59:17 [JavaFX Application Thread] INFO  StartClient - Using server port 55556
+2025-06-24 15:59:20 [main] INFO  AbstractServer - Client connected ...
+2025-06-24 15:59:20 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-24 15:59:20 [Thread-0] INFO  ServicesImpl - Trying to login with player: tpaul
+2025-06-24 15:59:20 [Thread-0] INFO  PlayerRepo - Finding player with nickname tpaul
+2025-06-24 15:59:21 [Thread-0] INFO  PlayerRepo - Found player with id 2
+2025-06-24 15:59:21 [Thread-0] INFO  ConfigurationRepo - Finding all the configurations
+2025-06-24 15:59:22 [Thread-0] INFO  GameRepo - Finding all the games
+2025-06-24 15:59:38 [main] INFO  StartServer - Server properties set. {chat.server.port=55556} 
+2025-06-24 15:59:38 [main] INFO  ConcurrentServer - Concurrent Server created
+2025-06-24 15:59:38 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-24 15:59:42 [JavaFX Application Thread] INFO  StartClient - Client properties set {server.host=localhost, server.port=55556} 
+2025-06-24 15:59:42 [JavaFX Application Thread] INFO  StartClient - Using server IP localhost
+2025-06-24 15:59:42 [JavaFX Application Thread] INFO  StartClient - Using server port 55556
+2025-06-24 15:59:46 [main] INFO  AbstractServer - Client connected ...
+2025-06-24 15:59:46 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-24 15:59:46 [Thread-0] INFO  ServicesImpl - Trying to login with player: tpaul
+2025-06-24 15:59:46 [Thread-0] INFO  PlayerRepo - Finding player with nickname tpaul
+2025-06-24 15:59:47 [Thread-0] INFO  PlayerRepo - Found player with id 2
+2025-06-24 15:59:47 [Thread-0] INFO  ConfigurationRepo - Finding all the configurations
+2025-06-24 15:59:47 [Thread-0] INFO  GameRepo - Finding all the games
+2025-06-24 15:59:51 [Thread-0] INFO  GameRepo - Saving game: ro.mpp2025.Game@22dc1d0
+2025-06-24 15:59:51 [Thread-0] INFO  GameRepo - Saved game: ro.mpp2025.Game@22dc1d0
+2025-06-24 15:59:51 [Thread-0] INFO  GameRepo - Finding all the games
+2025-06-25 08:40:55 [main] INFO  StartServer - Server properties set. {chat.server.port=55556} 
+2025-06-25 08:40:55 [main] INFO  ConcurrentServer - Concurrent Server created
+2025-06-25 08:40:55 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-25 08:41:03 [JavaFX Application Thread] INFO  StartClient - Client properties set {server.host=localhost, server.port=55556} 
+2025-06-25 08:41:03 [JavaFX Application Thread] INFO  StartClient - Using server IP localhost
+2025-06-25 08:41:03 [JavaFX Application Thread] INFO  StartClient - Using server port 55556
+2025-06-25 08:41:06 [main] INFO  AbstractServer - Client connected ...
+2025-06-25 08:41:06 [main] INFO  AbstractServer - Waiting for clients ...
+2025-06-25 08:41:06 [Thread-0] INFO  ServicesImpl - Trying to login with player: tpaul
+2025-06-25 08:41:06 [Thread-0] INFO  PlayerRepo - Finding player with nickname tpaul
