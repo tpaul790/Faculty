@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b9371eba-3c35-47d4-957d-99fbd98ec1d4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../lab1&amp;2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab1&amp;2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab1&amp;2/lab1&amp;2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab1&amp;2/programe/.idea/programe.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab1&amp;2/programe/pr1/.idea/pr1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab1&amp;2/programe/pr2/.idea/pr2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab1&amp;2/programe/pr3/.idea/pr3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab1&amp;2/spliter/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/.idea/lab3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/af/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/af/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/af/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/af/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/af/src/main/java/ppd/AutomatFinit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/af/src/main/resources/af.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/af/src/main/resources/class.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab4/src/Classes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab4/src/lab4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab5/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab5/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab5/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab5/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab5/program.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab5/src/main/java/ppd/FiniteAutomata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab5/src/main/java/ppd/LexicalAnalyzer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab5/src/main/java/ppd/fip/FIPEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab5/src/main/java/ppd/ts/SymbolEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab5/src/main/java/ppd/ts/SymbolTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab5/src/main/java/ppd/ts/SymbolType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab5/src/main/resources/af/af_id.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab5/src/main/resources/af/af_int.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab5/src/main/resources/af/af_real.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ppd/Gramatica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/gramatica.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lsb6/.idea/lsb6.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lsb6/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lsb6/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lsb6/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lsb6/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lsb6/analizor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lsb6/class.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lsb6/lex.yy.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lsb6/parser.y" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lsb6/spec.l" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lsb6/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/class/lab1/.idea/lab1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/class/lab1/cpp/.idea/cpp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/class/lab10/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/class/lab10/.idea/lab10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/class/lab10/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/class/lab10/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/class/lab10/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/class/lab2/.idea/lab2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/class/lab6/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/class/lab6/.idea/lab6.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/class/lab6/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/class/lab6/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/class/lab6/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/class/lab6/main" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex/asincron/.idea/asincron.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex/asincron/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex/asincron/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex/colectiva/.idea/colectiva.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex/lab_sinc/.idea/lab_sinc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex/sincron/.idea/editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex/sincron/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex/sincron/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex/sincron/.idea/sincron.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex/sincron/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex/sincron/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex/sincron/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex/sincron/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect1_Matei/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect1_Matei/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect1_Matei/.idea/Subiect1_Matei.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect1_Matei/.idea/editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect1_Matei/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect1_Matei/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect1_Matei/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect1_Matei/Subiect1 Propus MPI Matei.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect1_Vladiela/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect1_Vladiela/.idea/Subiect1_Vladiela.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect1_Vladiela/.idea/editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect1_Vladiela/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect1_Vladiela/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect1_Vladiela/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect1_Vladiela/cerinta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect1_Vladiela/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect1_Vladiela/polinom.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect2_Matei/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect2_Matei/.idea/Subiect2_Matei.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect2_Matei/.idea/editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect2_Matei/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect2_Matei/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect2_Matei/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect2_Matei/Subiect2 Propus MPI Matei.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect2_Vladiela/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect2_Vladiela/.idea/Subiect2_Vladiela.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect2_Vladiela/.idea/editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect2_Vladiela/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect2_Vladiela/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect2_Vladiela/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect2_Vladiela/cerinta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect2_Vladiela/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect3_Bogdan/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect3_Bogdan/.idea/Subiect3_Bogdan.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect3_Bogdan/.idea/editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect3_Bogdan/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect3_Bogdan/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect3_Bogdan/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect3_Bogdan/Subiect3 MPI - Bogdan.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/Subiect3_Bogdan/numbers.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/costan/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/costan/.idea/costan.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/costan/.idea/editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/costan/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/costan/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/costan/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/costan/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/costan/cerinta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/costan/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/costan/numbers.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/gr221_1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/gr221_1/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/gr221_1/.idea/editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/gr221_1/.idea/gr221_1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/gr221_1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/gr221_1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/gr221_1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/gr221_1/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/gr221_1/cerinta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/gr221_1/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/gr221_1/main" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/gr221_1/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/gr221_1/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/gr231_2/.idea/gr231_2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/gr231_2/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/gr231_2/cerinta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/gr231_2/inputB" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/ex_practic/gr231_2/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab1/.idea/lab1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/.idea/lab2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/convolution/InlineConvolution.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/convolution/InlineParallelConvolution.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/convolution/InlineParallelConvolution.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/convolution/InlineSequentialConvolution.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/convolution/InlineSequentialConvolution.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/inputs/input_1000_1000_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/inputs/input_10_10_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/outputs/output_INLINE_PARALLEL_BARRIER_1000_1000_3_16.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/outputs/output_INLINE_PARALLEL_BARRIER_1000_1000_3_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/outputs/output_INLINE_PARALLEL_BARRIER_1000_1000_3_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/outputs/output_INLINE_PARALLEL_BARRIER_1000_1000_3_8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/outputs/output_INLINE_PARALLEL_BARRIER_10_10_3_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/outputs/output_INLINE_PARALLEL_FLAG_1000_1000_3_16.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/outputs/output_INLINE_PARALLEL_FLAG_1000_1000_3_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/outputs/output_INLINE_PARALLEL_FLAG_1000_1000_3_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/outputs/output_INLINE_PARALLEL_FLAG_1000_1000_3_8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/outputs/output_INLINE_PARALLEL_FLAG_10_10_3_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/outputs/output_INLINE_SEQUENTIAL_1000_1000_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/outputs/output_INLINE_SEQUENTIAL_10_10_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/outputs/output_SEQUENTIAL_1000_1000_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/outputs/output_SEQUENTIAL_10_10_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/results/execution_results.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/run_tests.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/utils/MatrixFileManager.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/utils/MatrixFileManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/utils/MatrixValidator.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab2/utils/MatrixValidator.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/.idea/editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/.idea/lab3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/cmake-build-debug/.cmake/api/v1/query/cache-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/cmake-build-debug/CMakeFiles/FindMPI/test_mpi_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/cmake-build-debug/CMakeFiles/FindMPI/test_mpi_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/cmake-build-debug/build.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/cmake-build-debug/mpi_isend_irecv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/cmake-build-debug/mpi_send_recv_postcompute" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/inputs/input1_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/inputs/input1_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/inputs/input2_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/inputs/input2_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/inputs/input3_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/inputs/input3_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/mpi_isend_irecv.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/mpi_scatter_gather.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/mpi_send_recv_postcompute.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/mpi_send_recv_precomputation.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/outputs/output1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/outputs/output1_SEQUENTIAL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/outputs/output2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/outputs/output2_SEQUENTIAL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/outputs/output3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/outputs/output3_SEQUENTIAL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/results/execution_results.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/sequential.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/test_run.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/utils/FileManager.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/cpp/lab3/utils/FileManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/Convolution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/constants/BatchType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/constants/ComputationMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/constants/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/constants/DistributionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/inputs/input_10000_10_5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/inputs/input_1000_1000_5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/inputs/input_10_10000_5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/inputs/input_10_10_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_COLUMNS_10000_10_5_16.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_COLUMNS_10000_10_5_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_COLUMNS_10000_10_5_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_COLUMNS_10000_10_5_8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_COLUMNS_1000_1000_5_16.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_COLUMNS_1000_1000_5_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_COLUMNS_1000_1000_5_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_COLUMNS_1000_1000_5_8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_COLUMNS_10_10000_5_16.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_COLUMNS_10_10000_5_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_COLUMNS_10_10000_5_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_COLUMNS_10_10000_5_8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_COLUMNS_10_10_3_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_ROWS_10000_10_5_16.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_ROWS_10000_10_5_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_ROWS_10000_10_5_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_ROWS_10000_10_5_8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_ROWS_1000_1000_5_16.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_ROWS_1000_1000_5_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_ROWS_1000_1000_5_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_ROWS_1000_1000_5_8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_ROWS_10_10000_5_16.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_ROWS_10_10000_5_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_ROWS_10_10000_5_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_ROWS_10_10000_5_8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BATCH_ROWS_10_10_3_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BLOCK_10000_10_5_16.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BLOCK_10000_10_5_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BLOCK_10000_10_5_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BLOCK_10000_10_5_8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BLOCK_1000_1000_5_16.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BLOCK_1000_1000_5_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BLOCK_1000_1000_5_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BLOCK_1000_1000_5_8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BLOCK_10_10000_5_16.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BLOCK_10_10000_5_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BLOCK_10_10000_5_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BLOCK_10_10000_5_8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_BLOCK_10_10_3_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_CYCLIC_10000_10_5_16.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_CYCLIC_10000_10_5_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_CYCLIC_10000_10_5_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_CYCLIC_10000_10_5_8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_CYCLIC_1000_1000_5_16.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_CYCLIC_1000_1000_5_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_CYCLIC_1000_1000_5_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_CYCLIC_1000_1000_5_8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_CYCLIC_10_10000_5_16.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_CYCLIC_10_10000_5_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_CYCLIC_10_10000_5_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_CYCLIC_10_10000_5_8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_CYCLIC_10_10_3_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_LINEAR_10000_10_5_16.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_LINEAR_10000_10_5_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_LINEAR_10000_10_5_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_LINEAR_10000_10_5_8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_LINEAR_1000_1000_5_16.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_LINEAR_1000_1000_5_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_LINEAR_1000_1000_5_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_LINEAR_1000_1000_5_8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_LINEAR_10_10000_5_16.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_LINEAR_10_10000_5_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_LINEAR_10_10000_5_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_LINEAR_10_10000_5_8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_DISTRIBUTION_LINEAR_10_10_3_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_SEQUENTIAL_10000_10_5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_SEQUENTIAL_1000_1000_5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_SEQUENTIAL_10_10000_5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/data/outputs/output_SEQUENTIAL_10_10_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/run_tests.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/utils/MatrixFileManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab1/src/main/java/ppd/utils/MatrixValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab2/src/main/java/ppd/Convolution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab2/src/main/java/ppd/InlineConvolution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab2/src/main/java/ppd/config/ComputationMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab2/src/main/java/ppd/config/SynchronizationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab2/src/main/java/ppd/data/inputs/input_1000_1000_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab2/src/main/java/ppd/data/inputs/input_10_10_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab2/src/main/java/ppd/run_tests.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab2/src/main/java/ppd/utils/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab2/src/main/java/ppd/utils/MatrixFileManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab2/src/main/java/ppd/utils/MatrixValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab4/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab4/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab4/run_tests.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab4/src/main/java/ppd/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab4/src/main/java/ppd/RankingLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab4/src/main/java/ppd/ScoreProcessingQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab4/src/main/java/ppd/ScoreRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab4/src/main/java/ppd/SyncRankingLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab4/src/main/java/ppd/utils/ComputationMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab4/src/main/java/ppd/utils/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab4/src/main/java/ppd/utils/ContestFileManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab4/src/main/java/ppd/utils/ContestResultsValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab5/lab5/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab5/lab5/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab5/lab5/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab5/lab5/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab5/lab5/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab5/lab5/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab5/lab5/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab5/lab5/src/main/java/ppd/DatabaseSetup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab5/lab5/src/main/java/ppd/FineGrainedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab5/lab5/src/main/java/ppd/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab5/lab5/src/main/java/ppd/RezultatValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab5/lab5/src/main/java/ppd/ScoreDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab5/lab5/src/main/java/ppd/ScoreProcessingQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab5/lab5/src/main/java/ppd/Secvential.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab5/lab5/src/main/resources/documentate.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/home/java/lab5/lab5/src/main/resources/execution_results.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/practic/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/practic/.idea/editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/practic/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/practic/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/practic/.idea/practic.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/practic/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/practic/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/practic/main" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/practic/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/practic/numbers.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/.idea/AndroidProjectSystem.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/.idea/deviceManager.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/.idea/migrations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/.idea/studiobot.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/projects/ProjectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/projects/ProjectEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/projects/ProjectMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/projects/ProjectRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/projects/ProjectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/projects/ProjectSpecifications.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/projects/dto/ProjectCreateDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/projects/dto/ProjectDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/projects/dto/ProjectPageRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/projects/dto/ProjectUpdateDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/projects/exception/ProjectNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/dto/UserCreateDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/dto/UserPageRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/exception/LogoutFaildException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/websockets/ProjectWebSocketHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/resources/db/changelogs/members-changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/resources/db/changelogs/projects-changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/app/src/main/java/com/ppdm/app/PPDMApplication.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/app/src/main/java/com/ppdm/app/data/local/ProjectDatabase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/app/src/main/java/com/ppdm/app/data/local/TokenManager.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/app/src/main/java/com/ppdm/app/data/remote/ApiService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/app/src/main/java/com/ppdm/app/data/remote/AuthInterceptor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/app/src/main/java/com/ppdm/app/data/remote/WebSocketManager.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/app/src/main/java/com/ppdm/app/data/repository/ProjectRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/app/src/main/java/com/ppdm/app/di/AppModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/app/src/main/java/com/ppdm/app/presentation/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/app/src/main/java/com/ppdm/app/presentation/detail/DetailViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/app/src/main/java/com/ppdm/app/presentation/detail/ProjectDetailScreen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/app/src/main/java/com/ppdm/app/presentation/login/LoginScreen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/app/src/main/java/com/ppdm/app/presentation/login/LoginViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/app/src/main/java/com/ppdm/app/presentation/projects/ProjectListScreen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/app/src/main/java/com/ppdm/app/presentation/projects/ProjectListViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/app/src/main/java/com/ppdm/app/util/NetworkConnectivityObserver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/app/src/main/java/com/ppdm/app/util/NotificationHelper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/app/src/main/java/com/ppdm/app/util/SyncWorker.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1&amp;2/spliter/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab1&amp;2/spliter/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1&amp;2/spliter/FIP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab1&amp;2/spliter/FIP.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1&amp;2/spliter/TS.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab1&amp;2/spliter/TS.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1&amp;2/spliter/program.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab1&amp;2/spliter/program.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1&amp;2/spliter/src/LexicalAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab1&amp;2/spliter/src/LexicalAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1&amp;2/spliter/src/ts/SymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab1&amp;2/spliter/src/ts/SymbolTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1&amp;2/programe/pr1/.idea/pr1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1&amp;2/programe/pr2/.idea/pr2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1&amp;2/programe/pr3/.idea/pr3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1&amp;2/spliter/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1&amp;2/spliter/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1&amp;2/spliter/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1&amp;2/spliter/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1&amp;2/spliter/program.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1&amp;2/spliter/spliter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1&amp;2/spliter/src/Spliter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/.idea/programe.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/p1.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/p1.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/p2.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/p2.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/p3.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/p3.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/pr1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/pr1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/pr1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/pr1/.idea/pr1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/pr1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/pr2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/pr2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/pr2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/pr2/.idea/pr2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/pr2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/pr3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/pr3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/pr3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/pr3/.idea/pr3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFTC/lab1/programe/pr3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/.idea/lab1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.cmake/api/v1/query/cache-v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.cmake/api/v1/reply/cache-v2-764d6bf8a7a058dc39c3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-1bd959ffedaf44cbcf63.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-e05b2dbbdb80577af3ab.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.cmake/api/v1/reply/index-2025-10-01T15-23-04-0685.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.cmake/api/v1/reply/target-lab1-Debug-d9e76cd370816b4f1545.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-c9207fd7e2470347ea71.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.ninja_deps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.ninja_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/3.27.8/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/3.27.8/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/3.27.8/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/3.27.8/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/3.27.8/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdCXX/CMakeCXXCompilerId.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/lab1.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/build.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/lab1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/.idea/cpp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/.cmake/api/v1/query/cache-v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/.cmake/api/v1/reply/cache-v2-764d6bf8a7a058dc39c3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-1bd959ffedaf44cbcf63.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-e05b2dbbdb80577af3ab.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/.cmake/api/v1/reply/index-2025-10-01T15-23-04-0685.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/.cmake/api/v1/reply/target-lab1-Debug-d9e76cd370816b4f1545.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-c9207fd7e2470347ea71.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/.ninja_deps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/.ninja_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/3.27.8/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/3.27.8/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/3.27.8/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/3.27.8/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/3.27.8/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdCXX/CMakeCXXCompilerId.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/lab1.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/build.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/lab1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/main" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cpp/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/main" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/security/annotations/AllowAdmin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/security/annotations/AllowBoth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/security/annotations/AllowUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/security/controller/AuthentificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/security/controller/AuthentificationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/dto/AdminUpdateDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/dto/UpdatableUserDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/dto/UserInviteDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/dto/UserUpdateDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/dto/UserUpdateDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/websockets/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/websockets/WebSocketConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/resources/db/liquibase-changelog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/resources/db/liquibase-changelog.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;tpaul790&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/tpaul790/Faculty.git&quot;,
+    &quot;accountId&quot;: &quot;3814c1c9-e2dd-4cb4-9bf8-b0483f22f0bc&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="36YDfRDM058O88jRsyPcOchx36H" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Gramatica.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feat/lexical-analyzer&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/titienipaul/Desktop/GitHub/Faculty/Semester5/LFTC/lab7/inclass/src/main/java/ppd/Main.java&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/ppd" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.419" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.419" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b9371eba-3c35-47d4-957d-99fbd98ec1d4" name="Changes" comment="" />
+      <created>1765174714167</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1765174714167</updated>
+      <workItem from="1765174715511" duration="1804000" />
+      <workItem from="1765217444607" duration="22000" />
+      <workItem from="1765434549491" duration="65000" />
+      <workItem from="1767090323099" duration="773000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

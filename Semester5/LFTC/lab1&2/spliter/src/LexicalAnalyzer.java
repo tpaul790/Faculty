@@ -13,12 +13,12 @@ public class LexicalAnalyzer {
 
     private static final Pattern TOKEN_PATTERN = Pattern.compile(
             "#include|<[^>]+>" +
-                    "|\\b(using|namespace|std|int|char|float|struct|if|else|while|return|cin|cout|main)\\b" +
-                    "|\\d+\\.\\d+|\\d+" +               // numbers (float then int)
-                    "|\"(\\\\.|[^\\\\\"])*\"" +         // string literal (supports escaped chars)
-                    "|[a-zA-Z_][a-zA-Z0-9_]*" +         // identifiers
-                    "|<<|>>|<=|>=|==|!=|&&|\\|\\|" +    // multi-char operators
-                    "|[=+\\-*/%<>\\{\\}\\(\\);,]"        // single-char operators and punctuation
+                    "|\\b(using namespace std|int main|int|char|float|struct|if|else|while|return|cin|cout|main)\\b" +
+                    "|\\b\\d+\\.\\d+|\\d+\\b" +             // numbers (float then int)
+                    "|\"(\\\\.|[^\\\\\"])*\"" +             // string literal (supports escaped chars)
+                    "|\\b[a-zA-Z_][a-zA-Z0-9_]*\\b" +       // identifiers
+                    "|<<|>>|<=|>=|==|!=|&&|\\|\\|" +        // multi-char operators
+                    "|[=+\\-*/%<>{}();,]"                   // single-char operators and punctuation
     );
 
     private static final Pattern LINE_COMMENT = Pattern.compile("//.*");
@@ -52,8 +52,8 @@ public class LexicalAnalyzer {
         int code = 4;
 
         String[] tokens = {
-                "#include", "<library>", "int main", "using", "namespace", "std",
-                "int", "char", "float", "struct", "main",
+                "#include", "<library>", "int main", "using namespace std",
+                "int", "char", "float", "struct",
                 "if", "else", "while", "return",
                 "cin", "cout",
                 "(", ")", "{", "}", ";", ",",
@@ -152,15 +152,8 @@ public class LexicalAnalyzer {
             return;
         }
 
-        if ("#include".equals(token)) {
-            int c = getTokenCode("#include");
-            fip.add(new FIPEntry(c, 0));
-            return;
-        }
-
         if (token.startsWith("\"") && token.endsWith("\"")) {
-            String val = token.substring(1, token.length()-1);
-            int id = ts.add(val, SymbolType.CONSTANT);
+            int id = ts.add(token, SymbolType.CONSTANT);
             fip.add(new FIPEntry(getTokenCode("STRING_LITERAL"), id));
             return;
         }
@@ -189,7 +182,7 @@ public class LexicalAnalyzer {
     }
 
     private boolean isNumber(String s) {
-        return s.matches("\\d+\\.\\d+|\\d+");
+        return s.matches("\\d+(\\.\\d+|\\d+)?");
     }
 
     private boolean isIdentifier(String s) {

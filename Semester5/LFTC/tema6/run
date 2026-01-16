@@ -1,0 +1,14 @@
+Rulare imagine de docker pe ubuntu:
+docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app --platform linux/amd64 ubuntu:latest
+apt-get update
+apt-get install -y flex bison nasm gcc-multilib build-essential
+
+Compilare si rulare cod:
+
+flex scanner.l
+bison -d parser.y
+gcc lex.yy.c parser.tab.c -o compiler -m32
+./compiler < test.txt > output.asm
+nasm -f elf32 output.asm -o output.o
+gcc -m32 output.o -o program
+./program

@@ -1,0 +1,3 @@
+/Users/titienipaul/Desktop/GitHub/Faculty/Semester5/LFTC/lab6/cmake-build-debug/CMakeFiles/lsb6.dir
+/Users/titienipaul/Desktop/GitHub/Faculty/Semester5/LFTC/lab6/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/titienipaul/Desktop/GitHub/Faculty/Semester5/LFTC/lab6/cmake-build-debug/CMakeFiles/rebuild_cache.dir

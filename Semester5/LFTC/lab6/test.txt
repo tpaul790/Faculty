@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int a;
+    int b;
+    int val;
+    cin >> a;
+    cin >> b;
+    if (a > b){
+        val = a;
+        cout << "max is " << val;
+    }else
+    {
+        val = b;
+        cout << "max is " << val;
+    }
+    while (val < 100){
+        val = val + 1;
+    }
+    (1+2)+(3);
+    return 0;
+}

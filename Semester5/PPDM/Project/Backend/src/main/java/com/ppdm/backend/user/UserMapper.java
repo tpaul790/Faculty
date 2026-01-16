@@ -1,5 +1,6 @@
 package com.ppdm.backend.user;
 
+import com.ppdm.backend.user.dto.UserCreateDto;
 import com.ppdm.backend.user.dto.UserDto;
 import com.ppdm.backend.user.dto.UserUpdateDto;
 import org.mapstruct.Mapper;
@@ -16,4 +17,6 @@ public interface UserMapper {
     UserEntity dtoToEntity(UserDto dto);
 
     UserUpdateDto userUpdateDtoFromEntity(UserEntity user);
+
+    UserEntity userCreateDtoToEntity(UserCreateDto userDto);
 }

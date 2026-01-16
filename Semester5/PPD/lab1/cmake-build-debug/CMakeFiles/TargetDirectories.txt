@@ -1,3 +1,0 @@
-/Users/titienipaul/Desktop/GitHub/Faculty/Semester5/PPD/lab1/cmake-build-debug/CMakeFiles/lab1.dir
-/Users/titienipaul/Desktop/GitHub/Faculty/Semester5/PPD/lab1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/titienipaul/Desktop/GitHub/Faculty/Semester5/PPD/lab1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

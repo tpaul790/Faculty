@@ -1,0 +1,5 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -DCMAKE_C_COMPILER=/opt/homebrew/bin/gcc-15 -DCMAKE_CXX_COMPILER=/opt/homebrew/bin/g++-15 -G Ninja -S /Users/titienipaul/Desktop/GitHub/Faculty/Semester5/PPD/class/lab10 -B /Users/titienipaul/Desktop/GitHub/Faculty/Semester5/PPD/class/lab10/cmake-build-debug
+-- OpenMP found and will be used.
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/titienipaul/Desktop/GitHub/Faculty/Semester5/PPD/class/lab10/cmake-build-debug

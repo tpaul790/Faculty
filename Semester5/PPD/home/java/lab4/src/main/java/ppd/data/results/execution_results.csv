@@ -1,0 +1,9 @@
+Method, Thread Count, Reader Count, Average Execution Time (ms)
+SEQUENTIAL, , , 28.32
+PARALLEL, 4, 1, 13.92
+PARALLEL, 8, 1, 13.40
+PARALLEL, 16, 1, 13.39
+PARALLEL, 4, 2, 11.11
+PARALLEL, 8, 2, 11.48
+PARALLEL, 16, 2, 11.89
+SEQUENTIAL, , , 28.48

@@ -1,0 +1,9 @@
+
+--- TABELA DE SIMBOLURI (IDENTIFICATORI) ---
+| ID | Lexema |
+|----|--------|
+
+--- TABELA DE SIMBOLURI (CONSTANTE SI STRING-URI) ---
+| ID | Lexema |
+|----|--------|
+| 1  | 1 |

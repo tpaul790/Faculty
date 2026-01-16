@@ -1,0 +1,12 @@
+# ninja log v6
+19	1218	1767642767325427233	CMakeFiles/lab2.dir/utils/MatrixValidator.cpp.o	5a5c608917fe8ced
+18	1219	1767642767324674060	CMakeFiles/lab2.dir/convolution/InlineSequentialConvolution.cpp.o	7daf5aa5fd6916ed
+17	1279	1767642767323526883	CMakeFiles/lab2.dir/main.cpp.o	644781283be20dd0
+18	1560	1767642767324850020	CMakeFiles/lab2.dir/convolution/InlineParallelConvolution.cpp.o	4ea16e6c56e5d76d
+4	873	1767642807765141849	CMakeFiles/lab2.dir/main.cpp.o	644781283be20dd0
+5	874	1767642807765877439	CMakeFiles/lab2.dir/utils/MatrixFileManager.cpp.o	20a610a52a4459c9
+874	1050	1767642808635129627	lab2	c21c7070dab6be59
+3	835	1767642895489266706	CMakeFiles/lab2.dir/main.cpp.o	644781283be20dd0
+835	976	1767642896320927840	lab2	c21c7070dab6be59
+4	1174	1767642963871160312	CMakeFiles/lab2.dir/main.cpp.o	644781283be20dd0
+1174	1321	1767642965042059935	lab2	c21c7070dab6be59

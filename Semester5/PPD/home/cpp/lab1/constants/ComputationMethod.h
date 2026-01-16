@@ -1,0 +1,9 @@
+#ifndef COMPUTATIONMETHOD_H
+#define COMPUTATIONMETHOD_H
+enum class ComputationMethod {
+    SEQUENTIAL,
+    BATCH,
+    BLOCK,
+    DISTRIBUTION
+};
+#endif //COMPUTATIONMETHOD_H

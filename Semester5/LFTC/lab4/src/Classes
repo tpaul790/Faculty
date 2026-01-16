@@ -1,0 +1,7 @@
+AutomatFinit
+    stari: Set<String>      // memoreaza toate starile distincte ale automatului finit
+    alfabet: Set<String>    // memoreaza alfabetul automatului finit, simbolurile acceptate
+    tranzitii: Map<String, Map<String,String>>  //memoreaza toate tranzitiile automatului finit
+                                                //punctul de pornire, valoarea si punctul de oprire
+    stareInitiala: String   // starea initiala a automatului
+    stariFinale: Set<String>// starile finale ale automatului

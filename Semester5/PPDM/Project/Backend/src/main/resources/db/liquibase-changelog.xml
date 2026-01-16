@@ -7,4 +7,6 @@
 >
     <!--tables-->
     <include file="/db/changelogs/users-changelog.xml"/>
+    <include file="/db/changelogs/projects-changelog.xml"/>
+    <include file="/db/changelogs/members-changelog.xml"/>
 </databaseChangeLog>

@@ -1,0 +1,6 @@
+E -> T E_prime
+E_prime -> PLUS T E_prime | epsilon
+T -> F T_prime
+T_prime -> MUL F T_prime | epsilon
+F -> LPAREN E RPAREN | ID
+E

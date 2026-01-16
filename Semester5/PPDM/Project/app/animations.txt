@@ -1,0 +1,26 @@
+1. Screen Transitions (Slide Navigation)
+Opening a Screen: When you click on a project or "New Project", the new screen will slide in from the right side, pushing the old screen to the left.
+Going Back: When you press Back (or Save), the current screen will slide away to the right, revealing the previous screen from the left.
+
+2. List Animations (Liquid Motion)
+Adding Items: When you create an offline project and return to the list, the new item won't just "blink" into existence. The existing items will smoothly slide down to make room for it.
+Filtering/Searching: When you type in the search bar or toggle "Active Only", the items in the list will shuffle and reorder themselves smoothly to their new positions instead of disappearing and reappearing instantly.
+
+3. "Breathing" Offline Banner
+The Pulse: When you are offline, the red banner at the top won't be static. It will gently fade in and out (pulsing between 60% and 100% opacity).
+
+4. Interactive Floating Action Button (FAB)
+Scroll Down: As soon as you start scrolling down the list, the "New Project" button will shrink from a wide pill shape (Icon + Text) into a small circle (Icon only).
+Scroll Up: When you scroll back to the very top, it will expand again.
+
+
+For sensors:
+When you shake the phone, the filters will be cleared.
+The trick:
+Run the App and open the Project List.
+Type "Test" in the search bar so you have something to clear.
+On the Emulator toolbar (to the right of the phone screen), click the three dots (...) at the bottom.
+In the window that opens, select Virtual Sensors from the left menu.
+Click the Accelerometers tab (or ensure "Move" is selected).
+Look for the "Rotate" or "Move" sliders.
+The Trick: Quickly drag the Y-axis or Z-axis slider back and forth (0 -> 10 -> 0 -> 10) very rapidly.

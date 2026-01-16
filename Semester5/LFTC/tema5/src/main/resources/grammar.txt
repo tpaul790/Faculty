@@ -1,0 +1,28 @@
+program -> l_includs USING NAMESPACE STD SEMI INT MAIN LPAREN RPAREN LBRACE l_instr RETURN CONST SEMI RBRACE
+l_includs -> include l_includs | epsilon
+include -> HASH_INCLUDE LT library GT
+library -> IOSTREAM
+l_instr -> instr l_instr | epsilon
+instr -> read | write | atr | i_cond | i_rep | decl_struct_or_var
+decl_struct_or_var -> type ID decl_tail
+decl_tail -> SEMI | ASSIGN expr SEMI
+type -> INT | CHAR | FLOAT | struct_def
+struct_def -> STRUCT LBRACE list_decl RBRACE
+list_decl -> decl_struct_or_var list_decl | epsilon
+read -> CIN SHIFT_R ID SEMI
+write -> COUT SHIFT_L write_tail
+write_tail -> expr SEMI | MSG SHIFT_L expr SEMI
+atr -> ID ASSIGN expr SEMI
+expr -> term expr_tail
+term -> ID | CONST
+expr_tail -> op_aritm term expr_tail | epsilon
+op_aritm -> PLUS | MINUS | DIV | MUL | MOD
+i_cond -> IF LPAREN cond RPAREN LBRACE l_instr RBRACE else_part
+else_part -> ELSE LBRACE l_instr RBRACE | epsilon
+cond -> operand cond_tail
+cond_tail -> op_rel operand | op_logic operand | epsilon
+operand -> ID | CONST
+op_rel -> LT | LE | GT | GE | EQ | NE
+op_logic -> AND | OR
+i_rep -> WHILE LPAREN cond RPAREN LBRACE l_instr RBRACE
+program

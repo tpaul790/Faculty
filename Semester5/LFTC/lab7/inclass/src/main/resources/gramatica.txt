@@ -1,0 +1,4 @@
+E -> E e T | T
+T -> T t F | F
+F -> a E a | b
+E

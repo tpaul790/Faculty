@@ -4,18 +4,17 @@ import com.ppdm.backend.security.config.JwtTokenService;
 import com.ppdm.backend.user.UserService;
 import com.ppdm.backend.user.dto.UserDto;
 import com.ppdm.backend.user.exception.LoginFaildException;
+import com.ppdm.backend.user.exception.LogoutFaildException;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
+import java.util.HashMap;
 import java.util.Map;
 
 @RestController
@@ -26,25 +25,40 @@ public class AuthentificationController {
     private  final JwtTokenService jwtTokenService;
     private final UserService userService;
 
-    @PostMapping(value = "/login")
     @SneakyThrows
+    @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody LoginRequest request, HttpServletResponse response) {
         UserDto user;
-        try{
+        try {
             user = userService.login(request);
-            userService.isActive(user.getId());
-        } catch (LoginFaildException e){
+        } catch (LoginFaildException e) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("error", e.getMessage()));
+        }
+
+        String jwt = jwtTokenService.createJwtToken(user.getId(), user.getUsername());
+
+        Map<String, Object> responseBody = new HashMap<>();
+        responseBody.put("token", jwt);
+        responseBody.put("id", user.getId());
+        responseBody.put("username", user.getUsername());
+
+        return ResponseEntity.ok(responseBody);
+    }
+
+    @PostMapping("/logout/{id}")
+    public ResponseEntity<?> logout(@PathVariable Long id) {
+        try{
+            userService.logout(id);
+            return ResponseEntity.ok().build();
+        }catch (LogoutFaildException e){
             return ResponseEntity
                     .status(HttpStatus.UNAUTHORIZED)
                     .body(Map.of("error", e.getMessage()));
         }
+    }
 
-        String jwt = jwtTokenService.createJwtToken(user.getId(), user.getUsername());
-        Cookie cookie = new Cookie("auth-cookie",jwt);
-        cookie.setPath("/");
-        cookie.setDomain("localhost");
-        cookie.setHttpOnly(false);
-        response.addCookie(cookie);
-        return ResponseEntity.ok(Map.of("token", jwt));
+    @GetMapping("/health")
+    public ResponseEntity<?> health(){
+        return ResponseEntity.ok().build();
     }
 }

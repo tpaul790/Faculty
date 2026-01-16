@@ -1,0 +1,43 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no" ?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.4.xsd">
+
+    <changeSet id="20251004-1" author="Titieni Paul">
+        <createTable tableName="members">
+            <column name="project_id" type="bigint">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="user_id" type="bigint">
+                <constraints primaryKey="true"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint  baseColumnNames="project_id"
+                                  baseTableName="members"
+                                  baseTableSchemaName="public"
+                                  constraintName="fk_members_projects"
+                                  deferrable="true"
+                                  initiallyDeferred="true"
+                                  onDelete="CASCADE"
+                                  referencedColumnNames="id"
+                                  referencedTableName="projects"
+                                  referencedTableSchemaName="public"
+                                  validate="true"/>
+
+        <addForeignKeyConstraint  baseColumnNames="user_id"
+                                  baseTableName="members"
+                                  baseTableSchemaName="public"
+                                  constraintName="fk_members_users"
+                                  deferrable="true"
+                                  initiallyDeferred="true"
+                                  onDelete="CASCADE"
+                                  referencedColumnNames="id"
+                                  referencedTableName="users"
+                                  referencedTableSchemaName="public"
+                                  validate="true"/>
+    </changeSet>
+
+</databaseChangeLog>

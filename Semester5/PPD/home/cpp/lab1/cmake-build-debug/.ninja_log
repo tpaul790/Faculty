@@ -1,0 +1,19 @@
+# ninja log v5
+2	169	1760624169309327127	CMakeFiles/lab1.dir/convolution/SequentialConvolution.cpp.o	ca15a0396f093ad9
+4	546	1760804605735358328	CMakeFiles/lab1.dir/convolution/BlockConvolution.cpp.o	82b10a00d3f2600b
+3	532	1760808170704046481	CMakeFiles/lab1.dir/main.cpp.o	c24e62372c35660b
+540	666	1760808170839372848	lab1	7711ed545d6492a1
+2	650	1760624169788843377	CMakeFiles/lab1.dir/utils/MatrixValidator.cpp.o	b83a7079334712c8
+23	528	1760805356409421515	CMakeFiles/lab1.dir/utils/Mapper.cpp.o	3d8ea9171bc19065
+5	569	1760800936246049138	CMakeFiles/lab1.dir/convolution/DistributionConvolution.cpp.o	55ce58acc47b6063
+1	654	1760624169793275626	CMakeFiles/lab1.dir/convolution/BatchConvolution.cpp.o	53b5d91c6f5dd30c
+4	540	1760808170712619037	CMakeFiles/lab1.dir/utils/MatrixFileManager.cpp.o	ddd5c24516d8437f
+6	246	1761500243829831778	CMakeFiles/lab1.dir/convolution/SequentialConvolution.cpp.o	f425cddb4f08aea8
+4	508	1761500244091611381	CMakeFiles/lab1.dir/utils/Mapper.cpp.o	6f568f432cd9781c
+5	705	1761500244287362211	CMakeFiles/lab1.dir/convolution/DistributionConvolution.cpp.o	a5c88e4c6bb11d73
+3	714	1761500244296572196	CMakeFiles/lab1.dir/main.cpp.o	880424ab77cf2524
+4	740	1761500244323047657	CMakeFiles/lab1.dir/convolution/BatchConvolution.cpp.o	7347f7f89961a025
+5	767	1761500244349467449	CMakeFiles/lab1.dir/convolution/BlockConvolution.cpp.o	2da35671876a06e0
+246	839	1761500244422888235	CMakeFiles/lab1.dir/utils/MatrixFileManager.cpp.o	f93db18bd67f632a
+508	876	1761500244460485196	CMakeFiles/lab1.dir/utils/MatrixValidator.cpp.o	d7e4edd8077c2246
+876	1012	1761500244597003917	lab1	7711ed545d6492a1

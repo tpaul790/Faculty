@@ -1,0 +1,28 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no" ?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.4.xsd">
+
+    <changeSet id="20250831-1" author="TitieniPaul">
+        <createTable tableName="projects">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="varchar(256)"/>
+            <column name="budget" type="bigint"/>
+            <column name="created_at" type="timestamp"/>
+            <column name="active" type="boolean"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="1764135730380-1" author="Titieni Paul">
+        <addColumn tableName="projects">
+            <column name="office_latitude" type="varchar(30)"/>
+        </addColumn>
+        <addColumn tableName="projects">
+            <column name="office_longitude" type="varchar(30)"/>
+        </addColumn>
+    </changeSet>
+</databaseChangeLog>

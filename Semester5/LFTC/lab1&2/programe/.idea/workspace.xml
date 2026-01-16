@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a290f3dd-e622-4aa8-84a4-edd6a30de95f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/.idea/cpp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/.cmake/api/v1/query/cache-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/.cmake/api/v1/reply/target-lab1-Debug-d9e76cd370816b4f1545.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-c9207fd7e2470347ea71.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/3.27.8/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/3.27.8/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/3.27.8/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/3.27.8/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/3.27.8/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdCXX/CMakeCXXCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/lab1.dir/main.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/build.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/cmake-build-debug/lab1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/main" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPD/lab1/cpp/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/security/config/CustomCorsFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/security/config/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/security/config/JwtTokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/security/config/SecurityConfigDefault.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/security/controller/AuthentificationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/security/controller/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/security/exceptions/AuthenticationCredentialsNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/security/exceptions/JwtAuthenticationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/dto/UserUpdateDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/exception/InvalidUserException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/exception/LoginFaildException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/exception/UserAlreadyExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/user/exception/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/websockets/JwtChannelInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/java/com/ppdm/backend/websockets/WebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/resources/db/changelogs/users-changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PPDM/Project/Backend/src/main/resources/db/liquibase-changelog.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.cmake/api/v1/query/cache-v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.cmake/api/v1/reply/cache-v2-764d6bf8a7a058dc39c3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-1bd959ffedaf44cbcf63.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-e05b2dbbdb80577af3ab.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.cmake/api/v1/reply/index-2025-10-01T15-23-04-0685.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.cmake/api/v1/reply/target-lab1-Debug-d9e76cd370816b4f1545.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-c9207fd7e2470347ea71.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.ninja_deps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/.ninja_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/3.27.8/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/3.27.8/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/3.27.8/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/3.27.8/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/3.27.8/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdCXX/CMakeCXXCompilerId.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/lab1.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/build.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/cmake-build-debug/lab1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/main" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PPD/lab1/main.cpp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2023" />
+    <option name="minorVersion" value="3.4" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="33hfO0eWWRVdMCxnBH5fu31Cdh6" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "CMake Application.programe.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/titienipaul/Desktop/GitHub/Faculty/Semester5/LFTC/lab1&2/programe",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a290f3dd-e622-4aa8-84a4-edd6a30de95f" name="Changes" comment="" />
+      <created>1759774188970</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759774188970</updated>
+      <workItem from="1759774190490" duration="177000" />
+      <workItem from="1760331867239" duration="36000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
