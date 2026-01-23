@@ -1,0 +1,5 @@
+id,nume,cost,durata_min
+1,Atelier Popular,10.0,60
+2,Atelier VIP,1000.0,120
+3,Atelier Standard,100.0,60
+4,Atelier Pro,500.0,120
