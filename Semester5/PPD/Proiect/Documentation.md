@@ -53,8 +53,8 @@ Un client poate efectua trei tipuri de operațiuni:
 Conform specificațiilor:
 * **Capacitate Limitată:** Numărul de participanți simultani la un atelier $W_j$ din centrul $C_i$ nu poate depăși capacitatea $Cap(i,j)$.
 * **Validare Temporală:** Atelierele au durate variabile (ex: 2 ore). O rezervare la ora 10:00 pentru un atelier de 2 ore ocupă resurse și la ora 11:00.
-* **Persistență:** Toate datele trebuie salvate într-o bază de date (PostgreSQL).
-* **Verificare Periodică:** Un proces de fundal trebuie să verifice consistența sumelor încasate și să elimine rezervările neplătite în timp util (T_plata).
+* **Persistență:** Toate datele trebuie salvate într-o bază de date simpla sau in fisiere text/csv.
+* **Verificare Periodică:** Un proces de fundal trebuie să verifice consistența sumelor încasate, a disponibilității locurilor și să elimine ( sau marcheze ca expirate ) rezervările neplătite în timp util (T_plata).
 
 ---
 
@@ -64,7 +64,7 @@ Conform specificațiilor:
 Aplicația urmează o arhitectură **Client-Server** bazată pe socket-uri TCP/IP.
 
 * **Serverul:** Este componenta pasivă care ascultă pe un port (9000). La acceptarea unei conexiuni, deleagă procesarea unui `ClientHandler` care rulează într-un **Thread Pool**. Acest lucru permite serverului să rămână receptiv la noi conexiuni chiar și sub sarcină mare.
-* **Clientul (`TestDriver`):** Este componenta activă care simulează comportamentul uman, generând cereri aleatoare într-un flux continuu, respectând pauzele configurate (2s între cereri).
+* **Clientul (`TestDriver`):** Este componenta activă care simulează comportamentul uman, generând cereri aleatoare într-un flux continuu, respectând pauzele configurate (ex. 2s între cereri).
 
 ### 3.2. Modelul de Date (Persistență)
 Baza de date relațională este utilizată pentru a stoca starea sistemului. Schema bazei de date (PostgreSQL) cuprinde:
@@ -72,6 +72,7 @@ Baza de date relațională este utilizată pentru a stoca starea sistemului. Sch
 1.  **Tabelul `reservations`:** Stochează detaliile rezervării (ID, Client, Centru, Atelier, Ora, Status, Cost).
     * Coloana `status` gestionează ciclul de viață: `PENDING` $\to$ `PAID` $\to$ `CANCELLED` sau `EXPIRED`.
 2.  **Tabelul `transactions`:** Funcționează ca un jurnal financiar (ledger). Orice modificare financiară (plată sau refund) generează o intrare nouă. Aceasta permite verificarea auditabilă a sumelor (suma tranzacțiilor = suma costurilor rezervărilor plătite).
+3.  **Fisierul `verification_report.txt`:** Acesta conține rapoartele inregistrate de PeriodicChecker
 
 ### 3.3. Protocolul de Comunicare
 S-a utilizat serializarea obiectelor Java (`ObjectInputStream` / `ObjectOutputStream`).
@@ -85,7 +86,7 @@ S-a utilizat serializarea obiectelor Java (`ObjectInputStream` / `ObjectOutputSt
 Aceasta este secțiunea critică a proiectului, tratând mecanismele PPD.
 
 ### 4.1. Gestionarea Concurenței (Multithreading)
-Serverul utilizează `ExecutorService` cu un pool fix de fire de execuție ($p=8$, conform cerinței). Aceasta limitează numărul de fire active simultan, prevenind epuizarea resurselor sistemului (Context Switching excesiv) în cazul unui număr foarte mare de clienți.
+Serverul utilizează `ExecutorService` cu un pool fix de fire de execuție (ex. $p=8$). Aceasta limitează numărul de fire active simultan, prevenind epuizarea resurselor sistemului (Context Switching excesiv) în cazul unui număr foarte mare de clienți.
 
 ### 4.2. Granularitatea Blocării (Lock Striping)
 Pentru a asigura corectitudinea datelor fără a sacrifica performanța, am evitat utilizarea unui singur `lock` global (care ar fi serializat tot sistemul).
@@ -101,20 +102,22 @@ Am implementat **Fine-Grained Locking** (blocare fină) la nivel de resursă ato
 
 ### 4.4. Consistența Datelor (Periodic Checker)
 O cerință specială a fost procesul de verificare automată.
-* Acesta rulează pe un fir separat (`ScheduledExecutorService`) la fiecare 5 secunde.
-* Pentru a efectua o verificare corectă ("Snapshot Isolation"), Checker-ul apelează metoda `lockAll()`. Aceasta blochează temporar toate atelierele, interoghează baza de date pentru a calcula sumele totale și verifică dacă există suprapuneri de capacitate.
-* Dacă suma încasată reală diferă de suma așteptată, sau dacă `active_users > capacity`, eroarea este logată în `verification_report.txt`.
+* Acesta rulează pe un fir separat (`ScheduledExecutorService`) la fiecare 5 (sau orice alta valoare) secunde.
+* Pentru a efectua o verificare corectă ("Snapshot Isolation"), Checker-ul apelează metoda `lockAll()`. Aceasta blochează temporar toate atelierele, interoghează baza de date pentru a calcula sumele totale și verifică dacă există suprapuneri de capacitate sau daca exista rezervări în asteptare care au expirat.
+* Dacă suma încasată reală diferă de suma așteptată, sau dacă `active_users > capacity`, eroarea este logată în `verification_report.txt`. In cazul rezervărilor expirate, nu doar se logheaza eroare, ci se  și
+actualizează statusul rezervării in baza de date.
 
 ---
 
 ## 5. Analiza Performanței
 
 ### 5.1. Scenariul de Testare
-Testele au fost efectuate respectând parametrii:
-* Număr clienți: 20
-* Durată test: 120 secunde
-* Frecvență cereri: 1 cerere / 2 secunde per client
-* Thread-uri server: 8
+Pentru testare am folosit diferite fisiere de configurare cu parametrii diversificati:
+* Număr clienți: 10 sau 20
+* Durată test: 120 sau 240 secunde
+* Frecvență cereri: 1 cerere / 2 sau 5 secunde per client
+* Thread-uri server: 8 sau 12
+* Diferite fisiere pentru workshops si capacities
 
 ### 5.2. Comparație: Serial vs. Concurent
 
@@ -127,7 +130,7 @@ Testele au fost efectuate respectând parametrii:
 | **Utilizare Resurse** | Subutilizare CPU (multe nuclee stau degeaba). | Utilizare eficientă a multiplelor nuclee. |
 
 **Rezultate observate:**
-În timpul rulării testului de 120s, sistemul a procesat cu succes toate cererile. Fișierul de log `verification_report.txt` a confirmat că:
+În timpul rulării testelor, sistemul a procesat cu succes toate cererile. Fișierul de log `verification_report.txt` a confirmat că:
 1.  Nu au existat suprapuneri (Capacity Overflow).
 2.  Balanța financiară a fost mereu corectă (diferența 0.00).
 
@@ -143,25 +146,12 @@ Pentru a reproduce testele și a rula aplicația:
     * Verificați credențialele în `src/main/java/ppd/data/Database.java`.
 
 2.  **Configurare Scenariu:**
-    * Editați `src/main/resources/test_scenario.properties` pentru a modifica numărul de clienți sau durata.
+    * Editați `src/main/resources/test_scenario.properties` pentru a modifica numărul de clienți, durata, delay-ul clientilor, batch size-ul, check interval, fisierele de workshops si capacities, etc.
     * Editați `workshops.csv` și `capacities.csv` pentru a schimba datele de domeniu.
 
 3.  **Rulare:**
 
-    *Compilare:*
-    ```bash
-    mvn clean package
-    ```
-
-    *Pornire Server:*
-    ```bash
-    java -cp target/classes:target/dependency/* ppd.server.WorkshopServer
-    ```
-
-    *Pornire Client (Test Driver):*
-    ```bash
-    java -cp target/classes:target/dependency/* ppd.TestDriver
-    ```
+Folosind play button-ul din stanga functilor main corespunzatoare claselor: Workshop Server si TestDriver
 
 4.  **Verificare:**
     * Urmăriți consola pentru log-uri în timp real.
@@ -171,6 +161,6 @@ Pentru a reproduce testele și a rula aplicația:
 
 ## 7. Concluzii
 
-Proiectul demonstrează implementarea cu succes a unui sistem distribuit robust. Utilizarea mecanismelor de sincronizare avansate (`ReentrantLock`, `ScheduledExecutorService`) a permis gestionarea eficientă a concurenței, asigurând integritatea datelor impusă de scenariul "Workshop".
+Proiectul demonstrează implementarea cu succes a unui sistem distribuit robust. Utilizarea mecanismelor de sincronizare avansate (`ReentrantLock`, `ScheduledExecutorService`) a permis gestionarea eficientă a concurenței, asigurând integritatea datelor impusă de cerintele primite.
 
 Arhitectura modulară și separarea clară între logica de business, accesul la date și configurare permit extinderea ușoară a sistemului (de exemplu, adăugarea mai multor tipuri de resurse sau migrarea către un alt tip de bază de date) fără a rescrie logica de sincronizare.
