@@ -12,7 +12,7 @@ Sistemul gestionează concurența folosind mecanisme de sincronizare fine-graine
 
 ## Structura Proiectului
 
-* `src/main/java/ppd`: Fisierele de rulat (`WorkshopServer`), `TestDriver`.
+* `src/main/java/ppd`: Fisierele de rulat (`WorkshopServer`, `TestDriver`).
 * `src/main/java/ppd/client`: Fisiere care definesc logica clienților (`ClientHandler`, `WorkshopClient`).
 * `src/main/java/ppd/data`: Interacțiunea cu baza de date (`Database`) și modelul de date.
 * `src/main/java/ppd/config`: Gestionarea configurărilor (`WorkshopConfig`, `TestScenarioConfig`).
