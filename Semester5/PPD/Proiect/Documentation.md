@@ -2,9 +2,9 @@
 ## Programare Paralelă și Distribuită
 
 **Titlu Proiect:** Sistem Client-Server Multithreaded pentru Gestiunea Rezervărilor (Workshop System)
-**Student:** [Numele Tău]
-**Grupa:** [Grupa Ta]
-**Data:** [Data Curentă]
+**Student:** Titieni Robert-Paul
+**Grupa:** 237
+**Data:** 23.01.2026
 
 ---
 
