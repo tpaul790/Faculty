@@ -1,0 +1,177 @@
+
+--- Verification Report [2026-01-22T18:06:34.745625] ---
+Center 1: Balance OK (150.00)
+Center 2: Balance OK (300.00)
+Center 3: Balance OK (300.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:06:44.747595] ---
+EXPIRED: Reservation 409fbb5d
+EXPIRED: Reservation b475a39d
+Center 1: Balance OK (600.00)
+Center 2: Balance OK (150.00)
+Center 3: Balance OK (700.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:06:54.753410] ---
+Center 1: Balance OK (1350.00)
+Center 2: Balance OK (250.00)
+Center 3: Balance OK (550.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:07:04.759707] ---
+EXPIRED: Reservation e5165c0f
+Center 1: Balance OK (1150.00)
+Center 2: Balance OK (400.00)
+Center 3: Balance OK (850.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:07:14.761554] ---
+EXPIRED: Reservation 76d6518a
+Center 1: Balance OK (1800.00)
+Center 2: Balance OK (1000.00)
+Center 3: Balance OK (1150.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:07:24.762858] ---
+Center 1: Balance OK (2100.00)
+Center 2: Balance OK (1750.00)
+Center 3: Balance OK (1500.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:07:34.763657] ---
+EXPIRED: Reservation b0c38068
+EXPIRED: Reservation d1eead07
+Center 1: Balance OK (2650.00)
+Center 2: Balance OK (1650.00)
+Center 3: Balance OK (1400.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:07:44.763970] ---
+EXPIRED: Reservation 897ed6a7
+Center 1: Balance OK (3100.00)
+Center 2: Balance OK (1750.00)
+Center 3: Balance OK (1500.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:07:54.764065] ---
+Center 1: Balance OK (3100.00)
+Center 2: Balance OK (1900.00)
+Center 3: Balance OK (1750.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:08:04.764160] ---
+Center 1: Balance OK (3100.00)
+Center 2: Balance OK (2400.00)
+Center 3: Balance OK (1950.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:08:14.764976] ---
+Center 1: Balance OK (3600.00)
+Center 2: Balance OK (2600.00)
+Center 3: Balance OK (2300.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:08:24.760869] ---
+EXPIRED: Reservation 9b6fb651
+EXPIRED: Reservation 2dfb50e0
+EXPIRED: Reservation aeecdd44
+Center 1: Balance OK (3900.00)
+Center 2: Balance OK (3550.00)
+Center 3: Balance OK (2300.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:08:34.764274] ---
+EXPIRED: Reservation ac390680
+Center 1: Balance OK (4150.00)
+Center 2: Balance OK (3250.00)
+Center 3: Balance OK (2400.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:08:44.760319] ---
+EXPIRED: Reservation c2f311b2
+EXPIRED: Reservation f0747bdb
+Center 1: Balance OK (4750.00)
+Center 2: Balance OK (4100.00)
+Center 3: Balance OK (2500.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:08:54.762024] ---
+Center 1: Balance OK (4900.00)
+Center 2: Balance OK (4300.00)
+Center 3: Balance OK (3000.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:09:04.761374] ---
+Center 1: Balance OK (5100.00)
+Center 2: Balance OK (4350.00)
+Center 3: Balance OK (3200.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:09:14.763244] ---
+EXPIRED: Reservation 41cc009a
+EXPIRED: Reservation dece2f4d
+Center 1: Balance OK (5000.00)
+Center 2: Balance OK (4800.00)
+Center 3: Balance OK (3600.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:09:24.764465] ---
+Center 1: Balance OK (5300.00)
+Center 2: Balance OK (5100.00)
+Center 3: Balance OK (3950.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:09:34.764458] ---
+Center 1: Balance OK (5850.00)
+Center 2: Balance OK (5100.00)
+Center 3: Balance OK (4100.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:09:44.764383] ---
+Center 1: Balance OK (5850.00)
+Center 2: Balance OK (5200.00)
+Center 3: Balance OK (4550.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:09:54.760653] ---
+Center 1: Balance OK (6150.00)
+Center 2: Balance OK (5500.00)
+Center 3: Balance OK (4550.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:10:04.759757] ---
+Center 1: Balance OK (6600.00)
+Center 2: Balance OK (5500.00)
+Center 3: Balance OK (4550.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:10:14.763596] ---
+Center 1: Balance OK (6850.00)
+Center 2: Balance OK (5650.00)
+Center 3: Balance OK (5050.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:10:24.764427] ---
+Center 1: Balance OK (6950.00)
+Center 2: Balance OK (5800.00)
+Center 3: Balance OK (5350.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:10:34.764752] ---
+Center 1: Balance OK (6950.00)
+Center 2: Balance OK (5800.00)
+Center 3: Balance OK (5350.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:10:44.760502] ---
+Center 1: Balance OK (6950.00)
+Center 2: Balance OK (5800.00)
+Center 3: Balance OK (5350.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-22T18:10:54.765327] ---
+Center 1: Balance OK (6950.00)
+Center 2: Balance OK (5800.00)
+Center 3: Balance OK (5350.00)
+Capacity Checks: OK

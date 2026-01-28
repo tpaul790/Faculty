@@ -1,0 +1,102 @@
+
+--- Verification Report [2026-01-28T07:48:52.213043] ---
+Center 1: Balance OK (150.00)
+Center 2: Balance OK (0.00)
+Center 3: Balance OK (100.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-28T07:49:07.210002] ---
+Center 1: Balance OK (2350.00)
+Center 2: Balance OK (500.00)
+Center 3: Balance OK (300.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-28T07:49:22.212338] ---
+Center 1: Balance OK (2900.00)
+Center 2: Balance OK (1200.00)
+Center 3: Balance OK (950.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-28T07:49:37.211947] ---
+Center 1: Balance OK (2900.00)
+Center 2: Balance OK (2300.00)
+Center 3: Balance OK (1600.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-28T07:49:52.210851] ---
+Center 1: Balance OK (3050.00)
+Center 2: Balance OK (2400.00)
+Center 3: Balance OK (2850.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-28T07:50:07.211716] ---
+Center 1: Balance OK (4050.00)
+Center 2: Balance OK (3050.00)
+Center 3: Balance OK (3200.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-28T07:50:22.211489] ---
+Center 1: Balance OK (5000.00)
+Center 2: Balance OK (3550.00)
+Center 3: Balance OK (3700.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-28T07:50:37.210067] ---
+Center 1: Balance OK (5450.00)
+Center 2: Balance OK (4600.00)
+Center 3: Balance OK (4200.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-28T07:50:52.209959] ---
+Center 1: Balance OK (5800.00)
+Center 2: Balance OK (5550.00)
+Center 3: Balance OK (5150.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-28T07:51:07.220229] ---
+Center 1: Balance OK (6250.00)
+Center 2: Balance OK (6000.00)
+Center 3: Balance OK (5550.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-28T07:51:22.210360] ---
+Center 1: Balance OK (6450.00)
+Center 2: Balance OK (6550.00)
+Center 3: Balance OK (6250.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-28T07:51:37.210284] ---
+Center 1: Balance OK (7100.00)
+Center 2: Balance OK (6650.00)
+Center 3: Balance OK (6250.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-28T07:51:52.210071] ---
+Center 1: Balance OK (8000.00)
+Center 2: Balance OK (7050.00)
+Center 3: Balance OK (6250.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-28T07:52:07.209680] ---
+Center 1: Balance OK (8300.00)
+Center 2: Balance OK (8350.00)
+Center 3: Balance OK (6950.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-28T07:52:22.209854] ---
+Center 1: Balance OK (8550.00)
+Center 2: Balance OK (8600.00)
+Center 3: Balance OK (7100.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-28T07:52:37.206240] ---
+Center 1: Balance OK (9250.00)
+Center 2: Balance OK (9500.00)
+Center 3: Balance OK (7250.00)
+Capacity Checks: OK
+
+--- Verification Report [2026-01-28T07:52:52.208919] ---
+Center 1: Balance OK (9250.00)
+Center 2: Balance OK (10050.00)
+Center 3: Balance OK (7550.00)
+Capacity Checks: OK

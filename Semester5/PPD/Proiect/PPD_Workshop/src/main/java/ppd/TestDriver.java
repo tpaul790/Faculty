@@ -11,7 +11,7 @@ public class TestDriver {
     public static void main(String[] args) {
         System.out.println("Starting Test Driver...");
 
-        String testScenarioFile = "test_scenario2.properties";
+        String testScenarioFile = "test_scenario3.properties";
 
         TestScenarioConfig.initialize(testScenarioFile, false);
 

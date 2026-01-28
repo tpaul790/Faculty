@@ -20,7 +20,7 @@ public class WorkshopServer {
     public static void main(String[] args) {
         System.out.println("Initializing Workshop Server...");
 
-        String testScenarioFile = "test_scenario2.properties";
+        String testScenarioFile = "test_scenario3.properties";
 
         TestScenarioConfig.initialize(testScenarioFile, true);
 

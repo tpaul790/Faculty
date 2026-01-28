@@ -256,21 +256,3 @@ Center 1: Balance OK (21360.00)
 Center 2: Balance OK (9450.00)
 Center 3: Balance OK (5160.00)
 Capacity Checks: OK
-
---- Verification Report [2026-01-28T07:57:20.428898] ---
-Center 1: Balance OK (21360.00)
-Center 2: Balance OK (9450.00)
-Center 3: Balance OK (5160.00)
-Capacity Checks: OK
-
---- Verification Report [2026-01-28T07:57:25.426887] ---
-Center 1: Balance OK (21360.00)
-Center 2: Balance OK (9450.00)
-Center 3: Balance OK (5160.00)
-Capacity Checks: OK
-
---- Verification Report [2026-01-28T07:57:30.425468] ---
-Center 1: Balance OK (21360.00)
-Center 2: Balance OK (9450.00)
-Center 3: Balance OK (5160.00)
-Capacity Checks: OK
