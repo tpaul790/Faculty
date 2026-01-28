@@ -14,6 +14,7 @@ public class TestScenarioConfig {
     public static int PORT = 9000;
     public static int THREAD_POOL_SIZE = 8;
     public static int CHECK_INTERVAL_SEC = 10;
+    public static int PAYMENT_TIMEOUT_SEC = 15;
 
     public static void initialize(String filename, Boolean onServer) {
         System.out.println("Loading test scenario from: " + filename);
@@ -36,6 +37,7 @@ public class TestScenarioConfig {
             PORT = Integer.parseInt(prop.getProperty("port", "9000"));
             THREAD_POOL_SIZE = Integer.parseInt(prop.getProperty("thread_pool_size", "8"));
             CHECK_INTERVAL_SEC = Integer.parseInt(prop.getProperty("check_interval_sec", "10"));
+            PAYMENT_TIMEOUT_SEC = Integer.parseInt(prop.getProperty("payment_timeout_sec", "15"));
 
             if(!onServer) {
                 System.out.println("Scenario Loaded: " + CLIENTS_COUNT + " clients, "

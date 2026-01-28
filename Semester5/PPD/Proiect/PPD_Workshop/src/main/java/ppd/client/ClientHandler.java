@@ -1,5 +1,6 @@
 package ppd.client;
 
+import ppd.config.TestScenarioConfig;
 import ppd.config.WorkshopConfig;
 import ppd.data.Database;
 import ppd.dto.Reservation;
@@ -18,7 +19,6 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class ClientHandler implements Runnable {
     private final Socket socket;
-    private static final int PAYMENT_TIMEOUT_SEC = 10;
 
     public ClientHandler(Socket socket) {
         this.socket = socket;
@@ -104,7 +104,7 @@ public class ClientHandler implements Runnable {
                 return new Response(false, "Reservation already expired!", null, 0);
             }
 
-            if (Duration.between(res.getCreationTimestamp(), LocalDateTime.now()).getSeconds() > PAYMENT_TIMEOUT_SEC &&
+            if (Duration.between(res.getCreationTimestamp(), LocalDateTime.now()).getSeconds() > TestScenarioConfig.PAYMENT_TIMEOUT_SEC &&
                 res.getStatus() != ReservationStatus.EXPIRED) {
                 Database.updateReservationStatus(res.getId(), ReservationStatus.EXPIRED);
                 return new Response(false, "Too much time passed from the reservation initialization!", null, 0);

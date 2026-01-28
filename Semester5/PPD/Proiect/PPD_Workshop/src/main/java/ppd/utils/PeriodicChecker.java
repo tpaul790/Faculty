@@ -1,5 +1,6 @@
 package ppd.utils;
 
+import ppd.config.TestScenarioConfig;
 import ppd.config.WorkshopConfig;
 import ppd.data.Database;
 import ppd.dto.*;
@@ -12,7 +13,6 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public class PeriodicChecker implements Runnable {
-    private static final int EXPIRE_TIMEOUT = 12;
 
     @Override
     public void run() {
@@ -28,7 +28,7 @@ public class PeriodicChecker implements Runnable {
             // Check if some reservations expired
             for (Reservation r : all) {
                 if (r.getStatus() == ReservationStatus.PENDING) {
-                    if (Duration.between(r.getCreationTimestamp(), now).getSeconds() > EXPIRE_TIMEOUT) {
+                    if (Duration.between(r.getCreationTimestamp(), now).getSeconds() > TestScenarioConfig.PAYMENT_TIMEOUT_SEC) {
                         Database.updateReservationStatus(r.getId(), ReservationStatus.EXPIRED);
                         String msg = "EXPIRED: Reservation " + r.getId();
                         report.append(msg).append("\n");
