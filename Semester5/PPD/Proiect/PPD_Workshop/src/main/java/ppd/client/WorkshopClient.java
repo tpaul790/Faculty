@@ -1,5 +1,6 @@
 package ppd.client;
 
+import ppd.config.TestScenarioConfig;
 import ppd.config.WorkshopConfig;
 import ppd.dto.Request;
 import ppd.dto.RequestType;
@@ -37,7 +38,7 @@ public class WorkshopClient implements Runnable {
                 System.out.println(name + ": Reservation SUCCESS ID: " + resResp.getReservationId());
 
                 //Random wait, allow some reservations to expire
-                Thread.sleep(ThreadLocalRandom.current().nextInt(1000, 15000));
+                Thread.sleep(ThreadLocalRandom.current().nextInt(1000, TestScenarioConfig.PAYMENT_TIMEOUT_SEC * 1000 + 1000));
 
                 // Send Payment Request
                 CompletableFuture<Response> payFuture = sendRequestAsync(

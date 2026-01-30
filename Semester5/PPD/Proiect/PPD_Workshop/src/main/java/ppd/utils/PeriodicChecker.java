@@ -37,7 +37,6 @@ public class PeriodicChecker implements Runnable {
             }
 
             // Check Sums (Consistency)
-            // -------------------------------------------------
             for (int c = 1; c <= WorkshopConfig.NUM_CENTRES; c++) {
                 int finalC = c;
 
@@ -48,7 +47,7 @@ public class PeriodicChecker implements Runnable {
 
                 double actual = Database.getTotalTransactionAmountForCenter(c);
 
-                if (Math.abs(expected - actual) > 0.001) {
+                if (Math.abs(expected - actual) > 0) {
                     String err = String.format("CORRUPTION Center %d: Expected %.2f, Found %.2f", c, expected, actual);
                     report.append(err).append("\n");
                     System.err.println(err);
