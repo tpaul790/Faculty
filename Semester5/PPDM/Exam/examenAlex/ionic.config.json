@@ -1,7 +1,5 @@
 {
-  "name": "examenAlex",
-  "integrations": {
-    "capacitor": {}
-  },
+  "name": "ionic-app-base",
+  "integrations": {},
   "type": "react-vite"
 }
