@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import {
     IonContent, IonHeader, IonPage, IonTitle, IonToolbar,
     IonButtons, IonBackButton, IonInput, IonItem, IonLabel,
-    IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle
+    IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle,
+    IonLoading
 } from '@ionic/react';
 import { useHistory, useParams } from 'react-router';
 import { useTasks } from '../hooks/TaskContext';
@@ -10,53 +11,86 @@ import { useTasks } from '../hooks/TaskContext';
 const EditTask: React.FC = () => {
     const { id } = useParams<{ id: string }>();
     const history = useHistory();
-    const { tasks, saveTaskInBackground } = useTasks();
 
-    const [text, setText] = useState('');
-    const [task, setTask] = useState<any>(null);
+    const { tasks, saveTaskInBackground, loading } = useTasks();
+
+    const task = tasks.find(t => t.id === parseInt(id, 10));
+
+    const [text, setText] = useState<string>('');
+    const [isInitialized, setIsInitialized] = useState(false);
 
     useEffect(() => {
-        const foundTask = tasks.find(t => t.id === parseInt(id));
-        if (foundTask) {
-            setTask(foundTask);
-            // Dacă avem text local (ne-salvat/conflict), îl afișăm pe acela
-            setText(foundTask.localText || foundTask.text);
+        if (task && !isInitialized) {
+            const initialText = task.localText !== undefined ? task.localText : task.text;
+            setText(initialText);
+            setIsInitialized(true);
         }
-    }, [id, tasks]);
+    }, [task, isInitialized]);
 
     const handleSave = () => {
         if (task) {
-            // 3. Trigger background save and go back immediately
-            const taskToSave = { ...task, text: text };
+            const versionToUse = task.serverVersionTask
+                ? task.serverVersionTask.version
+                : task.version;
+
+            const taskToSave = {
+                ...task,
+                text: text,
+                version: versionToUse
+            };
+
             saveTaskInBackground(taskToSave);
             history.goBack();
         }
     };
 
-    if (!task) return <IonContent>Task not found</IonContent>;
+    if (loading && !task) {
+        return (
+            <IonPage>
+                <IonContent>
+                    <IonLoading isOpen={true} message="Loading task..." />
+                </IonContent>
+            </IonPage>
+        );
+    }
+
+    if (!task) {
+        return (
+            <IonPage>
+                <IonHeader>
+                    <IonToolbar>
+                        <IonButtons slot="start"><IonBackButton /></IonButtons>
+                        <IonTitle>Task Not Found</IonTitle>
+                    </IonToolbar>
+                </IonHeader>
+                <IonContent className="ion-padding">
+                    Task with ID {id} not found.
+                </IonContent>
+            </IonPage>
+        );
+    }
 
     return (
         <IonPage>
             <IonHeader>
                 <IonToolbar>
                     <IonButtons slot="start">
-                        <IonBackButton />
+                        <IonBackButton defaultHref="/home" />
                     </IonButtons>
                     <IonTitle>Edit Task {id}</IonTitle>
                 </IonToolbar>
             </IonHeader>
             <IonContent className="ion-padding">
 
-                {/* 7. Conflict Visualization */}
                 {task.status === 'conflict' && task.serverVersionTask && (
                     <IonCard color="warning">
                         <IonCardHeader>
                             <IonCardSubtitle>Server Version (Newer)</IonCardSubtitle>
                         </IonCardHeader>
                         <IonCardContent>
-                            <p><strong>Text:</strong> {task.serverVersionTask.text}</p>
+                            <p><strong>Server Text:</strong> {task.serverVersionTask.text}</p>
                             <p><strong>Version:</strong> {task.serverVersionTask.version}</p>
-                            <p><em>The server has a newer version. Saving now will overwrite it with your text below.</em></p>
+                            <p><em>Saving will overwrite the server version.</em></p>
                         </IonCardContent>
                     </IonCard>
                 )}
@@ -65,13 +99,14 @@ const EditTask: React.FC = () => {
                     <IonLabel position="stacked">Description</IonLabel>
                     <IonInput
                         value={text}
-                        onIonChange={e => setText(e.detail.value!)}
+                        placeholder="Edit task description"
+                        onIonInput={e => setText(e.detail.value!)}
                     />
                 </IonItem>
 
                 <div className="ion-padding-top">
                     <IonButton expand="block" onClick={handleSave}>
-                        Save
+                        Save Changes
                     </IonButton>
                 </div>
             </IonContent>

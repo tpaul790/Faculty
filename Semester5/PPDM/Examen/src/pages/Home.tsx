@@ -34,16 +34,13 @@ const Home: React.FC = () => {
 
     const handleTaskClick = async (task: LocalTask) => {
         if (task.status === 'offline') {
-            // 6. Retry sending
             if (task.localText) {
                 saveTaskInBackground({ ...task, text: task.localText });
             }
         } else if (task.status === 'conflict') {
-            // 7. Resolve conflict -> fetch server version then navigate
             await resolveConflict(task.id);
             history.push(`/edit/${task.id}`);
         } else {
-            // 3. Normal edit
             history.push(`/edit/${task.id}`);
         }
     };
@@ -72,7 +69,6 @@ const Home: React.FC = () => {
 
                 <IonLoading isOpen={loading} message={'Loading...'} />
 
-                {/* Error Retry Logic */}
                 {error && !loading && (
                     <div className="ion-padding ion-text-center">
                         <p style={{color: 'red'}}>{error}</p>
@@ -81,7 +77,6 @@ const Home: React.FC = () => {
                 )}
 
                 <IonList>
-                    {/* View 1: Tag List */}
                     {!selectedTag && uniqueTags.map(tag => (
                         <IonItem key={tag} button onClick={() => handleTagClick(tag)}>
                             <IonLabel>{tag}</IonLabel>
@@ -89,7 +84,6 @@ const Home: React.FC = () => {
                         </IonItem>
                     ))}
 
-                    {/* View 2: Task List for selected Tag */}
                     {selectedTag && tasks
                         .filter(t => t.tag === selectedTag)
                         .map(task => (

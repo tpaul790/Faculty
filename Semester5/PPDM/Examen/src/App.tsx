@@ -26,7 +26,6 @@ setupIonicReact();
 
 const App: React.FC = () => (
     <IonApp>
-        {/* Învelim aplicația în Provider pentru a avea acces la starea globală */}
         <TaskProvider>
             <IonReactRouter>
                 <IonRouterOutlet>

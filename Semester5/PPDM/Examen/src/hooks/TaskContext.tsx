@@ -16,38 +16,67 @@ interface TaskContextType {
 const TaskContext = createContext<TaskContextType | undefined>(undefined);
 
 export const TaskProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-    const [tasks, setTasks] = useState<LocalTask[]>([]);
+    // Initializare din LocalStorage
+    const [tasks, setTasks] = useState<LocalTask[]>(() => {
+        try {
+            const savedTasks = localStorage.getItem('tasks');
+            return savedTasks ? JSON.parse(savedTasks) : [];
+        } catch (e) {
+            return [];
+        }
+    });
+
     const [loading, setLoading] = useState<boolean>(false);
     const [error, setError] = useState<string | null>(null);
     const [toastMessage, setToastMessage] = useState<string | null>(null);
 
-    // 1. Fetch initial via GET /task
+    // Salvare automată în LocalStorage
+    useEffect(() => {
+        localStorage.setItem('tasks', JSON.stringify(tasks));
+    }, [tasks]);
+
+    // 1. FETCH TASKS
     const fetchTasks = useCallback(async () => {
-        setLoading(true);
+        if (tasks.length === 0) setLoading(true);
         setError(null);
         try {
             const response = await taskApi.getAll();
-            const initialTasks: LocalTask[] = response.data.map(t => ({
-                ...t,
-                isUnread: false, // Inițial nu știm ce e nou, dar vom marca via WS
-                status: 'synced'
-            }));
-            setTasks(initialTasks);
+            const serverTasks = response.data;
+
+            setTasks(currentTasks => {
+                const mergedTasks = serverTasks.map(serverTask => {
+                    const localCounterpart = currentTasks.find(t => t.id === serverTask.id);
+
+                    // Păstrăm task-ul local dacă are activitate în curs
+                    if (localCounterpart && (
+                        localCounterpart.status === 'sending' ||
+                        localCounterpart.status === 'offline' ||
+                        localCounterpart.status === 'conflict'
+                    )) {
+                        return localCounterpart;
+                    }
+
+                    const isUnread = localCounterpart ? localCounterpart.isUnread : true;
+
+                    return { ...serverTask, isUnread, status: 'synced' } as LocalTask;
+                });
+                return mergedTasks;
+            });
+
         } catch (err: any) {
-            setError('Failed to fetch tasks. Please retry.');
+            setError('Failed to fetch tasks. Using local data.');
             console.error(err);
         } finally {
             setLoading(false);
         }
     }, []);
 
-    // Initial load & WebSocket setup
     useEffect(() => {
         fetchTasks();
 
-        // 8. WebSocket Integration
         const ws = new WebSocket('ws://localhost:3000');
         ws.onopen = () => console.log('WS Connected');
+
         ws.onmessage = (event) => {
             const updatedTask: Task = JSON.parse(event.data);
             console.log('WS Update:', updatedTask);
@@ -55,55 +84,67 @@ export const TaskProvider: React.FC<{ children: React.ReactNode }> = ({ children
             setTasks(prevTasks => {
                 const index = prevTasks.findIndex(t => t.id === updatedTask.id);
                 if (index > -1) {
-                    // Actualizăm task-ul existent și îl marcăm ca necitit
+                    const currentTask = prevTasks[index];
                     const newTasks = [...prevTasks];
-                    // Păstrăm starea locală dacă este în conflict, altfel suprascriem
-                    if (newTasks[index].status === 'synced') {
+
+                    if (currentTask.status === 'synced' || !currentTask.status) {
                         newTasks[index] = { ...updatedTask, isUnread: true, status: 'synced' };
+                        setToastMessage(`Task ${updatedTask.id} updated from server!`);
                     } else {
-                        // Dacă userul editează ceva ce s-a schimbat pe server, devine conflict doar la Save
-                        // Dar putem notifica vizual
                         newTasks[index].isUnread = true;
+                        console.log(`Ignored WS update for task ${currentTask.id} because status is ${currentTask.status}`);
                     }
                     return newTasks;
                 } else {
                     return [...prevTasks, { ...updatedTask, isUnread: true, status: 'synced' }];
                 }
             });
-            setToastMessage(`Task ${updatedTask.id} updated!`);
         };
 
         return () => ws.close();
     }, [fetchTasks]);
 
-    // 3. & 4. Save Task in Background
     const saveTaskInBackground = async (taskToSave: Task) => {
-        // Update local UI immediately to "Sending..."
+        // Pas 1: Update Instantaneu în UI (Optimistic Update)
         setTasks(prev => prev.map(t =>
             t.id === taskToSave.id
-                ? { ...t, text: taskToSave.text, status: 'sending', localText: taskToSave.text }
+                ? {
+                    ...t,
+                    text: taskToSave.text,
+                    status: 'sending',
+                    localText: taskToSave.text,
+                    // MODIFICARE AICI: Ștergem datele despre conflictul anterior
+                    // pentru ca mesajul de eroare să dispară imediat ce dăm Save.
+                    serverVersionTask: undefined
+                }
                 : t
         ));
 
         try {
             const response = await taskApi.update(taskToSave);
-            // Success
+
+            // Pas 2: Confirmare de la server (Success)
             setTasks(prev => prev.map(t =>
                 t.id === taskToSave.id
-                    ? { ...response.data, status: 'synced', isUnread: false, localText: undefined, serverVersionTask: undefined }
+                    ? {
+                        ...response.data,
+                        status: 'synced',
+                        isUnread: false,
+                        localText: undefined,
+                        serverVersionTask: undefined
+                    }
                     : t
             ));
         } catch (err: any) {
-            console.error(err);
+            console.error('Save failed:', err);
+
             if (err.response && err.response.status === 409) {
-                // 5. Version Conflict
                 setTasks(prev => prev.map(t =>
                     t.id === taskToSave.id
                         ? { ...t, status: 'conflict' }
                         : t
                 ));
             } else {
-                // 5. Offline / Network Error
                 setTasks(prev => prev.map(t =>
                     t.id === taskToSave.id
                         ? { ...t, status: 'offline' }
@@ -113,14 +154,12 @@ export const TaskProvider: React.FC<{ children: React.ReactNode }> = ({ children
         }
     };
 
-    // 2. Mark tasks as read when entering tag view
     const markAsRead = (tag: string) => {
         setTasks(prev => prev.map(t =>
             t.tag === tag ? { ...t, isUnread: false } : t
         ));
     };
 
-    // 7. Fetch server version for conflict resolution
     const resolveConflict = async (id: number) => {
         setLoading(true);
         try {
@@ -140,10 +179,10 @@ export const TaskProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
     return (
         <TaskContext.Provider value={{ tasks, loading, error, fetchTasks, saveTaskInBackground, markAsRead, resolveConflict }}>
-    {children}
-    <IonToast isOpen={!!toastMessage} message={toastMessage || ''} duration={2000} onDidDismiss={() => setToastMessage(null)} />
-    </TaskContext.Provider>
-);
+            {children}
+            <IonToast isOpen={!!toastMessage} message={toastMessage || ''} duration={2000} onDidDismiss={() => setToastMessage(null)} />
+        </TaskContext.Provider>
+    );
 };
 
 export const useTasks = () => {
